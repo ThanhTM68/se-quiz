@@ -17,8 +17,8 @@ function App() {
                             to="/"
                             className="text-xl md:text-2xl font-bold flex items-center gap-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
                         >
-                            <BookOpen className="text-blue-400" /> SE Quiz
-                            Master
+                            <BookOpen className="text-blue-400" /> Trắc Nghiệm
+                            Tổng Hợp Master
                         </Link>
                         <div className="flex gap-4">
                             <Link
