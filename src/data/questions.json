@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "chapter": "Chương 1: Tổng quan",
+        "question": "Mục tiêu chính của Công nghệ phần mềm là gì?",
+        "options": [
+            "Viết code càng nhanh càng tốt",
+            "Tạo ra phần mềm chất lượng cao, dễ bảo trì với chi phí hợp lý",
+            "Sử dụng công nghệ mới nhất",
+            "Loại bỏ hoàn toàn lỗi phần mềm"
+        ],
+        "answer": "Tạo ra phần mềm chất lượng cao, dễ bảo trì với chi phí hợp lý"
+    },
+    {
+        "id": 2,
+        "chapter": "Chương 2: Mô hình quy trình",
+        "question": "Mô hình Thác nước (Waterfall) phù hợp nhất khi nào?",
+        "options": [
+            "Yêu cầu thay đổi liên tục",
+            "Dự án ngắn hạn, rủi ro thấp",
+            "Yêu cầu rõ ràng và ổn định ngay từ đầu",
+            "Khách hàng muốn xem sản phẩm sớm"
+        ],
+        "answer": "Yêu cầu rõ ràng và ổn định ngay từ đầu"
+    }
+]
