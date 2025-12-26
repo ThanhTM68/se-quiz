@@ -4,22 +4,19 @@ import initialQuestions from "../data/questions.json";
 const QuizContext = createContext();
 
 export const QuizProvider = ({ children }) => {
-    // Load questions từ localStorage nếu có (cho tính năng Admin), nếu không thì dùng file json
     const [allQuestions, setAllQuestions] = useState(() => {
         const saved = localStorage.getItem("se_quiz_data");
         return saved ? JSON.parse(saved) : initialQuestions;
     });
 
-    const [currentChapter, setCurrentChapter] = useState(null);
     const [quizQuestions, setQuizQuestions] = useState([]);
     const [score, setScore] = useState({ correct: 0, wrong: 0, total: 0 });
+    const [userAnswers, setUserAnswers] = useState({}); // Lưu trạng thái làm bài { questionId: selectedOption }
 
-    // Lưu lại vào localStorage mỗi khi questions thay đổi (Admin update)
     useEffect(() => {
         localStorage.setItem("se_quiz_data", JSON.stringify(allQuestions));
     }, [allQuestions]);
 
-    // Hàm trộn mảng (Fisher-Yates Shuffle)
     const shuffleArray = (array) => {
         const arr = [...array];
         for (let i = arr.length - 1; i > 0; i--) {
@@ -29,24 +26,48 @@ export const QuizProvider = ({ children }) => {
         return arr;
     };
 
-    // Bắt đầu bài thi: Lọc theo chương -> Trộn câu hỏi -> Trộn đáp án
-    const startQuiz = (chapter) => {
-        setCurrentChapter(chapter);
-        const filtered =
+    // Thêm tham số limit để giới hạn số câu
+    const startQuiz = (chapter, limit = 0) => {
+        let filtered =
             chapter === "All"
                 ? allQuestions
                 : allQuestions.filter((q) => q.chapter === chapter);
 
-        const shuffled = shuffleArray(filtered).map((q) => ({
+        // Trộn câu hỏi
+        let shuffled = shuffleArray(filtered).map((q) => ({
             ...q,
-            options: shuffleArray(q.options), // Trộn cả đáp án
+            options: shuffleArray(q.options),
         }));
+
+        // Cắt theo số lượng nếu có yêu cầu
+        if (limit > 0 && limit < shuffled.length) {
+            shuffled = shuffled.slice(0, limit);
+        }
 
         setQuizQuestions(shuffled);
         setScore({ correct: 0, wrong: 0, total: shuffled.length });
+        setUserAnswers({}); // Reset câu trả lời
     };
 
-    // Admin Actions
+    const handleAnswer = (questionId, isCorrect, option) => {
+        // Chỉ cập nhật nếu chưa trả lời câu này
+        if (!userAnswers[questionId]) {
+            setUserAnswers((prev) => ({ ...prev, [questionId]: option }));
+            if (isCorrect)
+                setScore((prev) => ({ ...prev, correct: prev.correct + 1 }));
+            else setScore((prev) => ({ ...prev, wrong: prev.wrong + 1 }));
+        }
+    };
+
+    // Admin: Import file
+    const importQuestions = (jsonData) => {
+        // Merge câu hỏi mới vào, lọc trùng ID nếu cần
+        const currentIds = new Set(allQuestions.map((q) => q.id));
+        const newQuestions = jsonData.filter((q) => !currentIds.has(q.id));
+        setAllQuestions([...allQuestions, ...newQuestions]);
+        return newQuestions.length; // Trả về số lượng thêm thành công
+    };
+
     const addQuestion = (newQ) => {
         setAllQuestions([...allQuestions, { ...newQ, id: Date.now() }]);
     };
@@ -55,26 +76,6 @@ export const QuizProvider = ({ children }) => {
         setAllQuestions(allQuestions.filter((q) => q.id !== id));
     };
 
-    const updateQuestion = (updatedQ) => {
-        setAllQuestions(
-            allQuestions.map((q) => (q.id === updatedQ.id ? updatedQ : q))
-        );
-    };
-
-    // Export JSON cho Admin
-    const exportData = () => {
-        const dataStr =
-            "data:text/json;charset=utf-8," +
-            encodeURIComponent(JSON.stringify(allQuestions, null, 2));
-        const downloadAnchorNode = document.createElement("a");
-        downloadAnchorNode.setAttribute("href", dataStr);
-        downloadAnchorNode.setAttribute("download", "questions.json");
-        document.body.appendChild(downloadAnchorNode);
-        downloadAnchorNode.click();
-        downloadAnchorNode.remove();
-    };
-
-    // Lấy danh sách chương duy nhất
     const chapters = [...new Set(allQuestions.map((q) => q.chapter))];
 
     return (
@@ -85,11 +86,11 @@ export const QuizProvider = ({ children }) => {
                 chapters,
                 startQuiz,
                 score,
-                setScore,
+                userAnswers,
+                handleAnswer,
                 addQuestion,
                 deleteQuestion,
-                updateQuestion,
-                exportData,
+                importQuestions,
             }}
         >
             {children}
