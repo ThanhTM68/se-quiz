@@ -19,7 +19,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto space-y-8">
             <div className="text-center space-y-2">
                 <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent py-2">
-                    SE Quiz Master
+                    Trắc Nghiệm - TM
                 </h1>
                 <p className="text-gray-400">
                     Hệ thống ôn tập trắc nghiệm - TM
