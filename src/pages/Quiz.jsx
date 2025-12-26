@@ -31,14 +31,19 @@ export default function Quiz() {
                 </Link>
             </div>
         );
-
-    const isAnswered = !!userAnswers[currentQ.id];
+    const isSubmitted = !!userAnswers[currentQ.id];
+    // Lấy đáp án đã chọn của câu hiện tại (nếu có)
     const selectedOption = userAnswers[currentQ.id];
+    // Kiểm tra xem câu này đã làm chưa
+    const isAnswered = !!selectedOption;
 
-    const onSelect = (option) => {
+    const onSelect = (label) => {
+        // Nếu đã trả lời rồi thì KHÔNG cho chọn lại (vì đã hiện đáp án rồi)
         if (isAnswered) return;
-        const isCorrect = option === currentQ.answer;
-        handleAnswer(currentQ.id, isCorrect, option);
+
+        const isCorrect = label === currentQ.answer;
+        // Lưu đáp án vào Context
+        handleAnswer(currentQ.id, isCorrect, label);
     };
 
     const goToQuestion = (index) => {
@@ -89,51 +94,66 @@ export default function Quiz() {
 
                             <div className="space-y-3 flex-1">
                                 {currentQ.options.map((opt, idx) => {
-                                    const isSelected = opt === selectedOption;
-                                    const isCorrect = opt === currentQ.answer;
+                                    // 1. Quy đổi Index (0,1,2) sang Label (A,B,C) để khớp với JSON
+                                    const label = String.fromCharCode(65 + idx);
 
-                                    // Logic màu sắc:
-                                    // Chưa trả lời: bình thường
-                                    // Đã trả lời:
-                                    //  - Nếu đây là đáp án ĐÚNG: luôn hiện xanh (để user biết đáp án đúng kể cả khi chọn sai)
-                                    //  - Nếu user chọn SAI: hiện đỏ
+                                    // 2. Kiểm tra trạng thái
+                                    const isCorrectAnswer =
+                                        label === currentQ.answer; // Đây là đáp án đúng của đề
+                                    const isUserSelected =
+                                        selectedOption === label; // Đây là cái người dùng chọn
+
+                                    // 3. Logic màu sắc (Instant Feedback)
                                     let btnStyle =
-                                        "bg-white/5 border-white/10 hover:bg-white/10";
+                                        "bg-white/5 border-white/10 hover:bg-white/10"; // Mặc định
 
                                     if (isAnswered) {
-                                        if (isCorrect)
+                                        // NẾU ĐÃ CHỌN:
+                                        if (isCorrectAnswer) {
+                                            // Luôn tô xanh đáp án ĐÚNG (dù user chọn đúng hay sai cũng hiện để biết)
                                             btnStyle =
-                                                "bg-green-500/20 border-green-500 text-green-100 font-medium";
-                                        else if (isSelected)
+                                                "bg-green-500/20 border-green-500 text-green-100 font-bold";
+                                        } else if (
+                                            isUserSelected &&
+                                            !isCorrectAnswer
+                                        ) {
+                                            // Nếu user chọn SAI -> Tô đỏ cái vừa chọn
                                             btnStyle =
                                                 "bg-red-500/20 border-red-500 text-red-100";
-                                        else
+                                        } else {
+                                            // Các câu còn lại làm mờ đi
                                             btnStyle =
                                                 "bg-white/5 border-transparent opacity-40";
+                                        }
                                     }
 
                                     return (
                                         <button
                                             key={idx}
-                                            onClick={() => onSelect(opt)}
-                                            disabled={isAnswered}
+                                            onClick={() => onSelect(label)} // Truyền A, B, C vào hàm
+                                            disabled={isAnswered} // Khóa nút sau khi chọn
                                             className={clsx(
                                                 "w-full p-4 text-left rounded-xl border transition-all duration-200 flex justify-between items-start gap-3",
                                                 btnStyle
                                             )}
                                         >
                                             <span className="flex-1">
+                                                <span className="font-bold mr-2 text-blue-300">
+                                                    {label}.
+                                                </span>
                                                 {opt}
                                             </span>
-                                            {isAnswered && isCorrect && (
+
+                                            {/* Icon chỉ hiện khi đã trả lời */}
+                                            {isAnswered && isCorrectAnswer && (
                                                 <CheckCircle
                                                     size={20}
                                                     className="text-green-400 shrink-0"
                                                 />
                                             )}
                                             {isAnswered &&
-                                                isSelected &&
-                                                !isCorrect && (
+                                                isUserSelected &&
+                                                !isCorrectAnswer && (
                                                     <XCircle
                                                         size={20}
                                                         className="text-red-400 shrink-0"
@@ -214,7 +234,8 @@ export default function Quiz() {
                             if (status) {
                                 if (status === q.answer)
                                     bgClass =
-                                        "bg-green-500/80 text-white border-green-400"; // Đúng
+                                        "bg-green-500/80 text-white border-green-400";
+                                // Đúng
                                 else
                                     bgClass =
                                         "bg-red-500/80 text-white border-red-400"; // Sai
