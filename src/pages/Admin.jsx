@@ -9,6 +9,8 @@ export default function Admin() {
         deleteQuestion,
         importQuestions,
         exportData,
+        chapters,
+        deleteQuestionsByChapter,
     } = useQuiz();
     const fileInputRef = useRef(null);
 
@@ -202,6 +204,39 @@ export default function Admin() {
 
                 {/* Cột Phải: Danh sách câu hỏi */}
                 <div className="lg:col-span-2 space-y-4">
+                    <div className="glass-panel p-5 border border-white/10">
+                        <h3 className="text-lg font-bold text-blue-300 mb-4 border-b border-white/10 pb-2">
+                            Quản lý Chương ({chapters.length})
+                        </h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-60 overflow-y-auto pr-2">
+                            {chapters.map((chap, idx) => (
+                                <div
+                                    key={idx}
+                                    className="flex justify-between items-center p-3 bg-white/5 rounded border border-white/10 hover:bg-white/10 transition"
+                                >
+                                    <span
+                                        className="font-bold text-sm text-white truncate max-w-[150px]"
+                                        title={chap}
+                                    >
+                                        {chap}
+                                    </span>
+                                    <button
+                                        onClick={() =>
+                                            deleteQuestionsByChapter(chap)
+                                        }
+                                        className="flex items-center gap-1.5 px-3 py-1.5 bg-red-900/30 hover:bg-red-600 text-red-400 hover:text-white border border-red-500/30 rounded text-xs transition"
+                                    >
+                                        <Trash2 size={14} /> Xóa
+                                    </button>
+                                </div>
+                            ))}
+                            {chapters.length === 0 && (
+                                <p className="text-gray-500 text-sm">
+                                    Chưa có dữ liệu chương.
+                                </p>
+                            )}
+                        </div>
+                    </div>
                     <h3 className="text-lg font-bold text-gray-300">
                         Danh sách câu hỏi
                     </h3>

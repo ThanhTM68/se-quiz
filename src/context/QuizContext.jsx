@@ -82,6 +82,21 @@ export const QuizProvider = ({ children }) => {
 
     const chapters = [...new Set(allQuestions.map((q) => q.chapter))];
 
+    const deleteQuestionsByChapter = (chapterName) => {
+        if (
+            window.confirm(
+                `Bạn có chắc muốn xóa TẤT CẢ câu hỏi thuộc "${chapterName}" không? Hành động này không thể hoàn tác!`
+            )
+        ) {
+            // Lọc giữ lại những câu KHÔNG thuộc chương đó
+            const remainingQuestions = allQuestions.filter(
+                (q) => q.chapter !== chapterName
+            );
+            setAllQuestions(remainingQuestions);
+            alert(`Đã xóa thành công các câu hỏi thuộc chương: ${chapterName}`);
+        }
+    };
+
     return (
         <QuizContext.Provider
             value={{
@@ -95,6 +110,7 @@ export const QuizProvider = ({ children }) => {
                 addQuestion,
                 deleteQuestion,
                 importQuestions,
+                deleteQuestionsByChapter,
             }}
         >
             {children}
