@@ -28,24 +28,28 @@ export const QuizProvider = ({ children }) => {
 
     // Thêm tham số limit để giới hạn số câu
     const startQuiz = (chapter, limit = 0) => {
+        // 1. Lọc câu hỏi theo chương (Giữ nguyên logic lọc)
         let filtered =
             chapter === "All"
                 ? allQuestions
                 : allQuestions.filter((q) => q.chapter === chapter);
 
-        // Trộn câu hỏi
-        let shuffled = shuffleArray(filtered).map((q) => ({
+        // 2. SỬA ĐỔI Ở ĐÂY:
+        // - Bỏ shuffleArray(filtered) -> Để giữ thứ tự câu hỏi 1, 2, 3...
+        // - Bỏ shuffleArray(q.options) -> Để giữ thứ tự đáp án A, B, C, D...
+
+        let finalQuestions = filtered.map((q) => ({
             ...q,
-            options: shuffleArray(q.options),
+            options: q.options, // Giữ nguyên options gốc, không trộn nữa
         }));
 
-        // Cắt theo số lượng nếu có yêu cầu
-        if (limit > 0 && limit < shuffled.length) {
-            shuffled = shuffled.slice(0, limit);
+        // 3. Cắt số lượng câu nếu có limit (Giữ nguyên)
+        if (limit > 0 && limit < finalQuestions.length) {
+            finalQuestions = finalQuestions.slice(0, limit);
         }
 
-        setQuizQuestions(shuffled);
-        setScore({ correct: 0, wrong: 0, total: shuffled.length });
+        setQuizQuestions(finalQuestions);
+        setScore({ correct: 0, wrong: 0, total: finalQuestions.length });
         setUserAnswers({}); // Reset câu trả lời
     };
 
