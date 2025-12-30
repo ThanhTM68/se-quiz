@@ -1,26 +1,2442 @@
 [
     {
         "id": 1,
-        "chapter": "Chương 1: Tổng quan",
-        "question": "Mục tiêu chính của Công nghệ phần mềm là gì?",
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Theo định nghĩa toán học, một bức ảnh được biểu diễn bởi hàm hai chiều f(x,y). Trong đó, f(x,y) đại diện cho đại lượng nào?",
         "options": [
-            "Viết code càng nhanh càng tốt",
-            "Tạo ra phần mềm chất lượng cao, dễ bảo trì với chi phí hợp lý",
-            "Sử dụng công nghệ mới nhất",
-            "Loại bỏ hoàn toàn lỗi phần mềm"
+            "A. Tần số của tín hiệu",
+            "B. Cường độ sáng hoặc mức xám tại toạ độ (x,y)",
+            "C. Bước sóng của ánh sáng",
+            "D. Thời gian phơi sáng"
         ],
-        "answer": "Tạo ra phần mềm chất lượng cao, dễ bảo trì với chi phí hợp lý"
+        "answer": "B"
     },
     {
         "id": 2,
-        "chapter": "Chương 2: Mô hình quy trình",
-        "question": "Mô hình Thác nước (Waterfall) phù hợp nhất khi nào?",
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Để một bức ảnh được coi là 'ảnh số' (digital image), các yếu tố x, y và f(x,y) phải thỏa mãn điều kiện gì?",
         "options": [
-            "Yêu cầu thay đổi liên tục",
-            "Dự án ngắn hạn, rủi ro thấp",
-            "Yêu cầu rõ ràng và ổn định ngay từ đầu",
-            "Khách hàng muốn xem sản phẩm sớm"
+            "A. Là các giá trị liên tục và vô hạn",
+            "B. x, y rời rạc nhưng f liên tục",
+            "C. Là các giá trị hữu hạn và rời rạc",
+            "D. x, y liên tục nhưng f rời rạc"
         ],
-        "answer": "Yêu cầu rõ ràng và ổn định ngay từ đầu"
+        "answer": "C"
+    },
+    {
+        "id": 3,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Thuật ngữ 'Pixel' là viết tắt của khái niệm nào?",
+        "options": [
+            "A. Picture Element (Phần tử ảnh)",
+            "B. Picture Electronic (Ảnh điện tử)",
+            "C. Pixelate Elevation (Độ cao điểm ảnh)",
+            "D. Picture Excel (Ảnh mở rộng)"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 4,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Trong xử lý ảnh mức thấp (Low-level processing), đặc điểm của đầu vào (Input) và đầu ra (Output) là gì?",
+        "options": [
+            "A. Input: Ảnh -> Output: Thuộc tính",
+            "B. Input: Thuộc tính -> Output: Hiểu ảnh",
+            "C. Input: Ảnh -> Output: Ảnh",
+            "D. Input: Dữ liệu nén -> Output: Ảnh"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 5,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Công việc nào sau đây là ví dụ điển hình của 'Xử lý ảnh mức trung' (Mid-level processing)?",
+        "options": [
+            "A. Khử nhiễu ảnh",
+            "B. Phân vùng ảnh và nhận dạng đối tượng",
+            "C. Làm sắc nét ảnh",
+            "D. Hiểu cảnh và phân tích ngữ nghĩa"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 6,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Mục tiêu chính của 'Xử lý ảnh mức cao' (High-level processing) là gì?",
+        "options": [
+            "A. Cải thiện độ tương phản",
+            "B. Nén ảnh để giảm dung lượng",
+            "C. Phân tích đối tượng và hiểu ngữ nghĩa của cảnh",
+            "D. Chuyển đổi ảnh sang đen trắng"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 7,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Ứng dụng đầu tiên của xử lý ảnh số vào những năm 1920 (hệ thống Bartlane) phục vụ cho ngành công nghiệp nào?",
+        "options": [
+            "A. Y tế",
+            "B. Báo chí (Truyền ảnh qua cáp)",
+            "C. Vũ trụ",
+            "D. An ninh"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 8,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Sự kiện năm 1964 đánh dấu bước ngoặt của xử lý ảnh số gắn liền với việc cải thiện ảnh từ con tàu vũ trụ nào?",
+        "options": [
+            "A. Apollo 11",
+            "B. Ranger 7",
+            "C. Sputnik 1",
+            "D. Voyager 1"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 9,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Công nghệ chụp CT (Computerized Axial Tomography) đoạt giải Nobel Y học năm 1979 sử dụng loại tia nào?",
+        "options": [
+            "A. Tia hồng ngoại",
+            "B. Tia Gamma",
+            "C. Tia X (X-Ray)",
+            "D. Sóng vô tuyến"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 10,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Loại tia nào trong phổ điện từ thường được sử dụng trong y học hạt nhân (ví dụ: chụp xương - bone scan)?",
+        "options": [
+            "A. Tia Gamma",
+            "B. Tia cực tím",
+            "C. Sóng vi ba",
+            "D. Ánh sáng nhìn thấy"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 11,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Hình ảnh cộng hưởng từ (MRI) được tạo ra dựa trên việc sử dụng dải sóng nào?",
+        "options": [
+            "A. Tia X",
+            "B. Sóng vô tuyến (Radio waves)",
+            "C. Tia tử ngoại",
+            "D. Tia Gamma"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 12,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Kiểm tra lỗi trên bo mạch điện tử trong công nghiệp thường sử dụng loại tia nào?",
+        "options": [
+            "A. Tia hồng ngoại",
+            "B. Ánh sáng nhìn thấy",
+            "C. Tia X",
+            "D. Sóng âm"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 13,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Ứng dụng nào sau đây thường sử dụng dải tia cực tím (Ultraviolet)?",
+        "options": [
+            "A. Chụp MRI não bộ",
+            "B. Phát hiện bệnh nấm ở thực vật (ví dụ: ngô) hoặc soi tiền giả",
+            "C. Chụp CT cắt lớp",
+            "D. Radar thời tiết"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 14,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Bước nào trong quy trình xử lý ảnh có mục đích chính là 'cải thiện chất lượng ảnh để tăng khả năng cảm nhận cho mắt người' (mang tính chủ quan)?",
+        "options": [
+            "A. Image Restoration (Khôi phục ảnh)",
+            "B. Image Compression (Nén ảnh)",
+            "C. Image Enhancement (Tăng cường ảnh)",
+            "D. Segmentation (Phân vùng ảnh)"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 15,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Sự khác biệt chính giữa 'Tăng cường ảnh' (Enhancement) và 'Khôi phục ảnh' (Restoration) là gì?",
+        "options": [
+            "A. Tăng cường ảnh là khách quan, Khôi phục ảnh là chủ quan",
+            "B. Tăng cường ảnh mang tính chủ quan, Khôi phục ảnh mang tính khách quan (dựa trên mô hình toán học)",
+            "C. Tăng cường ảnh dùng cho máy, Khôi phục ảnh dùng cho người",
+            "D. Hai khái niệm này hoàn toàn giống nhau"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 16,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Giai đoạn nào có nhiệm vụ chia một bức ảnh thành các phần hoặc các đối tượng riêng biệt?",
+        "options": [
+            "A. Morphological Processing (Xử lý hình thái)",
+            "B. Segmentation (Phân vùng ảnh)",
+            "C. Image Acquisition (Thu nhận ảnh)",
+            "D. Representation (Biểu diễn)"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 17,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Mục đích của giai đoạn 'Nén ảnh' (Image Compression) là gì?",
+        "options": [
+            "A. Làm ảnh rõ nét hơn",
+            "B. Giảm dung lượng lưu trữ hoặc băng thông truyền tải",
+            "C. Tăng độ sáng của ảnh",
+            "D. Chuyển đổi ảnh sang dạng vector"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 18,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Công đoạn 'Xử lý hình thái' (Morphological Processing) chủ yếu làm việc với các công cụ để trích xuất các thành phần ảnh hữu ích cho việc biểu diễn và mô tả cái gì?",
+        "options": [
+            "A. Màu sắc",
+            "B. Hình dáng (Shape)",
+            "C. Độ tương phản",
+            "D. Tần số"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 19,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Trong quy trình xử lý ảnh, bước 'Nhận dạng đối tượng' (Object Recognition) thực hiện nhiệm vụ gì?",
+        "options": [
+            "A. Gán nhãn cho đối tượng dựa trên các mô tả (ví dụ: 'xe hơi', 'người')",
+            "B. Tô màu cho đối tượng",
+            "C. Làm mờ nền của đối tượng",
+            "D. Cắt đối tượng ra khỏi ảnh"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 20,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Hai nhiệm vụ chính mà lĩnh vực xử lý ảnh số tập trung vào là gì?",
+        "options": [
+            "A. Vẽ tranh nghệ thuật và làm phim hoạt hình",
+            "B. Cải thiện thông tin ảnh cho mắt người và xử lý ảnh cho thị giác máy",
+            "C. Chụp ảnh chân dung và chụp ảnh phong cảnh",
+            "D. Tăng độ phân giải màn hình và tăng tốc độ máy tính"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 21,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Giá trị mức xám (gray level) thông thường của một ảnh số 8-bit nằm trong khoảng nào?",
+        "options": [
+            "A. 0 đến 1",
+            "B. 0 đến 255",
+            "C. -128 đến 127",
+            "D. 0 đến 65535"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 22,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Trong biểu đồ các bước xử lý ảnh, bước đầu tiên và cơ bản nhất là gì?",
+        "options": [
+            "A. Phân vùng ảnh",
+            "B. Thu nhận ảnh (Image Acquisition)",
+            "C. Nén ảnh",
+            "D. Khôi phục ảnh"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 23,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Việc nhận dạng biển số xe tự động hay nhận dạng vân tay thuộc nhóm ứng dụng nào của xử lý ảnh?",
+        "options": [
+            "A. Y tế",
+            "B. Giải trí",
+            "C. Thi hành luật và an ninh",
+            "D. Viễn thám"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 24,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "GIS là viết tắt của hệ thống nào có ứng dụng mạnh mẽ các kỹ thuật xử lý ảnh vệ tinh?",
+        "options": [
+            "A. Global Image System",
+            "B. Geographic Information Systems (Hệ thống thông tin địa lý)",
+            "C. Geological Intelligence Service",
+            "D. General Imaging Standard"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 25,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Trong xử lý ảnh mức thấp, ví dụ nào sau đây là chính xác nhất?",
+        "options": [
+            "A. Phân loại vân tay",
+            "B. Loại bỏ nhiễu (Noise removal)",
+            "C. Nhận diện khuôn mặt",
+            "D. Điều khiển xe tự lái"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 26,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Định dạng ảnh nào được đề cập là có '1 điểm có 3 giá trị' (Red, Green, Blue)?",
+        "options": [
+            "A. Ảnh nhị phân (Binary)",
+            "B. Ảnh mức xám (Grayscale)",
+            "C. Ảnh màu (Color Image)",
+            "D. Ảnh tia X"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 27,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Khâu nào đóng vai trò chuyển đổi dữ liệu đầu ra của quy trình phân vùng ảnh thành dạng phù hợp cho việc xử lý máy tính?",
+        "options": [
+            "A. Biểu diễn và mô tả (Representation & Description)",
+            "B. Thu nhận ảnh",
+            "C. Tăng cường ảnh",
+            "D. Khôi phục ảnh"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 28,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Trong mô hình xử lý ảnh, 'Bài toán' (Problem Domain) tương tác trực tiếp với giai đoạn nào để xác định các tham số cần thiết?",
+        "options": [
+            "A. Nén ảnh",
+            "B. Cơ sở tri thức (Knowledge Base) và các module xử lý",
+            "C. Chỉ tương tác với module hiển thị",
+            "D. Không tương tác với module nào"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 29,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Xử lý ảnh để 'lưu trữ, truyền và hiển thị' phù hợp với đối tượng nào?",
+        "options": [
+            "A. Mắt người",
+            "B. Thị giác máy",
+            "C. Cả mắt người và thị giác máy",
+            "D. Không đối tượng nào"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 30,
+        "chapter": "Chương 1: Nhập môn xử lý ảnh số",
+        "question": "Một ví dụ về xử lý ảnh 'mức cao' (High-level) được nêu trong tài liệu là?",
+        "options": [
+            "A. Tìm biên ảnh (Edge detection)",
+            "B. Tìm kiếm ảnh tương đồng (Google Image Search/Hiểu ảnh)",
+            "C. Lọc trung bình (Averaging filter)",
+            "D. Chụp X-quang"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 31,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Hệ thống thị giác của con người bao gồm 3 thành phần chính nào?",
+        "options": [
+            "A. Giác mạc, Thủy tinh thể, Võng mạc",
+            "B. Mắt, Thần kinh thị giác, Não",
+            "C. Tế bào hình nón, Tế bào hình que, Thần kinh thị giác",
+            "D. Mống mắt, Đồng tử, Võng mạc"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 32,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Trong cấu tạo mắt người, bộ phận nào có chức năng tương tự như thấu kính của máy ảnh, giúp tập trung ánh sáng vào võng mạc?",
+        "options": [
+            "A. Giác mạc (Cornea)",
+            "B. Mống mắt (Iris)",
+            "C. Thủy tinh thể (Lens)",
+            "D. Võng mạc (Retina)"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 33,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Tế bào hình nón (Cones) trong võng mạc có đặc điểm gì nổi bật?",
+        "options": [
+            "A. Nhạy cảm với mức sáng thấp, nhìn ban đêm tốt",
+            "B. Tập trung ở vùng ngoại vi, số lượng khoảng 150 triệu",
+            "C. Tập trung tại hoàng điểm (fovea), nhạy cảm với màu sắc và chi tiết",
+            "D. Không nhạy cảm với màu sắc, chỉ phân biệt sáng tối"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 34,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Tế bào hình que (Rods) đóng vai trò chính trong điều kiện nào?",
+        "options": [
+            "A. Nhìn chi tiết các vật thể nhỏ",
+            "B. Nhìn màu sắc rực rỡ",
+            "C. Nhìn trong điều kiện ánh sáng mạnh (Photopic)",
+            "D. Nhìn trong điều kiện ánh sáng yếu/ban đêm (Scotopic)"
+        ],
+        "answer": "D"
+    },
+    {
+        "id": 35,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Mối quan hệ giữa độ sáng chủ quan (mắt người cảm nhận) và cường độ sáng thực tế là hàm gì?",
+        "options": [
+            "A. Hàm tuyến tính",
+            "B. Hàm Logarit",
+            "C. Hàm mũ",
+            "D. Hàm bậc hai"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 36,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Tỷ lệ Weber (∆Ic/I) nhỏ cho biết điều gì về khả năng phân biệt cường độ sáng của mắt?",
+        "options": [
+            "A. Khả năng phân biệt kém",
+            "B. Khả năng phân biệt tốt",
+            "C. Mắt bị mù màu",
+            "D. Không ảnh hưởng đến khả năng phân biệt"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 37,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Hiện tượng ảo giác quang học hoặc Mach bands cho thấy cảm nhận độ sáng của mắt phụ thuộc vào yếu tố nào?",
+        "options": [
+            "A. Chỉ phụ thuộc vào cường độ sáng của vật thể",
+            "B. Phụ thuộc vào màu sắc của vật thể",
+            "C. Phụ thuộc vào không gian, biên và độ sáng của các vật xung quanh",
+            "D. Phụ thuộc vào khoảng cách tới vật thể"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 38,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Công thức liên hệ giữa vận tốc ánh sáng (c), bước sóng (λ) và tần số (f) là gì?",
+        "options": [
+            "A. c = λ / f",
+            "B. c = λ + f",
+            "C. c = λ * f",
+            "D. c = f / λ"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 39,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Năng lượng của một photon (E) tỷ lệ với tần số (f) theo công thức E = h.f, trong đó h là gì?",
+        "options": [
+            "A. Vận tốc ánh sáng",
+            "B. Hằng số Planck",
+            "C. Bước sóng",
+            "D. Khối lượng photon"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 40,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Thuộc tính 'Độ trưng' (Radiance) của nguồn sáng được định nghĩa là gì?",
+        "options": [
+            "A. Tổng năng lượng từ nguồn sáng (Watts)",
+            "B. Cường độ sáng phát ra từ bề mặt nguồn sáng",
+            "C. Khả năng nhận biết của thị giác người",
+            "D. Màu sắc của nguồn sáng"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 41,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Thuộc tính 'Độ chói' (Luminance) được hiểu là?",
+        "options": [
+            "A. Tổng năng lượng bức xạ",
+            "B. Cường độ sáng phát ra từ bề mặt nguồn sáng",
+            "C. Cảm nhận chủ quan về độ sáng",
+            "D. Độ tương phản của ảnh"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 42,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Tại sao chúng ta nhìn thấy một vật có màu xanh lá cây khi chiếu ánh sáng trắng vào nó?",
+        "options": [
+            "A. Vì vật đó hấp thụ ánh sáng xanh lá cây",
+            "B. Vì vật đó phản xạ ánh sáng xanh lá cây và hấp thụ các bước sóng khác",
+            "C. Vì vật đó tự phát ra ánh sáng xanh lá cây",
+            "D. Vì mắt người chỉ nhạy cảm với màu xanh lá cây"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 43,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Bộ cảm biến hình ảnh (Imaging Sensor) hoạt động dựa trên nguyên lý nào?",
+        "options": [
+            "A. Chuyển đổi áp suất thành điện áp",
+            "B. Chuyển đổi năng lượng ánh sáng thành tín hiệu điện (hiệu điện thế)",
+            "C. Chuyển đổi tín hiệu số thành tín hiệu tương tự",
+            "D. Chuyển đổi nhiệt độ thành màu sắc"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 44,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Quá trình 'Lấy mẫu' (Sampling) trong xử lý ảnh số là gì?",
+        "options": [
+            "A. Chuyển đổi giá trị biên độ (mức xám) liên tục thành rời rạc",
+            "B. Chuyển đổi tọa độ không gian liên tục thành tọa độ rời rạc",
+            "C. Nén dữ liệu ảnh",
+            "D. Tăng độ sáng cho ảnh"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 45,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Quá trình 'Lượng tử hóa' (Quantization) trong xử lý ảnh số là gì?",
+        "options": [
+            "A. Chuyển đổi giá trị biên độ (mức xám/năng lượng) liên tục thành tập các giá trị rời rạc",
+            "B. Chuyển đổi tọa độ không gian thành rời rạc",
+            "C. Chia ảnh thành các lưới pixel",
+            "D. Lọc nhiễu cho ảnh"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 46,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Một ảnh số thường được biểu diễn dưới dạng cấu trúc dữ liệu nào?",
+        "options": [
+            "A. Danh sách liên kết",
+            "B. Ma trận 2 chiều",
+            "C. Cây nhị phân",
+            "D. Đồ thị"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 47,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Gốc tọa độ (0,0) của một bức ảnh số thông thường nằm ở vị trí nào?",
+        "options": [
+            "A. Góc dưới bên trái",
+            "B. Góc dưới bên phải",
+            "C. Góc trên bên trái",
+            "D. Tâm của bức ảnh"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 48,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Độ phân giải không gian (Spatial Resolution) của ảnh được xác định bởi yếu tố nào?",
+        "options": [
+            "A. Số lượng bit màu",
+            "B. Số lượng điểm ảnh (pixel) dùng để tạo nên hình ảnh",
+            "C. Độ tương phản của màn hình",
+            "D. Kích thước file ảnh trên đĩa cứng"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 49,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Đơn vị DPI (Dots Per Inch) thường được sử dụng cho thiết bị nào?",
+        "options": [
+            "A. Màn hình máy tính",
+            "B. Máy in",
+            "C. Máy ảnh kỹ thuật số",
+            "D. Cảm biến ảnh"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 50,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Khác biệt giữa PPI và DPI là gì?",
+        "options": [
+            "A. PPI dùng cho máy in, DPI dùng cho màn hình",
+            "B. PPI là Pixel Per Inch (màn hình/ảnh số), DPI là Dots Per Inch (máy in)",
+            "C. PPI và DPI là giống hệt nhau",
+            "D. PPI đo độ sáng, DPI đo độ nét"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 51,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Nếu in cùng một bức ảnh (cùng số lượng pixel) ở kích thước lớn hơn, chất lượng ảnh sẽ thay đổi như thế nào?",
+        "options": [
+            "A. Chất lượng tốt hơn, ảnh rõ nét hơn",
+            "B. Chất lượng không đổi",
+            "C. Chất lượng kém hơn, pixel bị giãn ra (vỡ ảnh)",
+            "D. Màu sắc bị thay đổi"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 52,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Độ phân giải mức cường độ sáng (Intensity Resolution) được xác định bởi?",
+        "options": [
+            "A. Số lượng pixel dọc và ngang",
+            "B. Số bit sử dụng để lưu trữ giá trị mức xám của mỗi pixel",
+            "C. Kích thước vật lý của màn hình",
+            "D. Tần số quét của màn hình"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 53,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Một bức ảnh mức xám sử dụng 8 bit cho mỗi pixel (8 bpp) sẽ có bao nhiêu mức cường độ sáng?",
+        "options": ["A. 8 mức", "B. 16 mức", "C. 128 mức", "D. 256 mức"],
+        "answer": "D"
+    },
+    {
+        "id": 54,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Ảnh nhị phân (Binary Image) có độ phân giải mức cường độ sáng là bao nhiêu bit?",
+        "options": [
+            "A. 1 bit (2 mức: đen/trắng)",
+            "B. 2 bit (4 mức)",
+            "C. 8 bit (256 mức)",
+            "D. 24 bit (Triệu màu)"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 55,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Điều gì xảy ra khi giảm số mức cường độ sáng (số bit) của ảnh xuống quá thấp?",
+        "options": [
+            "A. Ảnh bị mờ đi (Blur)",
+            "B. Ảnh bị nhiễu hạt",
+            "C. Mức độ phân biệt chi tiết giảm, xuất hiện các vùng giả (False contouring)",
+            "D. Kích thước hình ảnh (chiều rộng x chiều cao) bị nhỏ lại"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 56,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Vùng điểm mù (Blind spot) trên võng mạc là nơi nào?",
+        "options": [
+            "A. Nơi tập trung nhiều tế bào hình nón nhất",
+            "B. Nơi dây thần kinh thị giác đi ra khỏi mắt, không có tế bào cảm quang",
+            "C. Vùng rìa của võng mạc",
+            "D. Chính giữa hoàng điểm"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 57,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Tầm nhìn Scotopic (thị giác tối) chủ yếu dựa vào hoạt động của loại tế bào nào?",
+        "options": [
+            "A. Tế bào hình nón (Cones)",
+            "B. Tế bào hình que (Rods)",
+            "C. Tế bào hạch",
+            "D. Tế bào sắc tố"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 58,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Tầm nhìn Photopic (thị giác sáng) chủ yếu dựa vào hoạt động của loại tế bào nào?",
+        "options": [
+            "A. Tế bào hình nón (Cones)",
+            "B. Tế bào hình que (Rods)",
+            "C. Thủy tinh thể",
+            "D. Giác mạc"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 59,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Đồng tử (Pupil) có chức năng gì trong mắt?",
+        "options": [
+            "A. Tập trung ánh sáng",
+            "B. Cung cấp dinh dưỡng cho mắt",
+            "C. Điều khiển lượng ánh sáng đi vào mắt (đóng/mở)",
+            "D. Chuyển đổi ánh sáng thành tín hiệu điện"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 60,
+        "chapter": "Chương 2: Cơ bản về Xử lý ảnh số",
+        "question": "Mối quan hệ giữa kích thước ảnh in và độ phân giải pixel để giữ nguyên chất lượng là gì?",
+        "options": [
+            "A. Kích thước in càng lớn thì cần số lượng pixel càng ít",
+            "B. Pixel tự động sinh ra khi in kích thước lớn",
+            "C. Bản thân pixel không có kích thước cố định, chúng co giãn theo kích thước in",
+            "D. Số lượng pixel không ảnh hưởng đến kích thước in"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 61,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Mục đích chính của quá trình tăng cường ảnh (Image Enhancement) là gì?",
+        "options": [
+            "A. Giảm dung lượng lưu trữ của ảnh",
+            "B. Làm cho ảnh trở nên phù hợp hơn cho một ứng dụng cụ thể hoặc cải thiện chất lượng trực quan",
+            "C. Mã hóa ảnh để bảo mật",
+            "D. Chuyển đổi định dạng ảnh từ PNG sang JPG"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 62,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Trong miền không gian, công thức tổng quát g(x,y) = T[f(x,y)] biểu diễn điều gì?",
+        "options": [
+            "A. Phép biến đổi Fourier",
+            "B. Phép biến đổi Wavelet",
+            "C. Quá trình xử lý ảnh trực tiếp trên các điểm ảnh",
+            "D. Quá trình nén ảnh"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 63,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Nếu toán tử T trong phương trình g(x,y) = T[f(x,y)] chỉ tác động lên một điểm ảnh tại vị trí (x,y) (kích thước lân cận là 1x1), thì đây là quá trình gì?",
+        "options": [
+            "A. Xử lý biểu đồ (Histogram processing)",
+            "B. Xử lý điểm (Point processing)",
+            "C. Lọc không gian (Spatial filtering)",
+            "D. Biến đổi hình thái (Morphological processing)"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 64,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Phép biến đổi âm bản (Negative transformation) thường được sử dụng để làm gì?",
+        "options": [
+            "A. Làm mờ ảnh",
+            "B. Tăng cường các chi tiết trắng hoặc xám trên nền tối (ví dụ ảnh X-quang)",
+            "C. Giảm nhiễu muối tiêu",
+            "D. Phát hiện biên ảnh"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 65,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Hàm biến đổi Logarithm s = c * log(1 + r) có tác dụng gì đối với ảnh?",
+        "options": [
+            "A. Giãn nở khoảng mức xám tối (làm sáng vùng tối) và nén khoảng mức xám sáng",
+            "B. Làm tối toàn bộ bức ảnh",
+            "C. Chỉ giữ lại các mức xám cao nhất",
+            "D. Biến ảnh thành ảnh nhị phân"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 66,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Trong biến đổi hàm mũ (Power-law/Gamma) s = c * r^γ, nếu γ < 1 thì ảnh kết quả sẽ như thế nào so với ảnh gốc?",
+        "options": [
+            "A. Tối hơn",
+            "B. Sáng hơn (làm rõ chi tiết vùng tối)",
+            "C. Không thay đổi",
+            "D. Chuyển sang âm bản"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 67,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Lược đồ xám (Histogram) của một bức ảnh số biểu diễn thông tin gì?",
+        "options": [
+            "A. Kích thước không gian của ảnh",
+            "B. Tần suất xuất hiện của các mức xám trong ảnh",
+            "C. Vị trí của các biên trong ảnh",
+            "D. Màu sắc của từng điểm ảnh"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 68,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Kỹ thuật Cân bằng lược đồ xám (Histogram Equalization) có tác dụng gì?",
+        "options": [
+            "A. Làm mượt ảnh",
+            "B. Tăng độ tương phản bằng cách phân bố lại mức xám sao cho đồng đều hơn",
+            "C. Giảm nhiễu Gauss",
+            "D. Làm sắc nét các cạnh"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 69,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Bộ lọc trung bình (Mean filter) thuộc loại bộ lọc nào và có tác dụng gì?",
+        "options": [
+            "A. Bộ lọc thông cao, làm sắc nét ảnh",
+            "B. Bộ lọc phi tuyến, loại bỏ nhiễu muối tiêu",
+            "C. Bộ lọc thông thấp (làm trơn), làm mờ ảnh và giảm nhiễu",
+            "D. Bộ lọc đạo hàm, phát hiện biên"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 70,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Bộ lọc trung vị (Median filter) đặc biệt hiệu quả trong việc loại bỏ loại nhiễu nào?",
+        "options": [
+            "A. Nhiễu Gauss",
+            "B. Nhiễu muối tiêu (Salt and Pepper noise)",
+            "C. Nhiễu tuần hoàn",
+            "D. Nhiễu hạt (Speckle noise)"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 71,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Bộ lọc Laplacian là một ví dụ của loại bộ lọc nào?",
+        "options": [
+            "A. Bộ lọc làm trơn (Smoothing)",
+            "B. Bộ lọc làm sắc nét (Sharpening) dựa trên đạo hàm bậc 2",
+            "C. Bộ lọc thống kê",
+            "D. Bộ lọc thông thấp"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 72,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Tổng các hệ số trong một mặt nạ (kernel) của bộ lọc Laplacian thường bằng bao nhiêu?",
+        "options": ["A. 1", "B. 0", "C. 255", "D. -1"],
+        "answer": "B"
+    },
+    {
+        "id": 73,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Vấn đề thường gặp khi áp dụng bộ lọc không gian tại các điểm biên của ảnh là gì?",
+        "options": [
+            "A. Không đủ các điểm lân cận để thực hiện tính toán",
+            "B. Giá trị điểm ảnh quá lớn",
+            "C. Bộ lọc không hoạt động với điểm biên",
+            "D. Biên luôn có giá trị 0"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 74,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Kích thước của mặt nạ lọc (kernel) thường là số lẻ (3x3, 5x5, ...) vì lý do gì?",
+        "options": [
+            "A. Để giảm khối lượng tính toán",
+            "B. Để có một điểm tâm xác định duy nhất",
+            "C. Do hạn chế của phần cứng máy tính",
+            "D. Để dễ dàng tạo ma trận nghịch đảo"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 75,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Cho một điểm ảnh có giá trị r = 50. Áp dụng phép biến đổi âm bản (Negative) với mức xám L=256 (giá trị max là 255). Giá trị đầu ra s là bao nhiêu?",
+        "options": ["A. 50", "B. 205", "C. 206", "D. 155"],
+        "answer": "B"
+    },
+    {
+        "id": 76,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Áp dụng phép phân ngưỡng (Thresholding) với ngưỡng T = 120. Nếu điểm ảnh đầu vào r = 150, giá trị đầu ra s (nhị phân 0 hoặc 1) là bao nhiêu? (Giả sử r > T thì s = 1)",
+        "options": ["A. 0", "B. 1", "C. 120", "D. 150"],
+        "answer": "B"
+    },
+    {
+        "id": 77,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Cho một vùng ảnh kích thước 3x3 có các giá trị: [10, 20, 30; 20, 30, 40; 30, 40, 50]. Giá trị của điểm tâm sau khi áp dụng bộ lọc trung bình (Mean filter) 3x3 là bao nhiêu?",
+        "options": ["A. 20", "B. 30", "C. 40", "D. 270"],
+        "answer": "B"
+    },
+    {
+        "id": 78,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Cho một vùng ảnh kích thước 3x3: [1, 2, 9; 2, 5, 2; 2, 1, 2]. Giá trị của điểm tâm sau khi áp dụng bộ lọc trung vị (Median filter) 3x3 là bao nhiêu?",
+        "options": ["A. 1", "B. 2", "C. 5", "D. 9"],
+        "answer": "B"
+    },
+    {
+        "id": 79,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Cho vùng ảnh 3x3: [0, 0, 0; 0, 100, 0; 0, 0, 0]. Áp dụng bộ lọc Laplacian với kernel [0, 1, 0; 1, -4, 1; 0, 1, 0]. Giá trị mới của điểm tâm là bao nhiêu?",
+        "options": ["A. 400", "B. -400", "C. 100", "D. 0"],
+        "answer": "B"
+    },
+    {
+        "id": 80,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Cho vùng ảnh 3x3: [10, 10, 10; 10, 10, 10; 10, 10, 10]. Áp dụng bộ lọc Laplacian với kernel [1, 1, 1; 1, -8, 1; 1, 1, 1]. Giá trị mới của điểm tâm là bao nhiêu?",
+        "options": ["A. 0", "B. 10", "C. 80", "D. -10"],
+        "answer": "A"
+    },
+    {
+        "id": 81,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Một ảnh có kích thước 5x5. Nếu áp dụng bộ lọc kích thước 3x3 mà không sử dụng đệm (padding), kích thước ảnh kết quả sẽ là bao nhiêu?",
+        "options": ["A. 5x5", "B. 3x3", "C. 4x4", "D. 2x2"],
+        "answer": "B"
+    },
+    {
+        "id": 82,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Tính giá trị trung bình có trọng số của vùng 3x3: [2, 2, 2; 2, 5, 2; 2, 2, 2] với kernel [1, 2, 1; 2, 4, 2; 1, 2, 1]. Tổng trọng số là 16.",
+        "options": ["A. 2.5", "B. 3.0", "C. 2.0", "D. 3.125"],
+        "answer": "D"
+    },
+    {
+        "id": 83,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Cho histogram của ảnh 4x4 (16 pixels) có mức xám 0 (4 pixel), 1 (8 pixel), 2 (4 pixel). Xác suất xuất hiện của mức xám 1 là bao nhiêu?",
+        "options": ["A. 0.25", "B. 0.5", "C. 0.75", "D. 1.0"],
+        "answer": "B"
+    },
+    {
+        "id": 84,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Trong cân bằng histogram, nếu hàm phân phối tích lũy (CDF) tại mức xám r_k là 0.5 và mức xám cực đại (L-1) là 7. Giá trị mức xám đầu ra s_k được làm tròn là bao nhiêu?",
+        "options": ["A. 3", "B. 4", "C. 5", "D. 2"],
+        "answer": "B"
+    },
+    {
+        "id": 85,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Cho vùng ảnh 3x3: [5, 5, 5; 5, 20, 5; 5, 5, 5]. Áp dụng bộ lọc trung vị. Giá trị đầu ra là:",
+        "options": ["A. 20", "B. 10", "C. 5", "D. 15"],
+        "answer": "C"
+    },
+    {
+        "id": 86,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Bộ lọc nào sau đây là bộ lọc tuyến tính?",
+        "options": [
+            "A. Bộ lọc trung vị (Median filter)",
+            "B. Bộ lọc Min",
+            "C. Bộ lọc Max",
+            "D. Bộ lọc trung bình (Mean filter)"
+        ],
+        "answer": "D"
+    },
+    {
+        "id": 87,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Khi áp dụng bộ lọc Min cho vùng ảnh [10, 20, 30; 5, 50, 60; 1, 2, 3], giá trị đầu ra tại tâm là bao nhiêu?",
+        "options": ["A. 1", "B. 50", "C. 60", "D. 20"],
+        "answer": "A"
+    },
+    {
+        "id": 88,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Với biến đổi gamma s = c * r^0.5, nếu giá trị đầu vào r = 4, c = 1, thì giá trị đầu ra s là bao nhiêu?",
+        "options": ["A. 16", "B. 2", "C. 4", "D. 8"],
+        "answer": "B"
+    },
+    {
+        "id": 89,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Cho một điểm ảnh có mức xám 100. Áp dụng bộ lọc tăng cường độ sáng đơn giản bằng cách cộng thêm hằng số 50. Nếu mức xám tối đa là 255, nhưng kết quả tính toán không vượt quá giới hạn, giá trị mới là bao nhiêu?",
+        "options": ["A. 100", "B. 50", "C. 150", "D. 255"],
+        "answer": "C"
+    },
+    {
+        "id": 90,
+        "chapter": "Chương 3: Nâng cao chất lượng ảnh",
+        "question": "Mặt nạ (Kernel) của bộ lọc đạo hàm (làm sắc nét) thường có đặc điểm gì về dấu của các hệ số?",
+        "options": [
+            "A. Tất cả đều dương",
+            "B. Tất cả đều âm",
+            "C. Có cả hệ số dương và âm",
+            "D. Tất cả bằng 0"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 91,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Ảnh Bitmap (hay raster) được biểu diễn như thế nào?",
+        "options": [
+            "A. Là tập hợp các công thức toán học mô tả đường nét và hình khối.",
+            "B. Là một ma trận các điểm màu (pixel).",
+            "C. Là danh sách các vector hướng.",
+            "D. Là tập hợp các hàm sóng sin và cos."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 92,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Đặc điểm nào sau đây là ưu điểm chính của đồ họa Vector so với Bitmap?",
+        "options": [
+            "A. Có thể hiển thị ảnh thực tế (photo-realistic) tốt hơn.",
+            "B. Dễ dàng chỉnh sửa từng điểm ảnh riêng biệt.",
+            "C. Có thể phóng to hoặc thu nhỏ mà không bị mất mát dữ liệu hay giảm chất lượng.",
+            "D. Luôn có dung lượng file lớn hơn Bitmap."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 93,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Định dạng file ảnh nào sau đây thuộc nhóm nén có tổn thất (lossy compression)?",
+        "options": ["A. TIFF", "B. PNG", "C. JPEG", "D. BMP"],
+        "answer": "C"
+    },
+    {
+        "id": 94,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Mô hình màu RGB thường được sử dụng cho thiết bị nào?",
+        "options": [
+            "A. Máy in phun màu.",
+            "B. Màn hình máy tính và camera video màu.",
+            "C. Máy in offset.",
+            "D. Máy in laser đen trắng."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 95,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Hệ màu CMY (Cyan, Magenta, Yellow) được gọi là hệ màu gì?",
+        "options": [
+            "A. Hệ màu cộng (Additive color system).",
+            "B. Hệ màu trừ (Subtractive color system).",
+            "C. Hệ màu tri giác.",
+            "D. Hệ màu nén."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 96,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Trong hệ màu RGB, màu trắng được tạo ra như thế nào?",
+        "options": [
+            "A. Không có màu nào (R=0, G=0, B=0).",
+            "B. Tổng hợp của Red và Green.",
+            "C. Tổng hợp của Red, Green và Blue với cường độ tối đa.",
+            "D. Tổng hợp của Cyan, Magenta và Yellow."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 97,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Trong in ấn, tại sao người ta thường dùng hệ màu CMYK thay vì chỉ CMY?",
+        "options": [
+            "A. Vì màu đen tạo ra từ C, M, Y không thực sự đen (thường có màu nâu đất) và để tiết kiệm mực màu.",
+            "B. Vì hệ CMY không thể tạo ra màu xanh lá cây.",
+            "C. Vì máy in chỉ hỗ trợ 4 hộp mực.",
+            "D. Vì màu đen (K) giúp làm sáng bức ảnh hơn."
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 98,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Mô hình màu HSI hoặc HSV phù hợp nhất với mục đích nào?",
+        "options": [
+            "A. Hiển thị trên màn hình CRT.",
+            "B. In ấn công nghiệp.",
+            "C. Mô tả cách con người cảm nhận và biên dịch màu sắc (hỗ trợ biên soạn ảnh).",
+            "D. Nén dữ liệu ảnh."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 99,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Thành phần 'Saturation' (Độ bão hòa) trong mô hình HSI biểu thị điều gì?",
+        "options": [
+            "A. Độ sáng của màu.",
+            "B. Loại màu (đỏ, cam, vàng...).",
+            "C. Mức độ pha trộn của màu với màu trắng (độ tinh khiết của màu).",
+            "D. Cường độ của màu đen trong ảnh."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 100,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Trong mô hình HSI, thành phần Hue (Sắc màu) dùng để chỉ:",
+        "options": [
+            "A. Độ chói của màu.",
+            "B. Bước sóng trội của ánh sáng (màu sắc thực sự như đỏ, vàng, tím).",
+            "C. Độ đậm nhạt của màu.",
+            "D. Độ tương phản của màu."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 101,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Kỹ thuật Digital Halftoning (Kỹ thuật nửa cường độ số) được sử dụng để làm gì?",
+        "options": [
+            "A. Tăng độ phân giải của ảnh bitmap lên gấp đôi.",
+            "B. Chuyển đổi ảnh màu sang ảnh xám.",
+            "C. Mô phỏng các sắc thái của màu xám (hoặc màu liên tục) bằng các chấm đen/màu có kích thước hoặc mật độ khác nhau.",
+            "D. Nén ảnh để gửi qua internet."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 102,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Kỹ thuật nào sau đây KHÔNG phải là kỹ thuật Digital Halftoning?",
+        "options": [
+            "A. Thresholding (Phân ngưỡng).",
+            "B. Patterning (Chọn mẫu).",
+            "C. Error diffusion (Khuếch tán lỗi).",
+            "D. Morphing (Biến hình)."
+        ],
+        "answer": "D"
+    },
+    {
+        "id": 103,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Trong kỹ thuật Patterning (Chọn mẫu), nếu dùng lưới 3x3 để biểu diễn, ta có thể tạo ra bao nhiêu mức xám khác nhau (bao gồm cả mức trắng và đen)?",
+        "options": ["A. 9 mức.", "B. 10 mức.", "C. 8 mức.", "D. 256 mức."],
+        "answer": "B"
+    },
+    {
+        "id": 104,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Nhược điểm chính của kỹ thuật Patterning (Chọn mẫu) là gì?",
+        "options": [
+            "A. Tốn nhiều thời gian tính toán.",
+            "B. Làm giảm độ phân giải không gian của ảnh (ảnh bị vỡ hạt khi in kích thước lớn).",
+            "C. Chỉ in được màu đen.",
+            "D. Không thể thực hiện trên máy tính."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 105,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Kỹ thuật Dithering (Phối màu) khác với Patterning ở điểm nào?",
+        "options": [
+            "A. Dithering tạo ra các điểm ảnh ngẫu nhiên.",
+            "B. Dithering sử dụng ma trận ngưỡng (dither matrix) để so sánh với từng pixel của ảnh gốc, giữ nguyên độ phân giải không gian.",
+            "C. Dithering chỉ dùng cho ảnh màu.",
+            "D. Dithering không dùng cho in ấn."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 106,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Thuật toán Floyd-Steinberg là ví dụ điển hình của kỹ thuật in nào?",
+        "options": [
+            "A. Patterning (Chọn mẫu).",
+            "B. Dithering (Phối màu có trật tự).",
+            "C. Error Diffusion (Khuếch tán lỗi).",
+            "D. Thresholding (Phân ngưỡng)."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 107,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Nguyên lý hoạt động của kỹ thuật Khuếch tán lỗi (Error Diffusion) là gì?",
+        "options": [
+            "A. Lỗi lượng tử hóa tại một điểm được phân bố sang các điểm lân cận chưa được xử lý.",
+            "B. Lỗi được xóa bỏ hoàn toàn tại mỗi điểm.",
+            "C. Lỗi được tích lũy lại và xử lý ở cuối bức ảnh.",
+            "D. Lỗi được thay thế bằng màu trắng."
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 108,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Định dạng ảnh nào hỗ trợ nén không tổn thất (lossless) và hỗ trợ nền trong suốt (transparency)?",
+        "options": ["A. JPEG", "B. PNG", "C. BMP", "D. PCX"],
+        "answer": "B"
+    },
+    {
+        "id": 109,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Để chuyển đổi từ ảnh màu RGB sang ảnh xám (Grayscale), phương pháp nào thường được sử dụng để tính giá trị mức xám (I)?",
+        "options": [
+            "A. I = (R + G + B) / 3",
+            "B. I = max(R, G, B)",
+            "C. I = 0.299R + 0.587G + 0.114B (công thức tính độ chói).",
+            "D. I = min(R, G, B)"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 110,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Trong hệ màu YUV hoặc YCbCr, thành phần Y đại diện cho cái gì?",
+        "options": [
+            "A. Độ bão hòa màu.",
+            "B. Độ chói (Luminance) hay thông tin về mức xám.",
+            "C. Sắc độ (Chrominance).",
+            "D. Màu vàng (Yellow)."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 111,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Định dạng file GIF bị giới hạn tối đa bao nhiêu màu?",
+        "options": [
+            "A. 16 màu.",
+            "B. 256 màu.",
+            "C. 65.536 màu.",
+            "D. 16 triệu màu."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 112,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Một ảnh có độ sâu màu là 24-bit (True Color) có thể hiển thị tối đa bao nhiêu màu?",
+        "options": [
+            "A. Khoảng 256 màu.",
+            "B. Khoảng 65 nghìn màu.",
+            "C. Khoảng 16.7 triệu màu.",
+            "D. Khoảng 1 tỷ màu."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 113,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Phần bù màu (complement) của màu Đỏ (Red) trong hệ màu CMY là màu gì?",
+        "options": [
+            "A. Xanh lục (Green).",
+            "B. Xanh lơ (Cyan).",
+            "C. Cánh sen (Magenta).",
+            "D. Vàng (Yellow)."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 114,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Ma trận khuếch tán lỗi của Floyd-Steinberg phân bố lỗi cho các điểm lân cận theo tỷ lệ nào (tổng là 16 phần)?",
+        "options": [
+            "A. 7 (phải), 3 (dưới trái), 5 (dưới), 1 (dưới phải).",
+            "B. 1 (phải), 1 (dưới trái), 1 (dưới), 1 (dưới phải).",
+            "C. 7 (phải), 1 (dưới trái), 5 (dưới), 3 (dưới phải).",
+            "D. 7 (phải), 3 (dưới trái), 5 (dưới), 1 (dưới phải) là sai, đúng là 7, 3, 5, 1 theo thứ tự khác."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 115,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Kỹ thuật Ordered Dithering (Phối màu có trật tự) thường sử dụng ma trận nào?",
+        "options": [
+            "A. Ma trận đơn vị.",
+            "B. Ma trận Bayer.",
+            "C. Ma trận xoay.",
+            "D. Ma trận nghịch đảo."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 116,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Khi chuyển đổi từ RGB sang CMY, công thức cơ bản nào được sử dụng (giả sử giá trị màu chuẩn hóa về [0,1])?",
+        "options": [
+            "A. C = R; M = G; Y = B.",
+            "B. C = 1 - R; M = 1 - G; Y = 1 - B.",
+            "C. C = R + G; M = G + B; Y = B + R.",
+            "D. C = G + B; M = R + B; Y = R + G."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 117,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Định dạng file vector phổ biến bao gồm:",
+        "options": [
+            "A. BMP, JPG, GIF.",
+            "B. EPS, AI, SVG, DXF.",
+            "C. PSD, PNG, RAW.",
+            "D. AVI, MP4, MKV."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 118,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Tại sao ảnh JPEG không phù hợp cho các bản vẽ kỹ thuật hoặc logo có đường nét sắc cạnh?",
+        "options": [
+            "A. Vì dung lượng file quá lớn.",
+            "B. Vì nén JPEG gây ra hiện tượng mờ hoặc nhiễu (artifacts) ở các cạnh sắc nét.",
+            "C. Vì JPEG không hỗ trợ màu trắng.",
+            "D. Vì JPEG chỉ hiển thị được màu đen trắng."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 119,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "Thuật ngữ 'Gamut' trong hệ thống màu có nghĩa là gì?",
+        "options": [
+            "A. Độ sáng tối đa của màn hình.",
+            "B. Dải màu (phạm vi màu) mà một thiết bị hoặc hệ màu có thể biểu diễn được.",
+            "C. Số lượng pixel trên một inch.",
+            "D. Tốc độ làm tươi của màn hình."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 120,
+        "chapter": "Chương 4: Hệ màu và kỹ thuật in ấn",
+        "question": "So với các kỹ thuật Halftoning khác, Khuếch tán lỗi (Error Diffusion) có đặc điểm gì nổi bật về mặt tính toán?",
+        "options": [
+            "A. Tính toán đơn giản nhất, nhanh nhất.",
+            "B. Là toán tử láng giềng nên cần tính toán chuyên sâu hơn (chậm hơn).",
+            "C. Không cần tính toán, chỉ cần tra bảng.",
+            "D. Chỉ thực hiện được trên siêu máy tính."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 121,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Trong xử lý ảnh, 'biên' (edge) được định nghĩa là gì?",
+        "options": [
+            "A. Vùng có màu sắc sặc sỡ nhất.",
+            "B. Các thay đổi đáng kể của cường độ sáng (mức xám) trong một bức ảnh.",
+            "C. Đường viền bao quanh khung ảnh.",
+            "D. Các điểm ảnh có giá trị bằng 0."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 122,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Mục tiêu chính của quá trình phát hiện biên là gì?",
+        "options": [
+            "A. Làm mờ ảnh để giảm nhiễu.",
+            "B. Tô màu cho các đối tượng.",
+            "C. Xác định các vùng có độ tương phản mạnh để tạo ra bản phác thảo cấu trúc của ảnh.",
+            "D. Tăng độ phân giải của ảnh."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 123,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Loại biên nào mô tả sự thay đổi cường độ sáng một cách đột ngột (lý tưởng)?",
+        "options": [
+            "A. Biên thoai thoải (Ramp edge).",
+            "B. Biên kiểu mái nhà (Roof edge).",
+            "C. Biên kiểu bước nhảy (Step edge).",
+            "D. Biên nhiễu (Noise edge)."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 124,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Loại biên nào mà cường độ sáng không thay đổi ngay lập tức mà diễn ra trên một khoảng cách nhất định?",
+        "options": [
+            "A. Step edge.",
+            "B. Ramp edge (Biên thoai thoải).",
+            "C. Line edge.",
+            "D. Impulse edge."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 125,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Tại các vùng có cường độ sáng không đổi (bằng phẳng), giá trị đạo hàm bậc 1 và bậc 2 sẽ như thế nào?",
+        "options": [
+            "A. Đạo hàm bậc 1 bằng 0, đạo hàm bậc 2 khác 0.",
+            "B. Cả hai đều bằng 0.",
+            "C. Cả hai đều khác 0.",
+            "D. Đạo hàm bậc 1 khác 0, đạo hàm bậc 2 bằng 0."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 126,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Đặc điểm của đạo hàm bậc 2 tại điểm nằm giữa sườn dốc của biên thoai thoải (ramp edge) là gì?",
+        "options": [
+            "A. Đạt cực đại.",
+            "B. Đạt cực tiểu.",
+            "C. Bằng 0 (Zero-crossing).",
+            "D. Không xác định."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 127,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Ba bước cơ bản trong quy trình phát hiện biên là gì?",
+        "options": [
+            "A. Thu nhận ảnh -> Nén ảnh -> Lưu trữ.",
+            "B. Làm mịn ảnh -> Phát hiện điểm biên -> Định vị biên.",
+            "C. Phân vùng -> Nhận dạng -> Hiểu ảnh.",
+            "D. Biến đổi Fourier -> Lọc -> Biến đổi ngược."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 128,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Mục đích của bước 'Làm mịn ảnh' (Smoothing) trước khi phát hiện biên là gì?",
+        "options": [
+            "A. Để làm tăng độ tương phản.",
+            "B. Để giảm nhiễu, vì đạo hàm rất nhạy cảm với nhiễu.",
+            "C. Để làm dày đường biên.",
+            "D. Để biến ảnh thành ảnh màu."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 129,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Vector Gradient tại một điểm ảnh chỉ ra điều gì?",
+        "options": [
+            "A. Hướng của đường biên.",
+            "B. Hướng có tốc độ thay đổi cường độ sáng cực đại.",
+            "C. Màu sắc của điểm ảnh.",
+            "D. Vị trí của điểm ảnh."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 130,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Quan hệ giữa hướng của vector Gradient và hướng của đường biên tại một điểm là gì?",
+        "options": [
+            "A. Song song với nhau.",
+            "B. Trùng nhau.",
+            "C. Vuông góc với nhau.",
+            "D. Tạo một góc 45 độ."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 131,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Toán tử Roberts sử dụng mặt nạ (kernel) có kích thước bao nhiêu?",
+        "options": ["A. 2 x 2", "B. 3 x 3", "C. 5 x 5", "D. 1 x 3"],
+        "answer": "A"
+    },
+    {
+        "id": 132,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Toán tử Prewitt sử dụng cặp mặt nạ 3x3 để tính đạo hàm theo hướng x và y. Hàng đầu tiên của mặt nạ Gx (đạo hàm theo x) là gì?",
+        "options": ["A. -1, 0, 1", "B. 1, 1, 1", "C. -1, -1, -1", "D. 0, 1, 0"],
+        "answer": "A"
+    },
+    {
+        "id": 133,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Sự khác biệt chính giữa toán tử Sobel và Prewitt là gì?",
+        "options": [
+            "A. Sobel dùng mặt nạ 5x5 còn Prewitt dùng 3x3.",
+            "B. Sobel gán trọng số cao hơn (trọng số 2) cho các điểm ảnh ở trung tâm hàng/cột lân cận.",
+            "C. Prewitt nhạy cảm với nhiễu ít hơn Sobel.",
+            "D. Sobel là đạo hàm bậc 2 còn Prewitt là bậc 1."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 134,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Toán tử Laplacian là toán tử dựa trên đạo hàm bậc mấy?",
+        "options": [
+            "A. Bậc 1",
+            "B. Bậc 2",
+            "C. Bậc 3",
+            "D. Không dùng đạo hàm"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 135,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Một đặc điểm quan trọng của toán tử Laplacian so với Gradient là gì?",
+        "options": [
+            "A. Laplacian là toán tử đẳng hướng (isotropic), không phụ thuộc hướng.",
+            "B. Laplacian ít nhạy cảm với nhiễu hơn.",
+            "C. Laplacian cho biết hướng của biên.",
+            "D. Laplacian sử dụng mặt nạ 2x2."
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 136,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Tổng các hệ số trong một mặt nạ của bộ lọc Laplacian thường bằng bao nhiêu?",
+        "options": ["A. 1", "B. 255", "C. 0", "D. -1"],
+        "answer": "C"
+    },
+    {
+        "id": 137,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Phương pháp LoG (Laplacian of Gaussian) kết hợp hai quá trình nào?",
+        "options": [
+            "A. Làm sắc nét và tìm biên.",
+            "B. Làm mịn bằng hàm Gaussian và tính đạo hàm bậc 2 Laplacian.",
+            "C. Tính Gradient và phân ngưỡng.",
+            "D. Nén ảnh và giải nén."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 138,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Hình dạng của toán tử LoG (Laplacian of Gaussian) thường được ví với cái gì?",
+        "options": [
+            "A. Cái nón (Cone).",
+            "B. Mũ Mexico (Mexican Hat).",
+            "C. Kim tự tháp.",
+            "D. Bàn cờ."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 139,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Phương pháp phát hiện biên Canny được coi là phương pháp gì?",
+        "options": [
+            "A. Phương pháp nhanh nhất.",
+            "B. Phương pháp phát hiện biên tối ưu.",
+            "C. Phương pháp đơn giản nhất.",
+            "D. Phương pháp chỉ dùng cho ảnh màu."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 140,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Trong thuật toán Canny, kỹ thuật 'Non-maximum suppression' (Triệt tiêu phi cực đại) có tác dụng gì?",
+        "options": [
+            "A. Loại bỏ nhiễu.",
+            "B. Làm mỏng đường biên (chỉ giữ lại đỉnh nhọn của gờ biên).",
+            "C. Nối các điểm biên đứt đoạn.",
+            "D. Tính toán ngưỡng tối ưu."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 141,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Kỹ thuật 'Hysteresis Thresholding' trong thuật toán Canny sử dụng bao nhiêu ngưỡng?",
+        "options": [
+            "A. 1 ngưỡng duy nhất.",
+            "B. 2 ngưỡng (ngưỡng cao và ngưỡng thấp).",
+            "C. 3 ngưỡng.",
+            "D. Không sử dụng ngưỡng."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 142,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Công thức tính độ lớn (magnitude) của Gradient G từ hai thành phần Gx và Gy là gì?",
+        "options": [
+            "A. G = Gx + Gy",
+            "B. G = sqrt(Gx^2 + Gy^2)",
+            "C. G = Gx * Gy",
+            "D. G = |Gx - Gy|"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 143,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Góc hướng của vector Gradient (theta) được tính bằng công thức nào?",
+        "options": [
+            "A. tan(Gy / Gx)",
+            "B. arctan(Gy / Gx)",
+            "C. sin(Gy / Gx)",
+            "D. cos(Gx / Gy)"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 144,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Nhược điểm lớn nhất của việc sử dụng đạo hàm để phát hiện biên là gì?",
+        "options": [
+            "A. Tốn nhiều bộ nhớ.",
+            "B. Rất nhạy cảm với nhiễu (khuếch đại nhiễu).",
+            "C. Không phát hiện được biên ngang.",
+            "D. Chỉ làm việc với ảnh nhị phân."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 145,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Giữa đạo hàm bậc 1 và đạo hàm bậc 2, loại nào nhạy cảm với nhiễu hơn?",
+        "options": [
+            "A. Đạo hàm bậc 1.",
+            "B. Đạo hàm bậc 2.",
+            "C. Nhạy cảm như nhau.",
+            "D. Không loại nào nhạy cảm với nhiễu."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 146,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Trong phương pháp Gradient, bước nào quyết định một điểm ảnh có phải là điểm biên hay không sau khi tính độ lớn Gradient?",
+        "options": [
+            "A. Làm trơn.",
+            "B. So sánh với một ngưỡng (Thresholding).",
+            "C. Tính tích chập.",
+            "D. Đảo ngược ảnh."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 147,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Toán tử DoG (Difference of Gaussian) được dùng để xấp xỉ cho toán tử nào?",
+        "options": [
+            "A. Sobel.",
+            "B. Prewitt.",
+            "C. LoG (Laplacian of Gaussian).",
+            "D. Roberts."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 148,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Trong mặt nạ 3x3 của toán tử Laplacian (phiên bản 4 láng giềng), hệ số ở tâm thường là bao nhiêu nếu các hệ số xung quanh là 1?",
+        "options": ["A. 4", "B. -4", "C. 8", "D. -8"],
+        "answer": "B"
+    },
+    {
+        "id": 149,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Trong phát hiện biên Canny, nếu một điểm ảnh có giá trị gradient nằm giữa ngưỡng thấp và ngưỡng cao, nó sẽ được xử lý như thế nào?",
+        "options": [
+            "A. Loại bỏ ngay lập tức.",
+            "B. Được giữ lại nếu nó kết nối với một điểm biên chắc chắn (điểm vượt ngưỡng cao).",
+            "C. Được giữ lại vô điều kiện.",
+            "D. Được gán giá trị trung bình."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 150,
+        "chapter": "Chương 5: Phát hiện biên",
+        "question": "Đặc điểm của biên 'Roof edge' là gì?",
+        "options": [
+            "A. Thay đổi cường độ rất nhanh.",
+            "B. Giống như một đường thẳng dày chạy qua một vùng.",
+            "C. Không thay đổi cường độ.",
+            "D. Nhiễu ngẫu nhiên."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 151,
+        "chapter": "Chương 6: Nén ảnh",
+        "question": "Mục đích chính của việc nén ảnh là gì?",
+        "options": [
+            "A. Tăng độ phân giải của ảnh.",
+            "B. Giảm lượng dữ liệu cần thiết để biểu diễn ảnh, tiết kiệm bộ nhớ và băng thông.",
+            "C. Chuyển đổi ảnh sang ảnh màu.",
+            "D. Mã hóa ảnh để bảo mật thông tin."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 152,
+        "chapter": "Chương 6: Nén ảnh",
+        "question": "Loại dư thừa dữ liệu nào xuất hiện do mối tương quan mạnh giữa các pixel lân cận trong ảnh?",
+        "options": [
+            "A. Dư thừa mã hóa (Coding redundancy).",
+            "B. Dư thừa không gian (Spatial/Interpixel redundancy).",
+            "C. Dư thừa tâm lý thị giác (Psychovisual redundancy).",
+            "D. Dư thừa thời gian (Temporal redundancy)."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 153,
+        "chapter": "Chương 6: Nén ảnh",
+        "question": "Loại dư thừa nào lợi dụng đặc điểm mắt người kém nhạy cảm với một số thông tin nhất định (như tần số cao) để loại bỏ bớt dữ liệu?",
+        "options": [
+            "A. Dư thừa mã hóa.",
+            "B. Dư thừa không gian.",
+            "C. Dư thừa tâm lý thị giác.",
+            "D. Dư thừa cấu trúc."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 154,
+        "chapter": "Chương 6: Nén ảnh",
+        "question": "Đặc điểm của phương pháp nén không tổn thất (Lossless compression) là gì?",
+        "options": [
+            "A. Tỷ lệ nén rất cao nhưng chất lượng ảnh giảm.",
+            "B. Dữ liệu sau khi giải nén giống hệt dữ liệu gốc.",
+            "C. Chỉ áp dụng được cho ảnh đen trắng.",
+            "D. Luôn sử dụng biến đổi Fourier."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 155,
+        "chapter": "Chương 6: Nén ảnh",
+        "question": "Thuật toán mã hóa độ dài chạy (Run-Length Coding - RLC) hiệu quả nhất với loại dữ liệu nào?",
+        "options": [
+            "A. Ảnh có nhiều chi tiết thay đổi liên tục.",
+            "B. Ảnh nhị phân hoặc ảnh có các vùng màu đồng nhất lặp lại liên tiếp.",
+            "C. Ảnh chụp phong cảnh tự nhiên.",
+            "D. Ảnh nhiễu hạt."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 156,
+        "chapter": "Chương 6: Nén ảnh",
+        "question": "Nguyên lý cơ bản của mã hóa Huffman là gì?",
+        "options": [
+            "A. Gán từ mã dài cho ký tự xuất hiện nhiều và từ mã ngắn cho ký tự xuất hiện ít.",
+            "B. Gán từ mã có độ dài cố định cho mọi ký tự.",
+            "C. Gán từ mã ngắn nhất cho ký tự có xác suất xuất hiện cao nhất.",
+            "D. Thay thế chuỗi ký tự bằng chỉ số trong từ điển."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 157,
+        "chapter": "Chương 6: Nén ảnh",
+        "question": "Thuật toán LZW (Lempel-Ziv-Welch) thuộc loại phương pháp nén nào?",
+        "options": [
+            "A. Nén có tổn thất dựa trên biến đổi DCT.",
+            "B. Nén không tổn thất dựa trên từ điển (Dictionary-based).",
+            "C. Nén fractal.",
+            "D. Nén dựa trên sóng con (Wavelet)."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 158,
+        "chapter": "Chương 6: Nén ảnh",
+        "question": "Trong chuẩn nén JPEG, bước đầu tiên để xử lý ảnh là gì?",
+        "options": [
+            "A. Lượng tử hóa.",
+            "B. Chia ảnh thành các khối (block) kích thước 8x8 pixel.",
+            "C. Mã hóa Huffman.",
+            "D. Quét Zig-zag."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 159,
+        "chapter": "Chương 6: Nén ảnh",
+        "question": "Phép biến đổi nào được sử dụng trong chuẩn nén JPEG để chuyển dữ liệu từ miền không gian sang miền tần số?",
+        "options": [
+            "A. Biến đổi Fourier nhanh (FFT).",
+            "B. Biến đổi Cosine rời rạc (DCT).",
+            "C. Biến đổi Wavelet.",
+            "D. Biến đổi Hough."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 160,
+        "chapter": "Chương 6: Nén ảnh",
+        "question": "Bước nào trong quy trình nén JPEG là nguyên nhân chính gây ra mất mát thông tin (Lossy)?",
+        "options": [
+            "A. Biến đổi DCT thuận.",
+            "B. Lượng tử hóa (Quantization).",
+            "C. Quét Zig-zag.",
+            "D. Mã hóa Entropy."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 161,
+        "chapter": "Chương 6: Nén ảnh",
+        "question": "Mục đích của việc quét Zig-zag các hệ số sau khi lượng tử hóa trong JPEG là gì?",
+        "options": [
+            "A. Để làm đẹp ảnh.",
+            "B. Để sắp xếp các hệ số tần số thấp (quan trọng) lên đầu và dồn các hệ số 0 (tần số cao) về cuối chuỗi, thuận lợi cho nén RLE.",
+            "C. Để trộn đều các tần số.",
+            "D. Để mã hóa màu sắc."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 162,
+        "chapter": "Chương 6: Nén ảnh",
+        "question": "Hệ số DC (hệ số góc trên bên trái của khối 8x8 sau biến đổi DCT) đại diện cho điều gì?",
+        "options": [
+            "A. Chi tiết tần số cao nhất của khối.",
+            "B. Giá trị trung bình (độ sáng nền) của toàn bộ khối 8x8.",
+            "C. Nhiễu của ảnh.",
+            "D. Màu sắc của pixel trung tâm."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 163,
+        "chapter": "Chương 6: Nén ảnh",
+        "question": "Trong nén JPEG, các hệ số DC của các khối liên tiếp thường được mã hóa bằng phương pháp nào?",
+        "options": [
+            "A. Mã hóa trực tiếp giá trị.",
+            "B. Điều chế xung mã vi sai (DPCM) - mã hóa sự sai khác so với khối trước.",
+            "C. LZW.",
+            "D. Không mã hóa."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 164,
+        "chapter": "Chương 6: Nén ảnh",
+        "question": "Tiêu chuẩn đánh giá chất lượng ảnh khách quan thường dùng thông số nào?",
+        "options": [
+            "A. Ý kiến của chuyên gia.",
+            "B. Sai số trung bình bình phương (MSE) và Tỷ số tín hiệu trên nhiễu đỉnh (PSNR).",
+            "C. Tốc độ nén.",
+            "D. Dung lượng file."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 165,
+        "chapter": "Chương 6: Nén ảnh",
+        "question": "Một ảnh có kích thước 640x480 pixel, mỗi pixel dùng 3 byte (24 bit) để biểu diễn màu. Dung lượng ảnh chưa nén xấp xỉ bao nhiêu?",
+        "options": ["A. ~300 KB.", "B. ~900 KB.", "C. ~3 MB.", "D. ~10 MB."],
+        "answer": "B"
+    },
+    {
+        "id": 166,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Mục tiêu chính của xử lý ảnh hình thái (Morphological Image Processing) là gì?",
+        "options": [
+            "A. Nén ảnh để giảm dung lượng.",
+            "B. Biến đổi ảnh sang miền tần số.",
+            "C. Loại bỏ khiếm khuyết trong ảnh sau phân vùng và bổ sung thông tin cấu trúc.",
+            "D. Cân bằng lược đồ xám để tăng độ tương phản."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 167,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Phần tử cấu trúc (Structuring Element - SE) trong xử lý hình thái thường có đặc điểm gì?",
+        "options": [
+            "A. Là một ma trận các số thực ngẫu nhiên.",
+            "B. Là một mảng (ma trận) nhỏ các giá trị 0 và 1, thường đối xứng qua tâm.",
+            "C. Là một hàm sóng sin hoặc cos.",
+            "D. Là một bộ lọc thông thấp kích thước lớn."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 168,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Trạng thái 'Fit' (Khớp) giữa phần tử cấu trúc (SE) và ảnh xảy ra khi nào?",
+        "options": [
+            "A. Khi tất cả các pixel của SE trùng khớp với các pixel giá trị 1 của ảnh.",
+            "B. Khi có ít nhất một pixel của SE trùng với pixel của ảnh.",
+            "C. Khi không có pixel nào của SE trùng với pixel của ảnh.",
+            "D. Khi tâm của SE trùng với tâm của ảnh."
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 169,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Trạng thái 'Hit' (Chạm) giữa phần tử cấu trúc (SE) và ảnh xảy ra khi nào?",
+        "options": [
+            "A. Chỉ khi tất cả pixel của SE trùng với pixel của ảnh.",
+            "B. Khi bất kỳ pixel nào (ít nhất 1) của SE trùng với pixel giá trị 1 của ảnh.",
+            "C. Khi tất cả pixel của SE đều nằm ngoài vùng đối tượng của ảnh.",
+            "D. Khi kích thước của SE bằng kích thước ảnh."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 170,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Phép co (Erosion) được định nghĩa dựa trên trạng thái nào giữa SE và ảnh?",
+        "options": [
+            "A. Hit (Chạm).",
+            "B. Fit (Khớp hoàn toàn).",
+            "C. Miss (Trượt).",
+            "D. Convolution (Tích chập)."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 171,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Phép giãn (Dilation) được định nghĩa dựa trên trạng thái nào giữa SE và ảnh?",
+        "options": [
+            "A. Hit (Chạm).",
+            "B. Fit (Khớp hoàn toàn).",
+            "C. Difference (Sai khác).",
+            "D. Average (Trung bình)."
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 172,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Tác dụng chính của phép co (Erosion) đối với đối tượng trong ảnh là gì?",
+        "options": [
+            "A. Phóng to đối tượng và lấp đầy các lỗ nhỏ.",
+            "B. Thu nhỏ đối tượng, loại bỏ các chi tiết nhỏ và tách rời các đối tượng dính nhau.",
+            "C. Làm mờ biên của đối tượng.",
+            "D. Giữ nguyên kích thước đối tượng."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 173,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Tác dụng chính của phép giãn (Dilation) đối với đối tượng trong ảnh là gì?",
+        "options": [
+            "A. Thu nhỏ đối tượng.",
+            "B. Phóng to đối tượng, lấp đầy các khoảng trống nhỏ và nối liền các đối tượng đứt gãy.",
+            "C. Làm sắc nét ảnh.",
+            "D. Tách rời các đối tượng đang dính nhau."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 174,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Công thức của phép Mở (Opening) ảnh A bởi phần tử cấu trúc B là gì?",
+        "options": [
+            "A. Co A bởi B, sau đó Giãn kết quả bởi B.",
+            "B. Giãn A bởi B, sau đó Co kết quả bởi B.",
+            "C. Co A bởi B, sau đó Co tiếp kết quả bởi B.",
+            "D. Giãn A bởi B, sau đó Giãn tiếp kết quả bởi B."
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 175,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Công thức của phép Đóng (Closing) ảnh A bởi phần tử cấu trúc B là gì?",
+        "options": [
+            "A. Co A bởi B, sau đó Giãn kết quả bởi B.",
+            "B. Giãn A bởi B, sau đó Co kết quả bởi B.",
+            "C. Trừ ảnh A cho ảnh sau khi Co.",
+            "D. Cộng ảnh A với ảnh sau khi Giãn."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 176,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Phép Mở (Opening) thường được sử dụng để làm gì?",
+        "options": [
+            "A. Lấp đầy các lỗ nhỏ bên trong đối tượng.",
+            "B. Nối các đối tượng bị đứt gãy.",
+            "C. Làm trơn đường bao, cắt đứt các eo hẹp và loại bỏ các lồi nhỏ (gai) của đối tượng.",
+            "D. Phóng to kích thước của đối tượng."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 177,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Phép Đóng (Closing) thường được sử dụng để làm gì?",
+        "options": [
+            "A. Loại bỏ các đối tượng nhỏ (nhiễu).",
+            "B. Tách rời các đối tượng dính nhau.",
+            "C. Làm trơn đường bao, lấp đầy các khuyết tật nhỏ (lỗ thủng) và nối liền các khe hở hẹp.",
+            "D. Thu nhỏ kích thước của đối tượng."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 178,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Nếu muốn loại bỏ các điểm nhiễu trắng nhỏ trên nền đen (nhiễu muối) mà ít làm thay đổi kích thước đối tượng lớn, ta nên dùng phép toán nào?",
+        "options": [
+            "A. Phép Giãn (Dilation).",
+            "B. Phép Mở (Opening).",
+            "C. Phép Đóng (Closing).",
+            "D. Phép Co (Erosion) đơn thuần."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 179,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Nếu muốn lấp đầy các lỗ đen nhỏ trên đối tượng trắng (nhiễu tiêu) mà ít làm thay đổi kích thước đối tượng, ta nên dùng phép toán nào?",
+        "options": [
+            "A. Phép Co (Erosion).",
+            "B. Phép Mở (Opening).",
+            "C. Phép Đóng (Closing).",
+            "D. Phép Giãn (Dilation) đơn thuần."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 180,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Ký hiệu toán học của phép Co (Erosion) giữa ảnh f và phần tử cấu trúc s là gì?",
+        "options": ["A. f ⊕ s", "B. f ⊖ s", "C. f ○ s", "D. f • s"],
+        "answer": "B"
+    },
+    {
+        "id": 181,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Ký hiệu toán học của phép Giãn (Dilation) giữa ảnh f và phần tử cấu trúc s là gì?",
+        "options": ["A. f ⊕ s", "B. f ⊖ s", "C. f * s", "D. f / s"],
+        "answer": "A"
+    },
+    {
+        "id": 182,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Phép toán nào giúp tách hai đối tượng đang dính nhau bởi một đường nối mảnh?",
+        "options": [
+            "A. Phép Giãn (Dilation).",
+            "B. Phép Đóng (Closing).",
+            "C. Phép Co (Erosion) hoặc Phép Mở (Opening).",
+            "D. Phép lấy bù (Complement)."
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 183,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Trong xử lý ảnh nhị phân, nếu sử dụng SE là hình tròn đường kính 10 pixel để thực hiện phép Co, điều gì sẽ xảy ra với các đối tượng có đường kính nhỏ hơn 10 pixel?",
+        "options": [
+            "A. Chúng được phóng to lên.",
+            "B. Chúng bị loại bỏ hoàn toàn (biến mất).",
+            "C. Chúng giữ nguyên kích thước.",
+            "D. Chúng biến thành hình vuông."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 184,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Kết quả của phép Mở (Opening) ảnh A bởi phần tử cấu trúc B (A ○ B) có tính chất nào sau đây so với ảnh gốc A?",
+        "options": [
+            "A. Luôn lớn hơn hoặc bằng A (tập con của A ⊆ A ○ B).",
+            "B. Luôn nhỏ hơn hoặc bằng A (là tập con của A: A ○ B ⊆ A).",
+            "C. Bằng phần bù của A.",
+            "D. Không có mối quan hệ kích thước rõ ràng."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 185,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Kết quả của phép Đóng (Closing) ảnh A bởi phần tử cấu trúc B (A • B) có tính chất nào sau đây so với ảnh gốc A?",
+        "options": [
+            "A. Luôn chứa ảnh A (A ⊆ A • B).",
+            "B. Luôn nằm trong ảnh A (A • B ⊆ A).",
+            "C. Luôn bằng ảnh A.",
+            "D. Là ảnh âm bản của A."
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 186,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Phép toán (A ⊖ B) ⊕ B tương đương với phép toán nào?",
+        "options": [
+            "A. Phép Đóng (Closing).",
+            "B. Phép Mở (Opening).",
+            "C. Phép Giãn (Dilation).",
+            "D. Phép Co (Erosion)."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 187,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Phép toán (A ⊕ B) ⊖ B tương đương với phép toán nào?",
+        "options": [
+            "A. Phép Đóng (Closing).",
+            "B. Phép Mở (Opening).",
+            "C. Phép Giãn (Dilation).",
+            "D. Phép Co (Erosion)."
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 188,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Để trích xuất đường biên (Boundary Extraction) của đối tượng A bằng hình thái học, ta thường dùng công thức nào (với B là phần tử cấu trúc)?",
+        "options": ["A. A - (A ⊖ B)", "B. (A ⊕ B) - A", "C. A ⊕ B", "D. A ⊖ B"],
+        "answer": "A"
+    },
+    {
+        "id": 189,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Phần tử cấu trúc B có kích thước 3x3 với tất cả giá trị là 1. Khi thực hiện phép giãn (Dilation) lên một điểm ảnh đơn lẻ, kết quả sẽ là gì?",
+        "options": [
+            "A. Một điểm ảnh duy nhất tại vị trí đó.",
+            "B. Một hình vuông kích thước 3x3 có tâm tại điểm đó.",
+            "C. Một hình chữ thập.",
+            "D. Điểm ảnh đó bị xóa."
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 190,
+        "chapter": "Chương 7: Xử lý ảnh hình thái",
+        "question": "Ứng dụng nào sau đây KHÔNG PHẢI là ứng dụng điển hình của xử lý ảnh hình thái?",
+        "options": [
+            "A. Làm trơn đường biên đối tượng.",
+            "B. Lấp đầy lỗ hổng trong đối tượng.",
+            "C. Tách các đối tượng dính nhau.",
+            "D. Nén ảnh JPEG."
+        ],
+        "answer": "D"
+    },
+    {
+        "id": 191,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Mục tiêu chính của quá trình nhận dạng ảnh là gì?",
+        "options": [
+            "A. Tìm ra quy luật và thuật toán để gán đối tượng vào lớp của nó",
+            "B. Nén ảnh để giảm dung lượng lưu trữ",
+            "C. Tăng độ tương phản của ảnh",
+            "D. Biến đổi ảnh sang miền tần số"
+        ],
+        "answer": "A. Tìm ra quy luật và thuật toán để gán đối tượng vào lớp của nó"
+    },
+    {
+        "id": 192,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Học có giám sát (Supervised learning) là quá trình học dựa vào:",
+        "options": [
+            "A. Kiến thức biết trước và thư viện mẫu chuẩn",
+            "B. Việc tự định ra các lớp mà không cần mẫu chuẩn",
+            "C. Sự cạnh tranh giữa các nơ-ron",
+            "D. Khoảng cách ngẫu nhiên giữa các điểm"
+        ],
+        "answer": "A. Kiến thức biết trước và thư viện mẫu chuẩn"
+    },
+    {
+        "id": 193,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Đặc điểm chính của Học không giám sát (Unsupervised learning) là gì?",
+        "options": [
+            "A. Sử dụng tập mẫu có gán nhãn để huấn luyện",
+            "B. Phải tự định ra các lớp và xác định đặc trưng của từng lớp (không có mẫu chuẩn)",
+            "C. Luôn sử dụng mạng nơ-ron nhiều lớp",
+            "D. Dựa trên các luật suy diễn logic biết trước"
+        ],
+        "answer": "B. Phải tự định ra các lớp và xác định đặc trưng của từng lớp (không có mẫu chuẩn)"
+    },
+    {
+        "id": 194,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Trong nhận dạng dựa theo không gian, một đối tượng thường được biểu diễn bằng:",
+        "options": [
+            "A. Một chuỗi ký tự",
+            "B. Một vector đặc trưng nhiều chiều",
+            "C. Một đồ thị cây",
+            "D. Một giá trị vô hướng duy nhất"
+        ],
+        "answer": "B. Một vector đặc trưng nhiều chiều"
+    },
+    {
+        "id": 195,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Hàm phân lớp g(X) giúp phân biệt các lớp đối tượng. Nếu có k lớp thì cần bao nhiêu hàm phân lớp?",
+        "options": ["A. k hàm", "B. k+1 hàm", "C. k-1 hàm", "D. 1 hàm"],
+        "answer": "C. k-1 hàm"
+    },
+    {
+        "id": 196,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Khi hàm phân lớp là tuyến tính, ranh giới phân lớp trong không gian được gọi là:",
+        "options": [
+            "A. Đường cong (Curve)",
+            "B. Siêu phẳng (Hyperplane)",
+            "C. Hình cầu (Sphere)",
+            "D. Điểm (Point)"
+        ],
+        "answer": "B. Siêu phẳng (Hyperplane)"
+    },
+    {
+        "id": 197,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Thuật toán k-Means (k-trung bình) thuộc loại phương pháp học nào?",
+        "options": [
+            "A. Học có giám sát",
+            "B. Học không giám sát (Tự học)",
+            "C. Học tăng cường",
+            "D. Học sâu (Deep Learning)"
+        ],
+        "answer": "B. Học không giám sát (Tự học)"
+    },
+    {
+        "id": 198,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Nguyên tắc hoạt động chính của thuật toán k-Means là:",
+        "options": [
+            "A. Tìm k lớp sao cho khoảng cách trung bình từ các phần tử đến tâm lớp là nhỏ nhất",
+            "B. Tìm k lớp sao cho khoảng cách giữa các tâm lớp là nhỏ nhất",
+            "C. Dựa trên số lượng láng giềng gần nhất",
+            "D. Tách và hợp các vùng dựa trên độ đồng nhất"
+        ],
+        "answer": "A. Tìm k lớp sao cho khoảng cách trung bình từ các phần tử đến tâm lớp là nhỏ nhất"
+    },
+    {
+        "id": 199,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Trong thuật toán k-Nearest Neighbor (k-láng giềng), việc phân lớp cho đối tượng mới dựa trên:",
+        "options": [
+            "A. Khoảng cách đến tâm của lớp gần nhất",
+            "B. Lớp chiếm đa số trong k láng giềng gần nhất",
+            "C. So sánh với một ngưỡng cố định",
+            "D. Kết quả của hàm năng lượng"
+        ],
+        "answer": "B. Lớp chiếm đa số trong k láng giềng gần nhất"
+    },
+    {
+        "id": 200,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Thuật toán ISODATA (Iterative Self Organizing Data Analysis) có đặc điểm gì nổi bật so với k-Means cổ điển?",
+        "options": [
+            "A. Số lượng lớp là cố định ngay từ đầu",
+            "B. Tương đối mềm dẻo, có thể tách hoặc gộp các lớp trong quá trình thực hiện",
+            "C. Chỉ sử dụng cho ảnh đen trắng",
+            "D. Không sử dụng khoảng cách để phân lớp"
+        ],
+        "answer": "B. Tương đối mềm dẻo, có thể tách hoặc gộp các lớp trong quá trình thực hiện"
+    },
+    {
+        "id": 201,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Thuật toán nhận dạng dựa vào Khoảng cách lớn nhất (Max Distance) tạo nên lớp mới khi nào?",
+        "options": [
+            "A. Khi khoảng cách từ một phần tử đến tâm hiện tại lớn hơn một ngưỡng xác định",
+            "B. Khi số lượng phần tử trong lớp quá lớn",
+            "C. Khi tất cả các phần tử đều giống nhau",
+            "D. Khi người dùng yêu cầu"
+        ],
+        "answer": "A. Khi khoảng cách từ một phần tử đến tâm hiện tại lớn hơn một ngưỡng xác định"
+    },
+    {
+        "id": 202,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Trong mô hình nhận dạng cấu trúc, đối tượng thường được biểu diễn dưới dạng nào?",
+        "options": [
+            "A. Vector số thực",
+            "B. Chuỗi ký tự hoặc cấu trúc ngữ pháp",
+            "C. Ma trận điểm ảnh",
+            "D. Biểu đồ histogram"
+        ],
+        "answer": "B. Chuỗi ký tự hoặc cấu trúc ngữ pháp"
+    },
+    {
+        "id": 203,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Mạng Nơ-ron nhân tạo (Neural Network) có khả năng:",
+        "options": [
+            "A. Học từ dữ liệu mẫu và tổng quát hóa",
+            "B. Chỉ thực hiện các phép toán logic cố định",
+            "C. Lưu trữ dữ liệu chính xác tuyệt đối như bộ nhớ RAM",
+            "D. Luôn yêu cầu lập trình thủ công từng luật"
+        ],
+        "answer": "A. Học từ dữ liệu mẫu và tổng quát hóa"
+    },
+    {
+        "id": 204,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Mạng Hopfield là loại mạng nơ-ron có cấu trúc như thế nào?",
+        "options": [
+            "A. Mạng nhiều lớp thẳng (Feedforward)",
+            "B. Mạng 1 lớp, liên kết đầy đủ, có hồi tiếp (Feedback)",
+            "C. Mạng nơ-ron tích chập (CNN)",
+            "D. Mạng tự tổ chức (SOM)"
+        ],
+        "answer": "B. Mạng 1 lớp, liên kết đầy đủ, có hồi tiếp (Feedback)"
+    },
+    {
+        "id": 205,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Tín hiệu đầu vào của mạng Hopfield thường có giá trị:",
+        "options": [
+            "A. Số thực bất kỳ",
+            "B. Lưỡng cực (-1 và 1)",
+            "C. Nhị phân (0 và 1)",
+            "D. Số phức"
+        ],
+        "answer": "B. Lưỡng cực (-1 và 1)"
+    },
+    {
+        "id": 206,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Chức năng chính của mạng Hopfield trong nhận dạng ảnh là:",
+        "options": [
+            "A. Phân cụm dữ liệu",
+            "B. Mô phỏng khả năng hồi tưởng (bộ nhớ liên kết), khôi phục ảnh từ thông tin thiếu",
+            "C. Trích xuất đặc trưng biên",
+            "D. Nén ảnh"
+        ],
+        "answer": "B. Mô phỏng khả năng hồi tưởng (bộ nhớ liên kết), khôi phục ảnh từ thông tin thiếu"
+    },
+    {
+        "id": 207,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Theo tài liệu, mạng Hopfield được phân loại là phương pháp học nào?",
+        "options": [
+            "A. Học có giám sát",
+            "B. Học không giám sát",
+            "C. Học gia cố",
+            "D. Học sâu"
+        ],
+        "answer": "A. Học có giám sát"
+    },
+    {
+        "id": 208,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Mạng Kohonen còn được gọi là gì?",
+        "options": [
+            "A. Bản đồ tự tổ chức (Self-Organizing Map - SOM)",
+            "B. Mạng nơ-ron hồi quy (RNN)",
+            "C. Mạng Perceptron đa lớp (MLP)",
+            "D. Máy vector hỗ trợ (SVM)"
+        ],
+        "answer": "A. Bản đồ tự tổ chức (Self-Organizing Map - SOM)"
+    },
+    {
+        "id": 209,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Mạng Kohonen sử dụng cơ chế học nào?",
+        "options": [
+            "A. Lan truyền ngược (Backpropagation)",
+            "B. Cạnh tranh (Competitive learning) và không cần mẫu học (Unsupervised)",
+            "C. Giảm gradient (Gradient Descent)",
+            "D. Học có giám sát chặt chẽ"
+        ],
+        "answer": "B. Cạnh tranh (Competitive learning) và không cần mẫu học (Unsupervised)"
+    },
+    {
+        "id": 210,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Cấu trúc topo của mạng Kohonen thường là:",
+        "options": [
+            "A. Một chuỗi tuyến tính",
+            "B. Lưới 2 chiều (vuông hoặc lục giác) các nơ-ron",
+            "C. Cấu trúc cây",
+            "D. Cấu trúc hình tháp"
+        ],
+        "answer": "B. Lưới 2 chiều (vuông hoặc lục giác) các nơ-ron"
+    },
+    {
+        "id": 211,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Trong mạng Kohonen, nơ-ron chiến thắng (winning neuron) là nơ-ron có:",
+        "options": [
+            "A. Trọng số lớn nhất",
+            "B. Vector trọng số gần với vector tín hiệu đầu vào nhất",
+            "C. Ngưỡng kích hoạt thấp nhất",
+            "D. Vị trí ở trung tâm mạng"
+        ],
+        "answer": "B. Vector trọng số gần với vector tín hiệu đầu vào nhất"
+    },
+    {
+        "id": 212,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Khi cập nhật trọng số trong mạng Kohonen, điều gì xảy ra với các nơ-ron lân cận của nơ-ron chiến thắng?",
+        "options": [
+            "A. Trọng số của chúng không thay đổi",
+            "B. Trọng số của chúng cũng được cập nhật để giống với đầu vào hơn (theo hàm lân cận)",
+            "C. Trọng số của chúng bị giảm về 0",
+            "D. Chúng bị loại bỏ khỏi mạng"
+        ],
+        "answer": "B. Trọng số của chúng cũng được cập nhật để giống với đầu vào hơn (theo hàm lân cận)"
+    },
+    {
+        "id": 213,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Trong nhận dạng dựa trên khoảng cách, nếu khoảng cách giữa hai đối tượng nhỏ hơn một ngưỡng τ thì:",
+        "options": [
+            "A. Hai đối tượng khác nhau, tách lớp",
+            "B. Hai đối tượng giống nhau, gộp vào một lớp",
+            "C. Đối tượng bị nhiễu",
+            "D. Không thể kết luận"
+        ],
+        "answer": "B. Hai đối tượng giống nhau, gộp vào một lớp"
+    },
+    {
+        "id": 214,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Khó khăn chính của phương pháp nhận dạng cấu trúc (Structural Recognition) là:",
+        "options": [
+            "A. Tốn quá nhiều bộ nhớ lưu trữ",
+            "B. Việc xác định các quy tắc xây dựng (ngữ pháp) là rất khó khăn",
+            "C. Không thể biểu diễn bằng máy tính",
+            "D. Chỉ áp dụng được cho ảnh màu"
+        ],
+        "answer": "B. Việc xác định các quy tắc xây dựng (ngữ pháp) là rất khó khăn"
+    },
+    {
+        "id": 215,
+        "chapter": "Chương 8: Nhận dạng ảnh",
+        "question": "Hàm kích hoạt tại các nơ-ron của mạng Hopfield thường là:",
+        "options": [
+            "A. Hàm Sigmoid",
+            "B. Hàm dấu (Sign function)",
+            "C. Hàm tuyến tính",
+            "D. Hàm ReLU"
+        ],
+        "answer": "B. Hàm dấu (Sign function)"
     }
 ]
