@@ -6,11 +6,21 @@ const STORAGE_KEY = "se_quiz_data";
 const DEFAULT_SUBJECT = "Môn TM";
 const DEFAULT_CHAPTER = "Chưa phân chương";
 
+const inferSubjectFromChapter = (chapterName) => {
+    if (typeof chapterName !== "string") return DEFAULT_SUBJECT;
+    const matched = chapterName.match(/\d+/);
+    const chapterNo = matched ? parseInt(matched[0], 10) : null;
+    if (!chapterNo) return DEFAULT_SUBJECT;
+    if (chapterNo <= 3) return "Xử lý ảnh số";
+    if (chapterNo <= 6) return "Biến đổi ảnh";
+    return "Nhận dạng ảnh";
+};
+
 const normalizeQuestion = (question) => {
     const subject =
         typeof question.subject === "string" && question.subject.trim()
             ? question.subject.trim()
-            : DEFAULT_SUBJECT;
+            : inferSubjectFromChapter(question.chapter);
     const chapter =
         typeof question.chapter === "string" && question.chapter.trim()
             ? question.chapter.trim()
@@ -101,11 +111,45 @@ export const QuizProvider = ({ children }) => {
     };
 
     const importQuestions = (jsonData) => {
-        const currentIds = new Set(allQuestions.map((q) => q.id));
         const normalized = normalizeQuestions(jsonData);
-        const newQuestions = normalized.filter((q) => !currentIds.has(q.id));
-        setAllQuestions([...allQuestions, ...newQuestions]);
-        return newQuestions.length;
+        if (!normalized.length) {
+            return { added: 0, updated: 0, total: 0 };
+        }
+
+        const byId = new Map(allQuestions.map((q) => [q.id, q]));
+        let added = 0;
+        let updated = 0;
+
+        normalized.forEach((q) => {
+            if (byId.has(q.id)) {
+                updated += 1;
+            } else {
+                added += 1;
+            }
+            byId.set(q.id, q);
+        });
+
+        setAllQuestions(Array.from(byId.values()));
+        return { added, updated, total: normalized.length };
+    };
+
+    const replaceAllQuestions = (jsonData) => {
+        const normalized = normalizeQuestions(jsonData);
+        setAllQuestions(normalized);
+        return normalized.length;
+    };
+
+    const restoreBundledQuestions = () => {
+        const normalized = normalizeQuestions(initialQuestions);
+        setAllQuestions(normalized);
+        return normalized.length;
+    };
+
+    const clearLocalData = () => {
+        localStorage.removeItem(STORAGE_KEY);
+        const normalized = normalizeQuestions(initialQuestions);
+        setAllQuestions(normalized);
+        return normalized.length;
     };
 
     const addQuestion = (newQ) => {
@@ -181,6 +225,9 @@ export const QuizProvider = ({ children }) => {
                 addQuestion,
                 deleteQuestion,
                 importQuestions,
+                replaceAllQuestions,
+                restoreBundledQuestions,
+                clearLocalData,
                 exportData,
                 deleteQuestionsByChapter,
             }}
