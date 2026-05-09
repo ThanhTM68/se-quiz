@@ -173,5 +173,1815 @@
             "Dừng chương trình ngay lập tức"
         ],
         "answer": "C"
+    },
+
+    {
+        "id": 21,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Trong TypeScript, đoạn code sau sẽ cho kết quả gì?\nfunction add(a: number, b: number) { return a + b; }\nconsole.log(add(5, '3'));",
+        "options": [
+            "8",
+            "53",
+            "Lỗi compile-time vì truyền sai kiểu dữ liệu",
+            "NaN"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 22,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Kết quả của đoạn code sau là gì?\nlet city: string = 'Hà Nội';\ncity = 123;\nconsole.log(city);",
+        "options": [
+            "Hà Nội",
+            "123",
+            "undefined",
+            "Lỗi compile-time: Type 'number' is not assignable to type 'string'"
+        ],
+        "answer": "D"
+    },
+    {
+        "id": 23,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Giá trị của myColor là bao nhiêu?\nenum Color { Red, Green, Blue }\nlet myColor = Color.Green;",
+        "options": ["0", "1", "2", "Green"],
+        "answer": "B"
+    },
+    {
+        "id": 24,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Đoạn code sau in ra kết quả gì?\nlet tuple: [string, number] = ['Tùng', 30];\nlet [name, age] = tuple;\nconsole.log(age);",
+        "options": ["Tùng", "30", "undefined", "Lỗi cú pháp"],
+        "answer": "B"
+    },
+    {
+        "id": 25,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Đoạn code sau có lỗi không?\ninterface User { id: number; name: string; }\nconst user: User = { id: 1 };",
+        "options": [
+            "Không lỗi",
+            "Lỗi vì thiếu property 'name'",
+            "Lỗi vì dùng const",
+            "Lỗi vì không có email"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 26,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Khi sử dụng useState trong TypeScript, đoạn code sau sẽ báo lỗi ở đâu?\nconst [count, setCount] = useState<number>(0);\nsetCount('10');",
+        "options": [
+            "Dòng khai báo useState",
+            "Dòng setCount('10') vì truyền string vào state kiểu number",
+            "Không báo lỗi",
+            "Lỗi ở biến count"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 27,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Kết quả in ra là gì?\nlet id: number | string;\nid = 'ABC';\nconsole.log(typeof id);",
+        "options": ["number", "string", "union", "any"],
+        "answer": "B"
+    },
+    {
+        "id": 28,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Đoạn code sau in ra gì?\ninterface User { readonly createdAt: string; }\nconst user: User = { createdAt: '2024' };\nuser.createdAt = '2025';",
+        "options": [
+            "2024",
+            "2025",
+            "Lỗi compile-time vì property là readonly",
+            "undefined"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 29,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Kết quả của hàm sau là gì?\nfunction greet(name: string, greeting?: string) {\n  return greeting ? `${greeting}, ${name}` : `Hi ${name}`;\n}\nconsole.log(greet('Minh'));",
+        "options": [
+            "Hi Minh",
+            "undefined, Minh",
+            "Lỗi vì thiếu tham số thứ 2",
+            "Minh"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 30,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Biến 'data' có kiểu dữ liệu là gì theo cơ chế Type Inference?\nlet data = [1, 'hai', 3];",
+        "options": ["number[]", "string[]", "(number | string)[]", "any[]"],
+        "answer": "C"
+    },
+    {
+        "id": 31,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Đoạn code sau có hợp lệ không?\ninterface Entity { id: number; }\ninterface User extends Entity { name: string; }\nconst u: User = { id: 1, name: 'A' };",
+        "options": [
+            "Có, vì User kế thừa id từ Entity",
+            "Không, vì User thiếu id",
+            "Không, vì không thể extends interface",
+            "Lỗi cú pháp"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 32,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Trong React với TypeScript, Hook useRef được khai báo như sau sẽ lưu trữ kiểu gì?\nconst inputRef = useRef<HTMLInputElement>(null);",
+        "options": [
+            "Số nguyên",
+            "Một chuỗi",
+            "Một đối tượng HTML input element",
+            "Một function"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 33,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Giá trị của status là gì?\nenum Direction { Up = 'UP', Down = 'DOWN' }\nlet move: Direction = Direction.Up;\nconsole.log(move);",
+        "options": ["0", "UP", "Direction.Up", "undefined"],
+        "answer": "B"
+    },
+    {
+        "id": 34,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Code sau in ra gì?\nfunction printId(id: number | string) {\n  if (typeof id === 'string') return id.toUpperCase();\n  return id;\n}\nconsole.log(printId(100));",
+        "options": [
+            "100",
+            "100 (kiểu string)",
+            "Lỗi vì id có thể là string",
+            "undefined"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 35,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Đoạn code sau báo lỗi gì?\ntype Status = 'open' | 'closed';\nlet current: Status = 'pending';",
+        "options": [
+            "Không lỗi",
+            "Lỗi vì 'pending' không nằm trong tập hợp kiểu literal Status",
+            "Lỗi vì Status là type chứ không phải interface",
+            "Lỗi cú pháp gán giá trị"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 36,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Hàm sau trả về kiểu dữ liệu gì?\nconst getStatus = () => 200;",
+        "options": ["string", "any", "number", "void"],
+        "answer": "C"
+    },
+    {
+        "id": 37,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Kết quả in ra là gì?\nconst users = [{id: 1, name: 'Tùng'}];\nconst user = users.find(u => u.id === 2);\nconsole.log(user);",
+        "options": ["null", "undefined", "false", "Lỗi compile-time"],
+        "answer": "B"
+    },
+    {
+        "id": 38,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Đoạn code này thực hiện điều gì?\ntype PartialUser = Partial<{ id: number, name: string }>;",
+        "options": [
+            "Bắt buộc phải có cả id và name",
+            "Biến tất cả thuộc tính thành optional (tùy chọn)",
+            "Xóa bỏ các thuộc tính",
+            "Chỉ lấy thuộc tính id"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 39,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Khi khai báo state: const [data, setData] = useState<Todo[]>([]); Kiểu của data là gì?",
+        "options": [
+            "Một đối tượng Todo",
+            "Một mảng các đối tượng Todo",
+            "null",
+            "any"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 40,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "TypeScript Cơ Bản - Kiểu Dữ Liệu và Interfaces",
+        "question": "Sự khác biệt chính giữa Interface và Type Alias trong TypeScript là gì?",
+        "options": [
+            "Type không dùng được cho object",
+            "Interface có thể merge definitions (gộp định nghĩa), Type thì không",
+            "Type nhanh hơn Interface",
+            "Interface không hỗ trợ kế thừa"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 1,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Kết quả in ra console là gì?\nclass Person {\n  name: string;\n  constructor(name: string) { this.name = name; }\n  greet() { return `Hi ${this.name}`; }\n}\nconst p = new Person('Tùng');\nconsole.log(p.greet());",
+        "options": [
+            "Hi Tùng",
+            "Hi undefined",
+            "Lỗi vì thiếu từ khóa function",
+            "Hi name"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 2,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Đoạn code sau có lỗi không?\nclass BankAccount {\n  private balance: number = 1000;\n}\nconst acc = new BankAccount();\nconsole.log(acc.balance);",
+        "options": [
+            "Không lỗi, in ra 1000",
+            "Lỗi vì balance là private",
+            "In ra undefined",
+            "Lỗi vì chưa có constructor"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 3,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Kết quả in ra là gì?\nclass Counter {\n  static count = 0;\n  constructor() { Counter.count++; }\n}\nnew Counter(); new Counter();\nconsole.log(Counter.count);",
+        "options": ["0", "1", "2", "undefined"],
+        "answer": "C"
+    },
+    {
+        "id": 4,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Trong TypeScript, điều gì xảy ra khi chạy đoạn code này?\nabstract class Animal { abstract makeSound(): void; }\nconst a = new Animal();",
+        "options": [
+            "Chạy bình thường",
+            "Lỗi vì không thể tạo instance từ abstract class",
+            "In ra undefined",
+            "Lỗi thiếu method makeSound"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 5,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Kết quả của đoạn code sau là gì?\nclass A { protected x = 10; }\nclass B extends A { getX() { return this.x; } }\nconst b = new B();\nconsole.log(b.getX());",
+        "options": [
+            "10",
+            "undefined",
+            "Lỗi vì x là protected",
+            "Error: x is not defined"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 6,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Hàm sau trả về giá trị gì?\nfunction identity<T>(arg: T): T { return arg; }\nconsole.log(identity<string>('Hello'));",
+        "options": ["T", "string", "Hello", "undefined"],
+        "answer": "C"
+    },
+    {
+        "id": 7,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Đoạn code sau có lỗi không?\ninterface User { id: number; name: string; }\ntype UpdateUser = Partial<User>;\nconst user: UpdateUser = { name: 'Minh' };",
+        "options": [
+            "Lỗi vì thiếu id",
+            "Không lỗi, vì Partial biến các thuộc tính thành tùy chọn",
+            "Lỗi vì không dùng interface",
+            "Lỗi cú pháp"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 8,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Trong React (TypeScript), lỗi nào xảy ra ở đây?\nconst [val, setVal] = useState<number>(0);\nsetVal('5');",
+        "options": [
+            "Lỗi runtime",
+            "Lỗi compile: string không thể gán cho number",
+            "Không lỗi, React tự ép kiểu",
+            "Lỗi ở dòng useState"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 9,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Kết quả in ra là gì?\nclass Point { x: number; y: number; }\nconst p = new Point();\nconsole.log(p.x);",
+        "options": [
+            "0",
+            "null",
+            "undefined",
+            "Lỗi vì chưa khởi tạo giá trị trong constructor"
+        ],
+        "answer": "D"
+    },
+    {
+        "id": 10,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Hàm sau sẽ báo lỗi gì?\nfunction getLen<T>(arg: T): number { return arg.length; }",
+        "options": [
+            "Không lỗi",
+            "Lỗi vì T không chắc chắn có thuộc tính length",
+            "Lỗi vì thiếu kiểu trả về",
+            "Lỗi cú pháp T"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 11,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Utility type nào dùng để chọn một vài thuộc tính từ interface?\ninterface T { a: number; b: string; c: boolean; }\ntype NewT = ...<T, 'a' | 'b'>;",
+        "options": ["Omit", "Pick", "Extract", "Exclude"],
+        "answer": "B"
+    },
+    {
+        "id": 12,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Kết quả in ra console là gì?\nclass Box<T> {\n  val: T;\n  constructor(v: T) { this.val = v; }\n}\nconst b = new Box(100);\nconsole.log(typeof b.val);",
+        "options": ["string", "object", "number", "T"],
+        "answer": "C"
+    },
+    {
+        "id": 13,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Đoạn code sau in ra gì?\nclass Animal { move() { console.log('Moving'); } }\nclass Dog extends Animal { move() { console.log('Running'); } }\nconst d: Animal = new Dog();\nd.move();",
+        "options": ["Moving", "Running", "Error", "undefined"],
+        "answer": "B"
+    },
+    {
+        "id": 14,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Utility type nào biến tất cả thuộc tính thành chỉ đọc (không thể sửa)?",
+        "options": ["Readonly<T>", "Private<T>", "Const<T>", "Final<T>"],
+        "answer": "A"
+    },
+    {
+        "id": 15,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Kết quả in ra là gì?\nconst pair: [string, number] = ['Age', 20];\nconsole.log(pair[1]);",
+        "options": ["Age", "20", "undefined", "Lỗi"],
+        "answer": "B"
+    },
+    {
+        "id": 16,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Trong class, 'super()' dùng để làm gì trong constructor?",
+        "options": [
+            "Tạo biến toàn cục",
+            "Gọi constructor của class cha",
+            "Gọi chính nó",
+            "Kết thúc hàm"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 17,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Khi khai báo: const inputRef = useRef<HTMLInputElement>(null); \ninputRef.current có kiểu là gì?",
+        "options": ["string", "number", "HTMLInputElement | null", "any"],
+        "answer": "C"
+    },
+    {
+        "id": 18,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Đoạn code: type T = Omit<{a:1, b:2}, 'a'>; \nBiến kiểu T sẽ có thuộc tính nào?",
+        "options": ["Chỉ a", "Chỉ b", "Cả a và b", "Không có thuộc tính nào"],
+        "answer": "B"
+    },
+    {
+        "id": 19,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Lỗi gì xảy ra ở đây?\nclass Person { readonly name: string = 'A'; }\nconst p = new Person();\np.name = 'B';",
+        "options": [
+            "Lỗi runtime",
+            "Lỗi compile: Cannot assign to 'name' because it is a read-only property",
+            "Không lỗi",
+            "Lỗi vì p là const"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 20,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Classes, OOP, và Generics",
+        "question": "Kết quả của đoạn code:\nfunction log<T extends {id: number}>(item: T) { console.log(item.id); }\nlog({ name: 'Tùng' });",
+        "options": [
+            "Lỗi: Argument is not assignable to parameter (thiếu id)",
+            "undefined",
+            "In ra null",
+            "Lỗi cú pháp extends"
+        ],
+        "answer": "A"
     }
+,
+  {
+    "id": 1,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Kết quả in ra console là gì?\nfunction Log(constructor: Function) { console.log('Class created'); }\n@Log\nclass Asset { }",
+    "options": ["Class created", "undefined", "Không in ra gì cho đến khi new Asset()", "Error"],
+    "answer": "A"
+  },
+  {
+    "id": 2,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Để sử dụng Decorators trong TypeScript, tùy chỉnh nào trong tsconfig.json là bắt buộc?",
+    "options": ["\"strict\": true", "\"target\": \"ES5\"", "\"experimentalDecorators\": true", "\"emitDecoratorMetadata\": false"],
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Đoạn code sau in ra gì?\nfunction Task(target: any) { target.prototype.id = 1; }\n@Task\nclass Todo { id: number; }\nconst myTodo = new Todo();\nconsole.log(myTodo.id);",
+    "options": ["1", "undefined", "null", "Error"],
+    "answer": "A"
+  },
+  {
+    "id": 4,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Trong Property Decorator, nếu setter ném ra Error khi validate email không có '@', kết quả là gì?\n@ValidateEmail\nemail: string = 'admin'; ",
+    "options": ["Biến email nhận giá trị 'admin'", "Biến email nhận giá trị null", "Chương trình dừng và báo lỗi ValidationError", "Biến email nhận giá trị undefined"],
+    "answer": "C"
+  },
+  {
+    "id": 5,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Kết quả in ra là gì?\n// math.ts: export const PI = 3.14;\n// main.ts: import { PI as ChuVi } from './math';\nconsole.log(ChuVi);",
+    "options": ["PI", "3.14", "undefined", "ReferenceError: ChuVi is not defined"],
+    "answer": "B"
+  },
+  {
+    "id": 6,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Khi dùng 'export default Logger' trong file logger.ts, cách import nào sau đây là đúng?",
+    "options": ["import { Logger } from './logger';", "import * as Logger from './logger';", "import Logger from './logger';", "import { default as Logger } from './logger';"],
+    "answer": "C"
+  },
+  {
+    "id": 7,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Kết quả in ra console là gì?\ntry {\n  console.log('Try');\n  throw new Error();\n} catch {\n  console.log('Catch');\n} finally {\n  console.log('Finally');\n}",
+    "options": ["Try, Catch", "Try, Finally", "Try, Catch, Finally", "Catch, Finally"],
+    "answer": "C"
+  },
+  {
+    "id": 8,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Trong React (TypeScript), nếu một custom hook ném ra ValidationError, cách xử lý nào tốt nhất?",
+    "options": ["Dùng try/catch bao quanh nơi gọi hook", "Sử dụng Error Boundary hoặc xử lý trong useEffect/Event handler", "Không cần xử lý vì TS sẽ tự sửa lỗi", "Sử dụng 'any' để bỏ qua lỗi"],
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Barrel Export (file index.ts) có mục đích chính là gì?",
+    "options": ["Tăng tốc độ thực thi code", "Giảm dung lượng file bundle", "Gom nhóm các exports để import gọn hơn từ một đầu mối", "Bảo mật mã nguồn"],
+    "answer": "C"
+  },
+  {
+    "id": 10,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Kết quả in ra là gì?\nconst config = { port: 3000 } as const;\nconfig.port = 4000;",
+    "options": ["4000", "3000", "Lỗi compile: Cannot assign to 'port' because it is a read-only property", "undefined"],
+    "answer": "C"
+  },
+  {
+    "id": 11,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Đoạn mã sau thực hiện điều gì?\ntype CreateTodo = Omit<ITodo, 'id' | 'createdAt'>;",
+    "options": ["Tạo type mới chỉ bao gồm id và createdAt", "Tạo type mới loại bỏ id và createdAt từ ITodo", "Bắt buộc ITodo phải có id và createdAt", "Gộp id và createdAt vào ITodo"],
+    "answer": "B"
+  },
+  {
+    "id": 12,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Kết quả in ra console là gì?\nlet val: unknown = 'Hello';\nconsole.log(val.toUpperCase());",
+    "options": ["HELLO", "hello", "Lỗi compile: Object is of type 'unknown'", "undefined"],
+    "answer": "C"
+  },
+  {
+    "id": 13,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Method Decorator @Stopwatch đo thời gian chạy hàm bằng cách nào?",
+    "options": ["Đo thời gian compile", "Ghi đè thuộc tính 'value' của descriptor bằng một hàm mới chứa logic đo thời gian", "Sử dụng useEffect", "Tự động thêm console.time() vào mọi dòng code"],
+    "answer": "B"
+  },
+  {
+    "id": 14,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Trong Todo App ví dụ, TodoStatus được định nghĩa là gì để có các giá trị 'todo', 'done'?",
+    "options": ["Interface", "Class", "Enum", "Decorator"],
+    "answer": "C"
+  },
+  {
+    "id": 15,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Lệnh 'import * as Utils from \"./utils\"' nghĩa là gì?",
+    "options": ["Chỉ import hàm default", "Import toàn bộ các named exports vào một đối tượng tên là Utils", "Xóa sạch file utils sau khi import", "Import nhưng không cho phép sử dụng"],
+    "answer": "B"
+  },
+  {
+    "id": 16,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Trong xử lý lỗi async, nếu gọi API thất bại mà không có catch, giá trị trả về của 'await fetch()' là gì?",
+    "options": ["null", "undefined", "Một Promise bị Rejected và gây crash nếu không bắt lỗi", "Một Error object"],
+    "answer": "C"
+  },
+  {
+    "id": 17,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Kết quả in ra là gì?\nconst user = { name: 'Tùng' };\nconsole.log(user?.address?.street);",
+    "options": ["Error", "undefined", "null", "Street rỗng"],
+    "answer": "B"
+  },
+  {
+    "id": 18,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Decorator Factory khác gì Decorator thông thường?",
+    "options": ["Nó là một hàm trả về một decorator, cho phép truyền tham số khi sử dụng", "Nó chạy nhanh hơn", "Nó chỉ dùng được cho class", "Nó không cần tsconfig"],
+    "answer": "A"
+  },
+  {
+    "id": 19,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Khi bật 'strictNullChecks': true, đoạn code 'let x: number = null;' sẽ:",
+    "options": ["Chạy bình thường", "Gán x bằng 0", "Báo lỗi compile-time", "Tự động chuyển x sang kiểu 'any'"],
+    "answer": "C"
+  },
+  {
+    "id": 20,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Advanced TypeScript - Decorators, Modules, và Thực Hành Dự Án",
+    "question": "Trong TypeScript, 'Re-export' từ file index.ts có cú pháp nào đúng?",
+    "options": ["import { User } from './User';", "export { User } from './User';", "export default User from './User';", "export User;"],
+    "answer": "B"
+  }
+,
+  {
+    "id": 1,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Kết quả in ra console là gì?\n// math.js: module.exports = (a, b) => a + b;\n// app.js: const add = require('./math');\nconsole.log(add(5, 10));",
+    "options": ["510", "15", "undefined", "Error: add is not a function"],
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Trong ES Modules, đoạn code sau sẽ bị lỗi gì?\n// app.js\nimport { add } from './math';",
+    "options": ["Không lỗi", "Lỗi vì thiếu từ khóa 'require'", "Lỗi vì thiếu phần mở rộng '.js' trong đường dẫn file", "Lỗi vì không dùng dấu ngoặc nhọn"],
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Để sử dụng 'import/export' thay vì 'require', bạn cần cấu hình gì trong package.json?",
+    "options": ["\"mode\": \"module\"", \"type\": \"module\"", "\"script\": \"esm\"", "\"standard\": \"es6\""],
+    "answer": "B"
+  },
+  {
+    "id": 4,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Kết quả in ra là gì?\n// utils.js: export const name = 'Node'; export default 'JS';\n// app.js: import appName, { name } from './utils.js';\nconsole.log(name, appName);",
+    "options": ["Node JS", "JS Node", "Node Node", "JS JS"],
+    "answer": "A"
+  },
+  {
+    "id": 5,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Khi chạy lệnh 'npm install express', thư mục nào sẽ được tạo ra để lưu trữ mã nguồn của thư viện?",
+    "options": ["bin", "libraries", "node_modules", "packages"],
+    "answer": "C"
+  },
+  {
+    "id": 6,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Đoạn code Express sau sẽ trả về kết quả gì tại http://localhost:3000/ ?\napp.get('/', (req, res) => {\n  res.send('Welcome');\n});",
+    "options": ["Một file JSON", "Chuỗi văn bản 'Welcome'", "Lỗi 404", "Một trang HTML trống"],
+    "answer": "B"
+  },
+  {
+    "id": 7,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Lệnh 'npm install --save-dev nodemon' có ý nghĩa gì?",
+    "options": ["Cài đặt nodemon cho môi trường production", "Cài đặt nodemon và chỉ dùng trong quá trình phát triển (development)", "Gỡ cài đặt nodemon", "Cài đặt nodemon vào thư mục gốc của hệ điều hành"],
+    "answer": "B"
+  },
+  {
+    "id": 8,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Trong ES Modules, làm thế nào để lấy đường dẫn thư mục hiện tại (__dirname)?",
+    "options": ["Sử dụng biến toàn cục __dirname có sẵn", "Dùng path.resolve()", "Sử dụng fileURLToPath và import.meta.url", "Dùng process.cwd()"],
+    "answer": "C"
+  },
+  {
+    "id": 9,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Kết quả của đoạn code sau là gì?\nconst users = [{id: 1, name: 'A'}, {id: 2, name: 'B'}];\nconst newId = Math.max(...users.map(u => u.id), 0) + 1;\nconsole.log(newId);",
+    "options": ["1", "2", "3", "NaN"],
+    "answer": "C"
+  },
+  {
+    "id": 10,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Middleware sau đây thực hiện nhiệm vụ gì?\napp.use(express.json());",
+    "options": ["Kết nối với cơ sở dữ liệu", "Log các request ra console", "Cho phép Express hiểu và đọc dữ liệu định dạng JSON từ body của request", "Nén dữ liệu trả về"],
+    "answer": "C"
+  },
+  {
+    "id": 11,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Lệnh nào dùng để khởi tạo một dự án Node.js mới với các thiết lập mặc định?",
+    "options": ["npm start", "npm init -y", "npm install", "node app.js"],
+    "answer": "B"
+  },
+  {
+    "id": 12,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Trong Express, 'req.params.id' dùng để lấy giá trị từ đâu?",
+    "options": ["Từ body của request", "Từ query string (?id=...)", "Từ URL chứa tham số (ví dụ: /users/:id)", "Từ headers của request"],
+    "answer": "C"
+  },
+  {
+    "id": 13,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Kết quả in ra là gì?\n// user.js: exports.age = 20;\n// app.js: const user = require('./user');\nconsole.log(user.age);",
+    "options": ["20", "undefined", "Error", "{} "],
+    "answer": "A"
+  },
+  {
+    "id": 14,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Hàm 'fs.readFileSync' trả về dữ liệu kiểu gì nếu không chỉ định 'utf8'?",
+    "options": ["String", "JSON", "Buffer (dữ liệu nhị phân)", "Array"],
+    "answer": "C"
+  },
+  {
+    "id": 15,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Đoạn code sau in ra gì?\napp.use((req, res, next) => {\n  console.log('A');\n  next();\n});\napp.get('/', (req, res) => {\n  console.log('B');\n  res.send('Done');\n});",
+    "options": ["A sau đó B", "B sau đó A", "Chỉ A", "Chỉ B"],
+    "answer": "A"
+  },
+  {
+    "id": 16,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "React Hooks (như useState) có sử dụng được trong file server.js của Node.js không?",
+    "options": ["Có, vì cả hai đều dùng JavaScript", "Không, vì Hooks là kiến thức dành riêng cho UI/Frontend (React)", "Chỉ dùng được nếu cài express-hooks", "Chỉ dùng được trong hàm async"],
+    "answer": "B"
+  },
+  {
+    "id": 17,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "File package-lock.json có vai trò gì?",
+    "options": ["Chứa mã nguồn của dự án", "Khóa các phiên bản chính xác của dependencies để đảm bảo tính đồng nhất", "Dùng để chạy các câu lệnh scripts", "Thay thế cho file package.json"],
+    "answer": "B"
+  },
+  {
+    "id": 18,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Khi dùng 'res.status(201).json(data)', mã trạng thái 201 có ý nghĩa gì?",
+    "options": ["Thành công (OK)", "Đã tạo mới thành công (Created)", "Yêu cầu sai (Bad Request)", "Lỗi server nội bộ"],
+    "answer": "B"
+  },
+  {
+    "id": 19,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Lệnh 'yarn add express' tương đương với lệnh nào trong NPM?",
+    "options": ["npm init express", "npm install express", "npm run express", "npm build express"],
+    "answer": "B"
+  },
+  {
+    "id": 20,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Node.js Cơ Bản: Hướng Dẫn Cho Người Mới Bắt Đầu",
+    "question": "Kết quả in ra là gì?\nconst path = require('path');\nconst fullPath = path.join('users', 'data', 'file.txt');\nconsole.log(fullPath);",
+    "options": ["users/data/file.txt (hoặc users\\data\\file.txt tùy OS)", "usersdatafile.txt", "/file.txt", "Error"],
+    "answer": "A"
+  }
+,
+  {
+    "id": 1,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Kết quả hiển thị là gì khi chạy đoạn code sau?\n<View>\n  Chào bạn!\n</View>",
+    "options": ["Hiển thị chữ 'Chào bạn!'", "Không hiển thị gì", "Lỗi: 'Strings must be rendered within a <Text> component'", "Hiển thị chữ trong một ô vuông trắng"],
+    "answer": "C"
+  },
+  {
+    "id": 2,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Trong React Native, giá trị mặc định của thuộc tính 'flexDirection' trong một <View> là gì?",
+    "options": ["row", "row-reverse", "column", "column-reverse"],
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Đoạn code sau in ra console giá trị bao nhiêu khi nhấn nút lần đầu?\nconst [count, setCount] = useState(0);\nconst press = () => {\n  setCount(count + 1);\n  console.log(count);\n};",
+    "options": ["1", "0", "undefined", "NaN"],
+    "answer": "B"
+  },
+  {
+    "id": 4,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Để hiển thị hình ảnh từ một đường dẫn URL, ta dùng cú pháp nào cho component <Image />?",
+    "options": ["source={require('./url')}", "src='https://...' ", "source={{ uri: 'https://...' }}", "imagePath='https://...' "],
+    "answer": "C"
+  },
+  {
+    "id": 5,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Màu nền của View sẽ là gì?\n<View style={[styles.box, { backgroundColor: 'red' }]} />\nconst styles = StyleSheet.create({ box: { backgroundColor: 'blue' } });",
+    "options": ["Màu xanh (blue)", "Màu đỏ (red)", "Màu tím (kết hợp)", "Báo lỗi cú pháp"],
+    "answer": "B"
+  },
+  {
+    "id": 6,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Component nào được khuyến nghị sử dụng thay thế cho TouchableOpacity để tạo nút nhấn tùy chỉnh?",
+    "options": ["Button", "Clickable", "Pressable", "Input"],
+    "answer": "C"
+  },
+  {
+    "id": 7,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Đoạn code: <View style={{ flex: 1, justifyContent: 'center' }} /> sẽ căn chỉnh các phần tử con như thế nào (nếu hướng là column)?",
+    "options": ["Căn giữa theo chiều ngang", "Căn giữa theo chiều dọc", "Dạt sang hai bên", "Dạt xuống cuối màn hình"],
+    "answer": "B"
+  },
+  {
+    "id": 8,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Trong component <TextInput />, prop nào dùng để lấy giá trị text mỗi khi người dùng nhập?",
+    "options": ["onTextChange", "onChangeText", "onKeyPress", "valueChange"],
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Kết quả của kiểu layout này là gì?\n<View style={{ flexDirection: 'row' }}>\n  <View style={{ flex: 1, backgroundColor: 'red' }} />\n  <View style={{ flex: 2, backgroundColor: 'blue' }} />\n</View>",
+    "options": ["Hai ô bằng nhau", "Ô đỏ chiếm 1/3, ô xanh chiếm 2/3 chiều ngang", "Ô đỏ chiếm 2/3, ô xanh chiếm 1/3 chiều ngang", "Hai ô xếp chồng lên nhau"],
+    "answer": "B"
+  },
+  {
+    "id": 10,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Để làm cho một danh sách có thể cuộn được, ta bao bọc chúng trong component nào?",
+    "options": ["ListView", "ScrollView", "ViewContainer", "SafeView"],
+    "answer": "B"
+  },
+  {
+    "id": 11,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Trong TypeScript, cách định nghĩa kiểu cho một danh sách Todo trong useState nào sau đây là đúng?",
+    "options": ["useState<Todo[]>([]);", "useState(Todo[]);", "useState<Array>([]);", "useState([]);"],
+    "answer": "A"
+  },
+  {
+    "id": 12,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Thuộc tính styling nào dùng để tạo bóng đổ chỉ có tác dụng trên hệ điều hành Android?",
+    "options": ["shadowColor", "shadowOpacity", "elevation", "boxShadow"],
+    "answer": "C"
+  },
+  {
+    "id": 13,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Lệnh 'npx expo start' dùng để làm gì?",
+    "options": ["Build ứng dụng ra file APK", "Khởi chạy development server và hiển thị QR code", "Cài đặt các thư viện mới", "Xóa dự án hiện tại"],
+    "answer": "B"
+  },
+  {
+    "id": 14,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Đoạn code nào dùng để lấy chiều rộng màn hình thiết bị một cách responsive?",
+    "options": ["Dimensions.get('window').width", "Screen.width", "window.innerWidth", "CSS.width"],
+    "answer": "A"
+  },
+  {
+    "id": 15,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Trong component <Text>, prop 'numberOfLines={1}' có tác dụng gì?",
+    "options": ["Chỉ hiển thị 1 dòng duy nhất và cắt bớt phần thừa", "Tăng kích thước chữ gấp đôi", "Cho phép nhập 1 dòng text", "Ẩn toàn bộ text"],
+    "answer": "A"
+  },
+  {
+    "id": 16,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Để ẩn nội dung mật khẩu khi nhập trong <TextInput />, ta dùng prop nào?",
+    "options": ["hideText={true}", "type='password'", "secureTextEntry={true}", "password={true}"],
+    "answer": "C"
+  },
+  {
+    "id": 17,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Trong Flexbox, 'alignItems: center' sẽ căn chỉnh phần tử con theo trục nào?",
+    "options": ["Trục chính (Main Axis)", "Trục phụ (Cross Axis)", "Cả hai trục", "Góc trên bên trái"],
+    "answer": "B"
+  },
+  {
+    "id": 18,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Kết quả của đoạn code sau là gì?\n<Pressable style={({ pressed }) => ({ opacity: pressed ? 0.5 : 1 })} />",
+    "options": ["Component luôn mờ 50%", "Component mờ đi khi người dùng nhấn vào", "Component bị ẩn hoàn toàn", "Component không thể nhấn được"],
+    "answer": "B"
+  },
+  {
+    "id": 19,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "Đâu là cách đúng để thêm một item mới vào mảng state 'todos'?",
+    "options": ["todos.push(newItem);", "setTodos(todos.push(newItem));", "setTodos([...todos, newItem]);", "setTodos(todos + newItem);"],
+    "answer": "C"
+  },
+  {
+    "id": 20,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Toàn Diện: React Native với Expo và TypeScript",
+    "question": "File cấu hình chính của ứng dụng Expo (chứa tên, icon, phiên bản) là file nào?",
+    "options": ["package.json", "app.json", "tsconfig.json", "index.tsx"],
+    "answer": "B"
+  }
+,
+  {
+    "id": 1,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Đoạn code sau in ra giá trị gì tại console khi nhấn nút lần đầu?\nconst [count, setCount] = useState<number>(0);\nconst handlePress = () => {\n  setCount(count + 1);\n  console.log(count);\n};",
+    "options": ["1", "0", "undefined", "NaN"],
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Trong TypeScript, dòng code nào sau đây sẽ gây lỗi biên dịch (compile error)?",
+    "options": ["const [val, setVal] = useState<number>(0);", "const [user, setUser] = useState<User | null>(null);", "const [text, setText] = useState<string>(123);", "const [items, setItems] = useState<string[]>([]);"],
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Hàm useEffect sau đây sẽ chạy bao nhiêu lần nếu component không bị unmount?\nuseEffect(() => {\n  console.log('Effect run');\n}, []);",
+    "options": ["Chạy sau mỗi lần render", "Chạy 2 lần (lúc mount và unmount)", "Chỉ chạy một lần duy nhất sau lần render đầu tiên", "Không bao giờ chạy"],
+    "answer": "C"
+  },
+  {
+    "id": 4,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Kết quả in ra console là gì?\nconst count = useRef(0);\nconst [val, setVal] = useState(0);\nuseEffect(() => {\n  count.current += 1;\n});\n// Giả sử component render lại 2 lần do setVal",
+    "options": ["count.current luôn là 0", "count.current tăng nhưng không gây render lại", "Lỗi vì không thể gán giá trị cho .current", "count.current reset về 0 mỗi lần render"],
+    "answer": "B"
+  },
+  {
+    "id": 5,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Đoạn code sau có vi phạm quy tắc Hooks không?\nif (userLoggedIn) {\n  useEffect(() => { fetchOrders(); }, []);\n}",
+    "options": ["Không, vì useEffect đặt trong block là hợp lệ", "Có, vì Hook không được gọi bên trong câu lệnh điều kiện", "Có, vì thiếu dependency array", "Không, nếu userLoggedIn là hằng số"],
+    "answer": "B"
+  },
+  {
+    "id": 6,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Để truy cập phương thức focus() của một TextInput trong Expo, bạn nên dùng Hook nào?",
+    "options": ["useState", "useMemo", "useRef", "useCallback"],
+    "answer": "C"
+  },
+  {
+    "id": 7,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Giá trị của 'memoizedValue' sẽ thay đổi khi nào?\nconst memoizedValue = useMemo(() => compute(a, b), [a]);",
+    "options": ["Khi a thay đổi", "Khi b thay đổi", "Khi cả a và b thay đổi", "Sau mỗi lần component render"],
+    "answer": "A"
+  },
+  {
+    "id": 8,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Trong useReducer, hàm nào được dùng để gửi một action nhằm cập nhật state?",
+    "options": ["commit", "dispatch", "setState", "send"],
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Đoạn code sau in ra gì khi component bị hủy (unmount)?\nuseEffect(() => {\n  return () => console.log('Cleanup');\n}, []);",
+    "options": ["In ra 'Cleanup' ngay khi mount", "In ra 'Cleanup' khi bất kỳ state nào thay đổi", "In ra 'Cleanup' khi component unmount", "Không in ra gì"],
+    "answer": "C"
+  },
+  {
+    "id": 10,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Lợi ích chính của việc sử dụng useCallback khi truyền props xuống component con là gì?",
+    "options": ["Tăng tốc độ tính toán", "Ngăn chặn việc tạo lại hàm, giúp tối ưu render ở component con", "Tự động cập nhật state", "Thay thế cho useEffect"],
+    "answer": "B"
+  },
+  {
+    "id": 11,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Điều gì xảy ra nếu bạn gọi 'useContext(MyContext)' mà không có 'MyContext.Provider' ở cấp cha?",
+    "options": ["Ứng dụng bị crash ngay lập tức", "Hook trả về giá trị mặc định được định nghĩa khi tạo Context", "Hook trả về undefined", "Lỗi compile-time"],
+    "answer": "B"
+  },
+  {
+    "id": 12,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Kết quả in ra là gì?\nconst [count, setCount] = useState(0);\nconst increment = () => {\n  setCount(prev => prev + 1);\n  setCount(prev => prev + 1);\n};\n// Sau khi gọi increment() 1 lần",
+    "options": ["count = 1", "count = 2", "count = 0", "count = undefined"],
+    "answer": "B"
+  },
+  {
+    "id": 13,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Custom Hook phải tuân theo quy ước đặt tên nào?",
+    "options": ["Bắt đầu bằng từ khóa 'hook'", "Bắt đầu bằng từ khóa 'use'", "Phải viết hoa chữ cái đầu", "Kết thúc bằng từ 'Hook'"],
+    "answer": "B"
+  },
+  {
+    "id": 14,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Trong useEffect, nếu không truyền dependency array (tham số thứ 2), effect sẽ chạy khi nào?",
+    "options": ["Chỉ chạy 1 lần", "Không bao giờ chạy", "Chạy sau mỗi lần render", "Chỉ chạy khi state thay đổi"],
+    "answer": "C"
+  },
+  {
+    "id": 15,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Tại sao không nên cập nhật state trực tiếp như 'state.value = 10'?",
+    "options": ["Vì TypeScript sẽ báo lỗi", "Vì React sẽ không nhận biết được thay đổi để render lại", "Vì nó làm chậm ứng dụng", "Vì state là hằng số"],
+    "answer": "B"
+  },
+  {
+    "id": 16,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Kết quả của đoạn code: \nconst ref = useRef(10);\nuseEffect(() => { ref.current = 20; }, []);\nreturn <Text>{ref.current}</Text>;",
+    "options": ["Hiển thị 20", "Hiển thị 10 (vì useRef thay đổi không gây render lại)", "Hiển thị undefined", "Lỗi vì ref là object"],
+    "answer": "B"
+  },
+  {
+    "id": 17,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Để xử lý logic login phức tạp với nhiều trạng thái (loading, success, error), Hook nào thường được ưu tiên thay cho useState?",
+    "options": ["useEffect", "useCallback", "useReducer", "useRef"],
+    "answer": "C"
+  },
+  {
+    "id": 18,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Đoạn code sau gây ra lỗi gì?\nfunction MyComponent() {\n  const [data, setData] = useState(null);\n  const fetchData = () => {\n     const [status, setStatus] = useState('idle'); // Lỗi ở đây\n  }\n}",
+    "options": ["Lỗi thiếu kiểu dữ liệu", "Lỗi gọi Hook bên trong một hàm thông thường (nested function)", "Lỗi vì status chưa được sử dụng", "Không có lỗi"],
+    "answer": "B"
+  },
+  {
+    "id": 19,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Trong TypeScript, làm sao để khai báo useRef cho một TextInput?",
+    "options": ["useRef<string>(null)", "useRef<TextInput>(null)", "useRef<Element>(null)", "useRef<any>(null)"],
+    "answer": "B"
+  },
+  {
+    "id": 20,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Sử Dụng React Hooks với TypeScript trong Expo",
+    "question": "Hàm 'isMounted' trong ví dụ Custom Hook 'useFetch' của tài liệu dùng để làm gì?",
+    "options": ["Kiểm tra kết nối internet", "Ngăn chặn việc gọi setData trên một component đã bị unmount", "Tự động render lại component", "Lưu trữ dữ liệu cache"],
+    "answer": "B"
+  }
+,
+  {
+    "id": 1,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Theo quy tắc File-based routing, file 'app/profile/settings.tsx' sẽ tương ứng với URL nào?",
+    "options": ["/settings", "/profile", "/profile/settings", "/app/profile/settings"],
+    "answer": "C"
+  },
+  {
+    "id": 2,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "File nào đóng vai trò khởi tạo ứng dụng, load fonts và cấu hình navigation thay thế cho App.tsx truyền thống?",
+    "options": ["app/index.tsx", "app/_layout.tsx", "app/main.tsx", "index.js"],
+    "answer": "B"
+  },
+  {
+    "id": 3,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Kết quả khi chạy đoạn code sau là gì?\n<Link href='/about'>\n  <Text>Go to About</Text>\n</Link>",
+    "options": ["Chuyển đến màn hình tương ứng file app/about.tsx", "Lỗi vì thiếu onPress", "Chỉ hiển thị text mà không thể nhấn", "Chuyển đến màn hình components/about.tsx"],
+    "answer": "A"
+  },
+  {
+    "id": 4,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Đoạn code sau in ra giá trị gì khi truy cập URL '/user/123'?\nconst { id } = useLocalSearchParams();\nconsole.log(id);",
+    "options": ["undefined", "id", "123", "null"],
+    "answer": "C"
+  },
+  {
+    "id": 5,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Trong useRouter(), phương thức nào dùng để thay thế màn hình hiện tại thay vì thêm một màn hình mới vào stack?",
+    "options": ["router.push()", "router.navigate()", "router.replace()", "router.back()"],
+    "answer": "C"
+  },
+  {
+    "id": 6,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Khi sử dụng Link với một Custom Component như Pressable, ta cần thêm thuộc tính nào để tránh lỗi?",
+    "options": ["asChild", "isCustom", "passHref", "asComponent"],
+    "answer": "A"
+  },
+  {
+    "id": 7,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "URL nào là đúng cho file 'app/(auth)/login.tsx'?",
+    "options": ["/(auth)/login", "/auth/login", "/login", "/app/login"],
+    "answer": "C"
+  },
+  {
+    "id": 8,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Để tạo thanh điều hướng ở dưới cùng (bottom tabs), bạn cần sử dụng Component nào trong file layout của nhóm đó?",
+    "options": ["<Stack />", "<Tabs />", "<Drawer />", "<View />"],
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Kết quả của đoạn code sau là gì?\nif (!isLoggedIn) return <Redirect href='/login' />;",
+    "options": ["Hiển thị một nút bấm dẫn đến trang login", "Tự động chuyển hướng người dùng sang màn hình login", "Báo lỗi vì không thể return Component điều hướng", "Không có gì xảy ra"],
+    "answer": "B"
+  },
+  {
+    "id": 10,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Trong Stack Navigation, thuộc tính 'presentation: modal' sẽ thay đổi hành vi hiển thị màn hình như thế nào?",
+    "options": ["Màn hình đẩy từ phải sang trái", "Màn hình popup từ dưới lên", "Màn hình mờ dần", "Màn hình không có header"],
+    "answer": "B"
+  },
+  {
+    "id": 11,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Làm thế nào để thay đổi tiêu đề (title) của Header một cách linh hoạt bên trong một Component?",
+    "options": ["Dùng useState", "Dùng navigation.setOptions() bên trong useEffect", "Dùng useRouter().title", "Sửa trực tiếp trong app.json"],
+    "answer": "B"
+  },
+  {
+    "id": 12,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Nếu file cấu hình là 'app/user/[id].tsx', cách nào để điều hướng kèm params bằng router object là đúng?",
+    "options": ["router.push('/user/123')", "router.push({ pathname: '/user/[id]', params: { id: '123' } })", "Cả A và B đều đúng", "router.navigate('123')"],
+    "answer": "C"
+  },
+  {
+    "id": 13,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Khi truy cập URL '/search?query=react', làm sao để lấy được giá trị 'react'?",
+    "options": ["useLocalSearchParams().query", "useRouter().params", "useNavigation().getQuery()", "useGlobalSearchParams().react"],
+    "answer": "A"
+  },
+  {
+    "id": 14,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Mục đích của việc đặt tên thư mục trong dấu ngoặc đơn, ví dụ '(tabs)', là gì?",
+    "options": ["Để ẩn thư mục khỏi VS Code", "Để tạo nhóm route mà không làm thay đổi đường dẫn URL", "Để đánh dấu đây là thư mục chứa logic", "Để tăng tốc độ load ứng dụng"],
+    "answer": "B"
+  },
+  {
+    "id": 15,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Trong file _layout.tsx, 'unstable_settings' dùng để làm gì?",
+    "options": ["Cấu hình màn hình khởi đầu (initial route) khi deep link", "Bật chế độ debug cho navigation", "Thay đổi màu sắc toàn bộ app", "Xử lý lỗi runtime"],
+    "answer": "A"
+  },
+  {
+    "id": 16,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Lỗi 'No routes matched location' thường xảy ra do nguyên nhân nào?",
+    "options": ["Thiếu file package.json", "File màn hình nằm ngoài thư mục app/", "Điện thoại không có internet", "Thiếu useEffect"],
+    "answer": "B"
+  },
+  {
+    "id": 17,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Để tạo một nút quay lại (back) bằng code, bạn sử dụng lệnh nào?",
+    "options": ["router.back()", "router.push('..')", "router.pop()", "Cả A và B đều đúng"],
+    "answer": "D"
+  },
+  {
+    "id": 18,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Làm sao để hiển thị một chấm đỏ thông báo (badge) trên một tab cụ thể?",
+    "options": ["Dùng useState", "Dùng thuộc tính 'tabBarBadge' trong options của Tabs.Screen", "Thêm một View vào header", "Sửa trong app.json"],
+    "answer": "B"
+  },
+  {
+    "id": 19,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Trong cấu trúc lồng nhau (Nested Layouts), file layout ở thư mục con sẽ áp dụng cho?",
+    "options": ["Toàn bộ ứng dụng", "Chỉ các file nằm trong thư mục con đó", "Chỉ file index.tsx của thư mục đó", "Các file ở thư mục cha"],
+    "answer": "B"
+  },
+  {
+    "id": 20,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng Dẫn Điều Hướng Trong React Native với Expo Router",
+    "question": "Hook nào giúp kiểm tra trạng thái root navigation đã sẵn sàng hay chưa để tránh lỗi điều hướng quá sớm?",
+    "options": ["useRouter", "useRootNavigationState", "useLocalSearchParams", "useNavigation"],
+    "answer": "B"
+  }
+,
+  {
+    "id": 1,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Kết quả in ra console là gì khi khởi tạo form với defaultValues sau?\nconst { control } = useForm({ defaultValues: { email: 'test@gmail.com' } });\n<Controller name='email' control={control} render={({ field }) => console.log(field.value)} />",
+    "options": ["null", "undefined", "test@gmail.com", "Chuỗi rỗng"],
+    "answer": "C"
+  },
+  {
+    "id": 2,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Trong component Controller, hàm nào được sử dụng để cập nhật giá trị vào form khi người dùng nhập liệu trên TextInput?",
+    "options": ["onBlur", "onChangeText", "field.onChange", "setValue"],
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Nếu field 'fullName' có rule { required: 'Bắt buộc' } và người dùng để trống khi nhấn Submit, giá trị của errors.fullName.message là gì?",
+    "options": ["undefined", "null", "Bắt buộc", "true"],
+    "answer": "C"
+  },
+  {
+    "id": 4,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Đoạn code: rules={{ minLength: { value: 3, message: 'Quá ngắn' } }}. Nếu người dùng nhập 'An', thông báo lỗi hiển thị sẽ là gì?",
+    "options": ["Không hiển thị lỗi", "Quá ngắn", "minLength error", "Error: 3"],
+    "answer": "B"
+  },
+  {
+    "id": 5,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Kết quả của pattern validate email /^[^\s@]+@[^\s@]+\.[^\s@]+$/ với chuỗi 'abc@com' (thiếu tên miền phụ) là gì theo logic trong tài liệu?",
+    "options": ["Hợp lệ (True)", "Không hợp lệ (False)", "Báo lỗi cú pháp Regex", "Trả về null"],
+    "answer": "B"
+  },
+  {
+    "id": 6,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Hook nào dùng để lấy giá trị thời gian thực của một trường (ví dụ password) để so sánh với trường khác (confirmPassword)?",
+    "options": ["useWatch", "watch()", "getValues()", "Cả B và C đều đúng"],
+    "answer": "D"
+  },
+  {
+    "id": 7,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Đoạn code sau trả về gì nếu value không bằng passwordValue?\nvalidate: (value) => value === passwordValue || 'Không khớp'",
+    "options": ["true", "false", "Không khớp", "undefined"],
+    "answer": "C"
+  },
+  {
+    "id": 8,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Hàm handleSubmit(onSubmit, onSubmitError) sẽ thực hiện hành động nào nếu form có lỗi validate?",
+    "options": ["Gọi hàm onSubmit", "Gọi hàm onSubmitError", "Không làm gì cả", "Reset form"],
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Trong formState, thuộc tính 'isSubmitting' sẽ chuyển sang 'true' khi nào?",
+    "options": ["Khi người dùng bắt đầu gõ", "Khi hàm onSubmit (async) đang được thực thi", "Khi có lỗi validate", "Khi form được reset"],
+    "answer": "B"
+  },
+  {
+    "id": 10,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Sau khi gọi hàm reset() từ useForm, các giá trị trong TextInput sẽ trở về trạng thái nào?",
+    "options": ["Chuỗi rỗng", "Giá trị ban đầu trong defaultValues", "Giá trị null", "Giữ nguyên giá trị đang nhập"],
+    "answer": "B"
+  },
+  {
+    "id": 11,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Tại sao tài liệu khuyên dùng Controller thay vì register trực tiếp như trên Web cho React Native?",
+    "options": ["Vì React Native chạy nhanh hơn", "Vì TextInput không hỗ trợ trực tiếp ref như thẻ input HTML", "Vì Controller bảo mật hơn", "Vì register không hỗ trợ TypeScript"],
+    "answer": "B"
+  },
+  {
+    "id": 12,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Khi khai báo useForm<RegisterFormData>(), mục đích chính của RegisterFormData là gì?",
+    "options": ["Để tạo giao diện", "Để định nghĩa kiểu dữ liệu và hỗ trợ autocomplete/check lỗi cho các field", "Để kết nối với database", "Để thay thế CSS"],
+    "answer": "B"
+  },
+  {
+    "id": 13,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Trong hàm onSubmit, tham số 'data' nhận được sẽ có định dạng gì?",
+    "options": ["Một mảng các chuỗi", "Một đối tượng JSON chứa key-value của các trường trong form", "Một chuỗi duy nhất", "Dữ liệu kiểu Buffer"],
+    "answer": "B"
+  },
+  {
+    "id": 14,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Lệnh render={({ field: { onBlur, onChange, value } }) => (...)} sử dụng kỹ thuật gì trong JavaScript?",
+    "options": ["Hoisting", "Destructuring", "Closure", "Spread Operator"],
+    "answer": "B"
+  },
+  {
+    "id": 15,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Nếu một field không có 'rules', khi submit form, field đó sẽ có kết quả validate như thế nào?",
+    "options": ["Luôn báo lỗi", "Luôn hợp lệ (True)", "Bị bỏ qua khỏi object data", "Gây crash ứng dụng"],
+    "answer": "B"
+  },
+  {
+    "id": 16,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Giá trị của errors.email?.message sẽ là gì nếu email đúng định dạng và không có lỗi?",
+    "options": ["'' (Chuỗi rỗng)", "null", "undefined", "true"],
+    "answer": "C"
+  },
+  {
+    "id": 17,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Trong styles, đoạn code '[styles.input, errors.fullName && styles.inputError]' có ý nghĩa gì?",
+    "options": ["Xóa style cũ", "Gộp style, chỉ áp dụng inputError nếu có lỗi fullName", "Luôn áp dụng cả hai style", "Báo lỗi cú pháp"],
+    "answer": "B"
+  },
+  {
+    "id": 18,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Hàm fakeRegisterApi sử dụng 'new Promise' và 'setTimeout' để mô phỏng điều gì?",
+    "options": ["Lỗi mạng", "Thời gian chờ phản hồi từ Server (API call)", "Tốc độ nhập liệu của người dùng", "Việc render lại giao diện"],
+    "answer": "B"
+  },
+  {
+    "id": 19,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Thuộc tính 'secureTextEntry' trong TextInput (được dùng cho password) có tác dụng gì?",
+    "options": ["Mã hóa dữ liệu gửi lên API", "Ẩn ký tự nhập vào (hiển thị dạng dấu chấm)", "Bắt buộc phải có chữ hoa", "Ngăn chặn copy-paste"],
+    "answer": "B"
+  },
+  {
+    "id": 20,
+    "subject": "Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn validate form với React Hook Form trong React Native (TypeScript)",
+    "question": "Luồng xử lý khi nhấn nút Đăng ký là gì?",
+    "options": ["Submit -> API -> Validate", "Validate -> Nếu hợp lệ -> Submit -> API", "API -> Validate -> Submit", "Submit -> Validate -> API"],
+    "answer": "B"
+  }
+,
+  {
+    "id": 1,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Kết quả in ra console là gì khi nhấn nút 'Tăng' lần đầu tiên?\nconst [count, setCount] = useState(0);\nconst handlePress = () => {\n  setCount(count + 1);\n  console.log(count);\n};",
+    "options": ["1", "0", "undefined", "NaN"],
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Trong tài liệu, 'useState' được khuyến nghị sử dụng khi nào?",
+    "options": ["Khi cần chia sẻ state cho toàn bộ ứng dụng", "Khi state chỉ dùng trong một component duy nhất", "Khi muốn tránh re-render hoàn toàn", "Khi làm dự án cực lớn"],
+    "answer": "B"
+  },
+  {
+    "id": 3,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Đoạn code sau dùng để làm gì?\nexport const CounterContext = createContext();",
+    "options": ["Tạo một state cục bộ", "Tạo một đối tượng Context để chia sẻ dữ liệu", "Tạo một store trong Zustand", "Khởi tạo một Reducer"],
+    "answer": "B"
+  },
+  {
+    "id": 4,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Để các component con có thể truy cập dữ liệu từ Context, ta phải bọc chúng trong Component nào?",
+    "options": ["<CounterContext.Consumer>", "<CounterContext.Provider>", "<CounterProvider.Global>", "<StateProvider>"],
+    "answer": "B"
+  },
+  {
+    "id": 5,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Kết quả của đoạn code sau là gì?\nconst { count } = useContext(CounterContext);\nreturn <Text>{count}</Text>;",
+    "options": ["Hiển thị giá trị count từ Provider gần nhất", "Báo lỗi vì không có useState", "Luôn hiển thị 0", "Lỗi vì thiếu tham số truyền vào"],
+    "answer": "A"
+  },
+  {
+    "id": 6,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Nhược điểm lớn nhất của 'useContext' khi quản lý state phức tạp được nhắc đến là gì?",
+    "options": ["Khó học", "Phải cài đặt thư viện ngoài", "Có thể gây re-render không mong muốn cho các component không liên quan", "Không hỗ trợ TypeScript"],
+    "answer": "C"
+  },
+  {
+    "id": 7,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Lệnh nào dùng để cài đặt thư viện Zustand?",
+    "options": ["npm install react-zustand", "npm install zustand", "npm add state-zustand", "expo install zustand-native"],
+    "answer": "B"
+  },
+  {
+    "id": 8,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Trong Zustand, hàm 'set' trong 'create' dùng để làm gì?\nincrease: () => set((state) => ({ count: state.count + 1 }))",
+    "options": ["Xóa toàn bộ state", "Cập nhật giá trị mới cho state", "Định nghĩa một hook mới", "Kết nối với API"],
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Ưu điểm vượt trội của Zustand so với Context API là gì?",
+    "options": ["Không cần dùng Provider bọc ngoài App", "Tránh re-render không cần thiết", "Nhẹ và dễ hiểu hơn Redux", "Tất cả các đáp án trên"],
+    "answer": "D"
+  },
+  {
+    "id": 10,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Lộ trình học tập state management được tài liệu đề xuất cho người mới là gì?",
+    "options": ["Redux -> Zustand -> useState", "useState -> useContext -> Zustand", "Zustand -> Context -> Redux", "useState -> Redux -> Recoil"],
+    "answer": "B"
+  },
+  {
+    "id": 11,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Đoạn code sau thuộc về thư viện nào?\nexport const useCounterStore = create((set) => ({ count: 0 }));",
+    "options": ["React Core", "Redux Toolkit", "Zustand", "Recoil"],
+    "answer": "C"
+  },
+  {
+    "id": 12,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Trong React Native, khi sử dụng useState, biến 'count' thay đổi sẽ làm gì?",
+    "options": ["Tắt ứng dụng", "Chỉ thay đổi giá trị trong bộ nhớ", "Kích hoạt component render lại (re-render)", "Gửi dữ liệu lên server"],
+    "answer": "C"
+  },
+  {
+    "id": 13,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Dữ liệu được truyền vào 'value' của Provider trong đoạn code sau là gì?\n<CounterContext.Provider value={{ count, setCount }}>",
+    "options": ["Một mảng", "Một Object chứa giá trị và hàm cập nhật", "Một chuỗi văn bản", "Một con số"],
+    "answer": "B"
+  },
+  {
+    "id": 14,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Theo bảng tóm tắt, cách quản lý nào được đánh giá là 'Khó học'?",
+    "options": ["useState", "useContext", "Zustand", "Redux Toolkit"],
+    "answer": "D"
+  },
+  {
+    "id": 15,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Kết quả khi chạy hàm decrease trong Zustand: \ndecrease: () => set((state) => ({ count: state.count - 1 }))\nNếu count đang là 5, sau khi gọi decrease, count sẽ là?",
+    "options": ["6", "4", "5", "0"],
+    "answer": "B"
+  },
+  {
+    "id": 16,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Tại sao dùng Zustand lại không cần Provider bọc ngoài App?",
+    "options": ["Vì nó dùng bộ nhớ Global của hệ điều hành", "Vì nó là một Hook độc lập quản lý state bên ngoài cây component của React", "Vì nó tự động bọc App mà không cần khai báo", "Vì nó không hỗ trợ React Native"],
+    "answer": "B"
+  },
+  {
+    "id": 17,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Thuật ngữ 'atom' được tài liệu nhắc đến khi nói về thư viện nào?",
+    "options": ["Redux", "Zustand", "Recoil", "Context API"],
+    "answer": "C"
+  },
+  {
+    "id": 18,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Trong component Counter dùng Zustand, làm sao để lấy hàm 'increase'?\nconst { increase } = useCounterStore();",
+    "options": ["Dùng hàm call()", "Destructuring từ kết quả của hook useCounterStore", "Lấy từ props của component", "Dùng hàm fetch()"],
+    "answer": "B"
+  },
+  {
+    "id": 19,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Khi nào nên cân nhắc chuyển từ Zustand sang Redux Toolkit?",
+    "options": ["Khi muốn code ngắn hơn", "Khi làm dự án rất lớn với nhiều state cực kỳ phức tạp", "Khi không muốn dùng npm", "Khi làm ứng dụng chỉ có 1 màn hình"],
+    "answer": "B"
+  },
+  {
+    "id": 20,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Các bước lựa chọn state management (quản lý trạng thái)",
+    "question": "Lệnh nào sau đây KHÔNG phải là một Hook chính thức trong React Core?",
+    "options": ["useState", "useContext", "useCounterStore", "useEffect"],
+    "answer": "C"
+  }
+,
+  {
+    "id": 1,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Kết quả của đoạn code sau là gì?\nconst response = await axios.get('https://api.example.com/user');\nconsole.log(response.data);",
+    "options": ["In ra đối tượng JSON đã được parse tự động", "In ra một Promise", "In ra chuỗi JSON chưa parse", "Lỗi vì thiếu .json()"],
+    "answer": "A"
+  },
+  {
+    "id": 2,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "So với 'fetch', 'axios' có ưu điểm gì khi xử lý lỗi HTTP (ví dụ lỗi 404)?",
+    "options": ["Phải kiểm tra response.ok thủ công", "Tự động nhảy vào khối catch khi gặp lỗi 4xx hoặc 5xx", "Không thể bắt được lỗi 500", "Chỉ bắt được lỗi mất mạng"],
+    "answer": "B"
+  },
+  {
+    "id": 3,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Đoạn code sau sẽ in ra gì nếu server trả về lỗi 401?\ntry {\n  await axios.get('/profile');\n} catch (error) {\n  if (axios.isAxiosError(error)) {\n    console.log(error.response?.status);\n  }\n}",
+    "options": ["undefined", "401", "null", "Error object"],
+    "answer": "B"
+  },
+  {
+    "id": 4,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Trong TypeScript, đoạn code sau trả về kiểu dữ liệu gì?\nconst getPost = async () => {\n  const res = await axios.get<Post>('/posts/1');\n  return res.data;\n};",
+    "options": ["Promise<AxiosResponse>", "Promise<Post>", "Post", "void"],
+    "answer": "B"
+  },
+  {
+    "id": 5,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Khi tạo một axios instance với baseURL: 'https://api.com', lệnh 'instance.get(\"/users\")' sẽ gửi request đến đâu?",
+    "options": ["/users", "https://api.com/users", "https://api.com", "Lỗi đường dẫn"],
+    "answer": "B"
+  },
+  {
+    "id": 6,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Mục đích của Request Interceptor trong đoạn code sau là gì?\napiClient.interceptors.request.use(async (config) => {\n  config.headers.Authorization = `Bearer ${token}`;\n  return config;\n});",
+    "options": ["Kiểm tra lỗi server", "Tự động gắn token vào header của mọi request trước khi gửi đi", "Xóa token khi log out", "Mã hóa dữ liệu body"],
+    "answer": "B"
+  },
+  {
+    "id": 7,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Trong React Hook useEffect, việc gọi 'controller.abort()' trong hàm cleanup có tác dụng gì?",
+    "options": ["Xóa dữ liệu trong state", "Hủy request axios nếu component bị unmount trước khi có kết quả", "Tắt ứng dụng", "Reset lại trang"],
+    "answer": "B"
+  },
+  {
+    "id": 8,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Lệnh GET nào sau đây sẽ tạo ra URL: '.../posts?userId=1'?",
+    "options": ["axios.get('/posts/1')", "axios.get('/posts', { params: { userId: 1 } })", "axios.get('/posts', { data: { userId: 1 } })", "axios.get('/posts?id=1')"],
+    "answer": "B"
+  },
+  {
+    "id": 9,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Khi sử dụng axios.post(url, payload), dữ liệu 'payload' sẽ được xử lý như thế nào mặc định?",
+    "options": ["Chuyển thành FormData", "Tự động serialize thành chuỗi JSON", "Chuyển thành query params", "Giữ nguyên kiểu Object của JS"],
+    "answer": "B"
+  },
+  {
+    "id": 10,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Để bắt lỗi trường hợp 'Request đã gửi nhưng không nhận được phản hồi' (như mất mạng), ta kiểm tra thuộc tính nào của AxiosError?",
+    "options": ["error.response", "error.request", "error.message", "error.config"],
+    "answer": "B"
+  },
+  {
+    "id": 11,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Sự khác biệt chính giữa PUT và PATCH trong axios là gì?",
+    "options": ["PUT nhanh hơn PATCH", "PUT thay thế toàn bộ resource, PATCH cập nhật một phần", "Chỉ PATCH mới dùng được với JSON", "Không có sự khác biệt"],
+    "answer": "B"
+  },
+  {
+    "id": 12,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Đoạn code: 'axios.create({ timeout: 5000 })' có ý nghĩa gì?",
+    "options": ["Chờ 5 giây rồi mới gửi request", "Tự động hủy request nếu sau 5 giây không có phản hồi", "Cache dữ liệu trong 5 giây", "Giới hạn thời gian render component là 5 giây"],
+    "answer": "B"
+  },
+  {
+    "id": 13,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Để thực hiện upload file ảnh trong React Native bằng axios, ta cần đưa dữ liệu vào đối tượng nào?",
+    "options": ["JSON string", "FormData", "Buffer", "Base64 string"],
+    "answer": "B"
+  },
+  {
+    "id": 14,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Kết quả in ra là gì?\nconst res = await axios.get('/api');\nconsole.log(res.status);",
+    "options": ["Dữ liệu trả về", "Mã trạng thái HTTP (ví dụ 200)", "Thông báo lỗi", "undefined"],
+    "answer": "B"
+  },
+  {
+    "id": 15,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Trong Response Interceptor, nếu muốn xử lý lỗi 401 toàn cục (ví dụ đẩy ra màn hình Login), ta viết code ở tham số thứ mấy của hàm .use()?",
+    "options": ["Tham số thứ 1 (onFulfilled)", "Tham số thứ 2 (onRejected)", "Cả hai tham số", "Không thể xử lý trong interceptor"],
+    "answer": "B"
+  },
+  {
+    "id": 16,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "TypeScript interface 'ApiResponse<T>' trong tài liệu giúp làm gì?",
+    "options": ["Định nghĩa cấu trúc chung cho mọi phản hồi từ API", "Tự động sửa lỗi API", "Thay thế cho axios instance", "Kết nối với Database"],
+    "answer": "A"
+  },
+  {
+    "id": 17,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Lệnh 'npx expo install axios' khác gì với 'npm install axios'?",
+    "options": ["Không khác gì", "Đảm bảo phiên bản axios tương thích tốt nhất với phiên bản Expo hiện tại", "Chỉ cài được trên Android", "Xóa sạch các node_modules cũ"],
+    "answer": "B"
+  },
+  {
+    "id": 18,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Khi sử dụng AbortController, làm thế nào để biết một lỗi là do người dùng chủ động hủy request?",
+    "options": ["Kiểm tra error.status === 0", "Sử dụng hàm axios.isCancel(error)", "Kiểm tra error === 'abort'", "Lỗi hủy không thể bắt được"],
+    "answer": "B"
+  },
+  {
+    "id": 19,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Trong component 'PostListScreen', tại sao cần 'setLoading(false)' trong khối 'finally'?",
+    "options": ["Để dừng request", "Để đảm bảo loading spinner luôn được tắt dù request thành công hay thất bại", "Để xóa lỗi", "Để kích hoạt useEffect lần nữa"],
+    "answer": "B"
+  },
+  {
+    "id": 20,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn về axios",
+    "question": "Cấu hình 'Accept: application/json' trong headers có ý nghĩa gì?",
+    "options": ["Gửi dữ liệu dạng JSON", "Thông báo cho server rằng client muốn nhận lại dữ liệu định dạng JSON", "Bật chế độ bảo mật", "Cho phép upload file"],
+    "answer": "B"
+  }
+,
+  {
+    "id": 1,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn tư duy và kỹ thuật lập trình React Native hiện đại",
+    "question": "Kết quả in ra console là gì khi nhấn nút 'Tăng' lần đầu tiên?\nconst [count, setCount] = useState(0);\nconst handlePress = () => {\n  setCount(count + 1);\n  console.log(count);\n};",
+    "options": ["1", "0", "undefined", "NaN"],
+    "answer": "B"
+  },
+  {
+    "id": 2,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn tư duy và kỹ thuật lập trình React Native hiện đại",
+    "question": "Màn hình sẽ hiển thị số lượng là bao nhiêu sau khi nhấn nút 'Tăng'?\nlet count = 0;\nexport default function Counter() {\n  return (\n    <View>\n      <Text>Số lượng: {count}</Text>\n      <Button title='Tăng' onPress={() => { count++; }} />\n    </View>\n  );\n}",
+    "options": ["1", "Số lượng: 1", "Số lượng: 0 (không đổi)", "Báo lỗi crash"],
+    "answer": "C"
+  },
+  {
+    "id": 3,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn tư duy và kỹ thuật lập trình React Native hiện đại",
+    "question": "Giá trị của 'quantity' sẽ là bao nhiêu sau khi thực hiện logic sau?\nsetQuantity(quantity + 1);\nsetQuantity(quantity + 1);\n// Giả sử quantity ban đầu là 1",
+    "options": ["2", "3", "1", "4"],
+    "answer": "A"
+  },
+  {
+    "id": 4,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn tư duy và kỹ thuật lập trình React Native hiện đại",
+    "question": "Để tăng 'quantity' từ 1 lên 3 một cách chính xác trong cùng một hàm xử lý, bạn phải viết thế nào?",
+    "options": ["setQuantity(3)", "setQuantity(prev => prev + 1); setQuantity(prev => prev + 1);", "setQuantity(quantity + 2)", "Cả B và C đều đúng"],
+    "answer": "D"
+  },
+  {
+    "id": 5,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn tư duy và kỹ thuật lập trình React Native hiện đại",
+    "question": "Đoạn code sau gây ra hiện tượng gì?\nuseEffect(() => {\n  setCount(count + 1);\n}, [count]);",
+    "options": ["Tăng count lên 1 rồi dừng", "Cập nhật count mỗi khi render", "Vòng lặp vô tận (Infinite Loop)", "Không có gì xảy ra"],
+    "answer": "C"
+  },
+  {
+    "id": 6,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn tư duy và kỹ thuật lập trình React Native hiện đại",
+    "question": "Màn hình hiển thị tên gì sau khi gọi updateName()?\nconst [user, setUser] = useState({ name: 'A', age: 20 });\nfunction updateName() {\n  user.name = 'B';\n  setUser(user);\n}",
+    "options": ["Tên B", "Tên A (không đổi do vi phạm tính bất biến)", "undefined", "Lỗi crash ứng dụng"],
+    "answer": "B"
+  },
+  {
+    "id": 7,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn tư duy và kỹ thuật lập trình React Native hiện đại",
+    "question": "Cách cập nhật mảng nào sau đây giúp React nhận diện được thay đổi và render lại giao diện?",
+    "options": ["students.push(newStudent); setStudents(students);", "setStudents([...students, newStudent]);", "students[0] = newStudent; setStudents(students);", "setStudents(students.concat(newStudent)); nhưng không dùng spread"],
+    "answer": "B"
+  },
+  {
+    "id": 8,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn tư duy và kỹ thuật lập trình React Native hiện đại",
+    "question": "Trong LoginForm, useRef được sử dụng để làm gì trong ví dụ của tài liệu?",
+    "options": ["Lưu trữ tên đăng nhập", "Lưu trữ mật khẩu", "Móc nối để ép focus từ ô Username sang ô Password", "Tự động gửi form"],
+    "answer": "C"
+  },
+  {
+    "id": 9,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn tư duy và kỹ thuật lập trình React Native hiện đại",
+    "question": "Kết quả hiển thị của 'fullName' là gì nếu không dùng useEffect theo khuyến nghị?\nconst [first, setFirst] = useState('A');\nconst [last, setLast] = useState('B');\nconst fullName = `${first} ${last}`;\nreturn <Text>{fullName}</Text>;",
+    "options": ["A B", "Báo lỗi vì fullName không phải state", "Trống không", "Phải dùng useEffect mới hiển thị được"],
+    "answer": "A"
+  },
+  {
+    "id": 10,
+    "subject": "68CS1 & 68CS2 Phát triển ứng dụng đa nền tảng",
+    "chapter": "Hướng dẫn tư duy và kỹ thuật lập trình React Native hiện đại",
+    "question": "Khi nhấn 'Đổi state khác' (không liên quan đến students), đoạn code useMemo sau có chạy lại logic filter không?\nconst passedStudents = useMemo(() => {\n  return students.filter(item => item.score >= 5);\n}, [students]);",
+    "options": ["Có, vì component render lại là nó chạy lại", "Không, nó tái sử dụng kết quả cũ vì 'students' không đổi", "Chỉ chạy nếu dùng useCallback", "Bị lỗi vì useMemo không dùng cho mảng"],
+    "answer": "B"
+  }
 ]
