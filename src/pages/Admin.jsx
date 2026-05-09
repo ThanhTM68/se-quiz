@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import { useQuiz } from "../context/QuizContext";
 import { Trash2, Download, Upload, Plus, FileJson } from "lucide-react";
 
@@ -9,13 +9,13 @@ export default function Admin() {
         deleteQuestion,
         importQuestions,
         exportData,
-        chapters,
+        subjects,
         deleteQuestionsByChapter,
     } = useQuiz();
     const fileInputRef = useRef(null);
 
-    // State form nhập tay
     const [form, setForm] = useState({
+        subject: "",
         chapter: "",
         question: "",
         opt1: "",
@@ -25,28 +25,43 @@ export default function Admin() {
         answer: "",
     });
 
+    const chapterPairs = useMemo(() => {
+        const keySet = new Set();
+        const pairs = [];
+
+        allQuestions.forEach((q) => {
+            const key = `${q.subject}|||${q.chapter}`;
+            if (!keySet.has(key)) {
+                keySet.add(key);
+                pairs.push({ subject: q.subject, chapter: q.chapter });
+            }
+        });
+
+        return pairs;
+    }, [allQuestions]);
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const newQ = {
-            chapter: form.chapter,
+            subject: form.subject.trim(),
+            chapter: form.chapter.trim(),
             question: form.question,
             options: [form.opt1, form.opt2, form.opt3, form.opt4],
-            answer: form.answer,
+            answer: form.answer.trim().toUpperCase(),
         };
         addQuestion(newQ);
-        alert("Đã thêm câu hỏi!");
-        setForm({
-            ...form,
+        alert("Đã thêm câu hỏi.");
+        setForm((prev) => ({
+            ...prev,
             question: "",
             opt1: "",
             opt2: "",
             opt3: "",
             opt4: "",
             answer: "",
-        });
+        }));
     };
 
-    // Xử lý Upload file
     const handleFileUpload = (e) => {
         const file = e.target.files[0];
         if (!file) return;
@@ -57,16 +72,15 @@ export default function Admin() {
                 const json = JSON.parse(event.target.result);
                 if (Array.isArray(json)) {
                     const count = importQuestions(json);
-                    alert(`Đã nhập thành công ${count} câu hỏi mới!`);
+                    alert(`Đã nhập thành công ${count} câu hỏi mới.`);
                 } else {
-                    alert("File JSON không đúng định dạng mảng (Array)!");
+                    alert("File JSON không đúng định dạng mảng (Array).");
                 }
-            } catch (err) {
-                alert("Lỗi đọc file JSON!");
+            } catch {
+                alert("Lỗi đọc file JSON.");
             }
         };
         reader.readAsText(file);
-        // Reset input để chọn lại cùng file nếu muốn
         e.target.value = null;
     };
 
@@ -74,20 +88,14 @@ export default function Admin() {
         <div className="space-y-8 pb-10">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
-                    <h2 className="text-2xl font-bold">
-                        Quản lý Ngân hàng câu hỏi
-                    </h2>
+                    <h2 className="text-2xl font-bold">Quản lý Ngân hàng câu hỏi</h2>
                     <p className="text-gray-400 text-sm">
                         Hiện có:{" "}
-                        <span className="text-blue-400 font-bold">
-                            {allQuestions.length}
-                        </span>{" "}
-                        câu hỏi
+                        <span className="text-blue-400 font-bold">{allQuestions.length}</span> câu hỏi
                     </p>
                 </div>
 
                 <div className="flex gap-3">
-                    {/* Nút Upload ẩn, kích hoạt qua label hoặc ref */}
                     <input
                         type="file"
                         ref={fileInputRef}
@@ -112,13 +120,31 @@ export default function Admin() {
             </div>
 
             <div className="grid lg:grid-cols-3 gap-8">
-                {/* Cột Trái: Form Thêm Thủ Công */}
                 <div className="lg:col-span-1 space-y-4">
                     <div className="glass-panel p-6 sticky top-4">
                         <h3 className="text-lg font-bold mb-4 flex items-center gap-2 text-blue-300">
                             <Plus size={20} /> Thêm thủ công
                         </h3>
                         <form onSubmit={handleSubmit} className="space-y-3">
+                            <input
+                                placeholder="Tên môn học"
+                                required
+                                className="glass-input text-sm"
+                                value={form.subject}
+                                onChange={(e) =>
+                                    setForm({
+                                        ...form,
+                                        subject: e.target.value,
+                                    })
+                                }
+                                list="subject-list"
+                            />
+                            <datalist id="subject-list">
+                                {subjects.map((subject) => (
+                                    <option key={subject} value={subject} />
+                                ))}
+                            </datalist>
+
                             <input
                                 placeholder="Tên chương"
                                 required
@@ -165,7 +191,7 @@ export default function Admin() {
                             </div>
 
                             <input
-                                placeholder="Đáp án đúng (Copy y hệt)"
+                                placeholder="Đáp án đúng (A/B/C/D)"
                                 required
                                 className="glass-input text-sm border-green-500/30 focus:border-green-500"
                                 value={form.answer}
@@ -183,7 +209,6 @@ export default function Admin() {
                         </form>
                     </div>
 
-                    {/* Hướng dẫn định dạng JSON */}
                     <div className="glass-panel p-4 text-xs text-gray-400">
                         <h4 className="font-bold text-gray-300 mb-2 flex items-center gap-2">
                             <FileJson size={14} /> Định dạng file JSON mẫu:
@@ -192,9 +217,10 @@ export default function Admin() {
                             {`[
   {
     "id": 1,
+    "subject": "Tên môn học",
     "chapter": "Tên chương",
     "question": "Câu hỏi?",
-    "options": ["A", "B", "C", "D"],
+    "options": ["Nội dung A", "Nội dung B", "Nội dung C", "Nội dung D"],
     "answer": "A"
   }
 ]`}
@@ -202,27 +228,34 @@ export default function Admin() {
                     </div>
                 </div>
 
-                {/* Cột Phải: Danh sách câu hỏi */}
                 <div className="lg:col-span-2 space-y-4">
                     <div className="glass-panel p-5 border border-white/10">
                         <h3 className="text-lg font-bold text-blue-300 mb-4 border-b border-white/10 pb-2">
-                            Quản lý Chương ({chapters.length})
+                            Quản lý Chương ({chapterPairs.length})
                         </h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-60 overflow-y-auto pr-2">
-                            {chapters.map((chap, idx) => (
+                            {chapterPairs.map((item) => (
                                 <div
-                                    key={idx}
-                                    className="flex justify-between items-center p-3 bg-white/5 rounded border border-white/10 hover:bg-white/10 transition"
+                                    key={`${item.subject}-${item.chapter}`}
+                                    className="flex justify-between items-center p-3 bg-white/5 rounded border border-white/10 hover:bg-white/10 transition gap-3"
                                 >
-                                    <span
-                                        className="font-bold text-sm text-white truncate max-w-[150px]"
-                                        title={chap}
-                                    >
-                                        {chap}
-                                    </span>
+                                    <div className="min-w-0">
+                                        <p
+                                            className="font-bold text-sm text-white truncate"
+                                            title={item.chapter}
+                                        >
+                                            {item.chapter}
+                                        </p>
+                                        <p
+                                            className="text-xs text-blue-300 truncate"
+                                            title={item.subject}
+                                        >
+                                            {item.subject}
+                                        </p>
+                                    </div>
                                     <button
                                         onClick={() =>
-                                            deleteQuestionsByChapter(chap)
+                                            deleteQuestionsByChapter(item.chapter, item.subject)
                                         }
                                         className="flex items-center gap-1.5 px-3 py-1.5 bg-red-900/30 hover:bg-red-600 text-red-400 hover:text-white border border-red-500/30 rounded text-xs transition"
                                     >
@@ -230,16 +263,12 @@ export default function Admin() {
                                     </button>
                                 </div>
                             ))}
-                            {chapters.length === 0 && (
-                                <p className="text-gray-500 text-sm">
-                                    Chưa có dữ liệu chương.
-                                </p>
+                            {chapterPairs.length === 0 && (
+                                <p className="text-gray-500 text-sm">Chưa có dữ liệu chương.</p>
                             )}
                         </div>
                     </div>
-                    <h3 className="text-lg font-bold text-gray-300">
-                        Danh sách câu hỏi
-                    </h3>
+                    <h3 className="text-lg font-bold text-gray-300">Danh sách câu hỏi</h3>
                     <div className="space-y-3">
                         {allQuestions
                             .slice()
@@ -250,35 +279,35 @@ export default function Admin() {
                                     className="glass-panel p-4 flex gap-4 group hover:border-blue-500/30 transition"
                                 >
                                     <div className="flex-1">
-                                        <span className="text-[10px] font-bold uppercase tracking-wider bg-white/5 px-2 py-1 rounded text-blue-300">
-                                            {q.chapter}
-                                        </span>
-                                        <p className="font-medium mt-2 text-white/90">
-                                            {q.question}
-                                        </p>
-                                        <div className="mt-2 text-sm text-gray-500 grid grid-cols-2 gap-x-4 gap-y-1">
-                                            {q.options.map((opt, i) => (
-                                                <span
-                                                    key={i}
-                                                    className={
-                                                        opt === q.answer
-                                                            ? "text-green-400 font-bold"
-                                                            : ""
-                                                    }
-                                                >
-                                                    - {opt}
-                                                </span>
-                                            ))}
+                                        <div className="flex flex-wrap gap-2">
+                                            <span className="text-[10px] font-bold uppercase tracking-wider bg-white/5 px-2 py-1 rounded text-blue-300">
+                                                {q.subject}
+                                            </span>
+                                            <span className="text-[10px] font-bold uppercase tracking-wider bg-white/5 px-2 py-1 rounded text-purple-300">
+                                                {q.chapter}
+                                            </span>
+                                        </div>
+                                        <p className="font-medium mt-2 text-white/90">{q.question}</p>
+                                        <div className="mt-2 text-sm text-gray-500 grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1">
+                                            {q.options.map((opt, i) => {
+                                                const label = String.fromCharCode(65 + i);
+                                                const isCorrect = q.answer === label;
+                                                return (
+                                                    <span
+                                                        key={i}
+                                                        className={isCorrect ? "text-green-400 font-bold" : ""}
+                                                    >
+                                                        {label}. {opt}
+                                                    </span>
+                                                );
+                                            })}
                                         </div>
                                     </div>
                                     <button
                                         onClick={() => {
-                                            if (
-                                                confirm(
-                                                    "Bạn có chắc muốn xóa câu này?"
-                                                )
-                                            )
+                                            if (confirm("Bạn có chắc muốn xóa câu này?")) {
                                                 deleteQuestion(q.id);
+                                            }
                                         }}
                                         className="text-gray-600 hover:text-red-400 self-start p-2 opacity-0 group-hover:opacity-100 transition"
                                     >

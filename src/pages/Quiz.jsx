@@ -86,7 +86,7 @@ export default function Quiz() {
                             className="glass-panel p-6 md:p-8 h-full flex flex-col overflow-y-auto"
                         >
                             <div className="text-xs uppercase tracking-wider text-gray-500 mb-2 font-bold">
-                                {currentQ.chapter}
+                                {currentQ.subject} - {currentQ.chapter}
                             </div>
                             <h2 className="text-xl md:text-2xl font-bold mb-6 leading-relaxed text-white/90">
                                 {currentQ.question}
