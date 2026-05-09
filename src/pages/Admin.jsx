@@ -9,6 +9,7 @@ import {
     RotateCcw,
     DatabaseZap,
 } from "lucide-react";
+import QuestionContent from "../components/QuestionContent";
 
 export default function Admin() {
     const {
@@ -56,7 +57,8 @@ export default function Admin() {
         const source = allQuestions.slice().reverse();
         if (!keyword) return source;
         return source.filter((q) => {
-            const text = `${q.subject} ${q.chapter} ${q.question}`.toLowerCase();
+            const text =
+                `${q.subject} ${q.chapter} ${q.question}`.toLowerCase();
             return text.includes(keyword);
         });
     }, [allQuestions, search]);
@@ -101,7 +103,7 @@ export default function Admin() {
 
                 const result = importQuestions(json);
                 alert(
-                    `Đã nhập ${result.total} câu. Thêm mới: ${result.added}, cập nhật: ${result.updated}.`
+                    `Đã nhập ${result.total} câu. Thêm mới: ${result.added}, cập nhật: ${result.updated}.`,
                 );
             } catch {
                 alert("Lỗi đọc file JSON.");
@@ -114,10 +116,15 @@ export default function Admin() {
         <div className="space-y-8 pb-10">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
-                    <h2 className="text-2xl font-bold">Quản lý Ngân hàng câu hỏi</h2>
+                    <h2 className="text-2xl font-bold">
+                        Quản lý Ngân hàng câu hỏi
+                    </h2>
                     <p className="text-gray-400 text-sm">
                         Hiện có:{" "}
-                        <span className="text-blue-400 font-bold">{allQuestions.length}</span> câu hỏi
+                        <span className="text-blue-400 font-bold">
+                            {allQuestions.length}
+                        </span>{" "}
+                        câu hỏi
                     </p>
                 </div>
 
@@ -167,7 +174,7 @@ export default function Admin() {
                         onClick={() => {
                             const count = restoreBundledQuestions();
                             alert(
-                                `Đã khôi phục dữ liệu gốc từ questions.json (${count} câu).`
+                                `Đã khôi phục dữ liệu gốc từ questions.json (${count} câu).`,
                             );
                         }}
                         className="bg-emerald-700 hover:bg-emerald-600 px-4 py-2 rounded-lg flex items-center gap-2 text-sm font-bold transition shadow-lg shadow-emerald-900/20"
@@ -179,12 +186,12 @@ export default function Admin() {
                         onClick={() => {
                             if (
                                 confirm(
-                                    "Xóa dữ liệu local và nạp lại từ questions.json?"
+                                    "Xóa dữ liệu local và nạp lại từ questions.json?",
                                 )
                             ) {
                                 const count = clearLocalData();
                                 alert(
-                                    `Đã reset local data, nạp lại ${count} câu từ questions.json.`
+                                    `Đã reset local data, nạp lại ${count} câu từ questions.json.`,
                                 );
                             }
                         }}
@@ -208,7 +215,10 @@ export default function Admin() {
                                 className="glass-input text-sm"
                                 value={form.subject}
                                 onChange={(e) =>
-                                    setForm((prev) => ({ ...prev, subject: e.target.value }))
+                                    setForm((prev) => ({
+                                        ...prev,
+                                        subject: e.target.value,
+                                    }))
                                 }
                                 list="subject-list"
                             />
@@ -224,7 +234,10 @@ export default function Admin() {
                                 className="glass-input text-sm"
                                 value={form.chapter}
                                 onChange={(e) =>
-                                    setForm((prev) => ({ ...prev, chapter: e.target.value }))
+                                    setForm((prev) => ({
+                                        ...prev,
+                                        chapter: e.target.value,
+                                    }))
                                 }
                             />
 
@@ -235,7 +248,10 @@ export default function Admin() {
                                 className="glass-input text-sm resize-none"
                                 value={form.question}
                                 onChange={(e) =>
-                                    setForm((prev) => ({ ...prev, question: e.target.value }))
+                                    setForm((prev) => ({
+                                        ...prev,
+                                        question: e.target.value,
+                                    }))
                                 }
                             />
 
@@ -263,7 +279,10 @@ export default function Admin() {
                                 className="glass-input text-sm border-green-500/30 focus:border-green-500"
                                 value={form.answer}
                                 onChange={(e) =>
-                                    setForm((prev) => ({ ...prev, answer: e.target.value }))
+                                    setForm((prev) => ({
+                                        ...prev,
+                                        answer: e.target.value,
+                                    }))
                                 }
                             />
 
@@ -322,7 +341,10 @@ export default function Admin() {
                                     </div>
                                     <button
                                         onClick={() =>
-                                            deleteQuestionsByChapter(item.chapter, item.subject)
+                                            deleteQuestionsByChapter(
+                                                item.chapter,
+                                                item.subject,
+                                            )
                                         }
                                         className="flex items-center gap-1.5 px-3 py-1.5 bg-red-900/30 hover:bg-red-600 text-red-400 hover:text-white border border-red-500/30 rounded text-xs transition"
                                     >
@@ -333,7 +355,9 @@ export default function Admin() {
                         </div>
                     </div>
 
-                    <h3 className="text-lg font-bold text-gray-300">Danh sách câu hỏi</h3>
+                    <h3 className="text-lg font-bold text-gray-300">
+                        Danh sách câu hỏi
+                    </h3>
                     <input
                         className="glass-input"
                         placeholder="Tìm theo môn, chương hoặc nội dung câu hỏi..."
@@ -356,15 +380,25 @@ export default function Admin() {
                                             {q.chapter}
                                         </span>
                                     </div>
-                                    <p className="font-medium mt-2 text-white/90">{q.question}</p>
+                                    <QuestionContent
+                                        text={q.question}
+                                        className="font-medium mt-2 text-white/90"
+                                    />
                                     <div className="mt-2 text-sm text-gray-500 grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1">
                                         {q.options.map((opt, i) => {
-                                            const label = String.fromCharCode(65 + i);
-                                            const isCorrect = q.answer === label;
+                                            const label = String.fromCharCode(
+                                                65 + i,
+                                            );
+                                            const isCorrect =
+                                                q.answer === label;
                                             return (
                                                 <span
                                                     key={i}
-                                                    className={isCorrect ? "text-green-400 font-bold" : ""}
+                                                    className={
+                                                        isCorrect
+                                                            ? "text-green-400 font-bold"
+                                                            : ""
+                                                    }
                                                 >
                                                     {label}. {opt}
                                                 </span>
@@ -374,7 +408,11 @@ export default function Admin() {
                                 </div>
                                 <button
                                     onClick={() => {
-                                        if (confirm("Bạn có chắc muốn xóa câu này?")) {
+                                        if (
+                                            confirm(
+                                                "Bạn có chắc muốn xóa câu này?",
+                                            )
+                                        ) {
                                             deleteQuestion(q.id);
                                         }
                                     }}

@@ -2,201 +2,206 @@
     {
         "id": 1,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "JavaScript - Nền Tảng và Tính Chất Bất Đồng Bộ",
-        "question": "Kết quả của đoạn code sau là gì? \nconsole.log('A'); \nsetTimeout(() => console.log('B'), 0); \nconsole.log('C');",
-        "options": ["A, B, C", "A, C, B", "B, A, C", "C, A, B"],
-        "answer": "B"
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Kết quả in ra console là gì?\nconsole.log('1');\nsetTimeout(() => console.log('2'), 0);\nPromise.resolve().then(() => console.log('3'));\nconsole.log('4');",
+        "options": ["1, 2, 3, 4", "1, 4, 2, 3", "1, 4, 3, 2", "1, 3, 4, 2"],
+        "answer": "C"
     },
     {
         "id": 2,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "JavaScript - Nền Tảng và Tính Chất Bất Đồng Bộ",
-        "question": "Trong JavaScript, biến khai báo với từ khóa 'var' có đặc điểm gì?",
-        "options": [
-            "Không bị hoisting",
-            "Có phạm vi block-scoped",
-            "Bị hoisting và nhận giá trị undefined",
-            "Không thể khai báo lại"
-        ],
-        "answer": "C"
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Trong React, Hook nào được sử dụng để thực hiện side effects (gọi API, subscription)?",
+        "options": ["useState", "useEffect", "useContext", "useMemo"],
+        "answer": "B"
     },
     {
         "id": 3,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "JavaScript - Nền Tảng và Tính Chất Bất Đồng Bộ",
-        "question": "Kết quả của biểu thức: 5 == '5' và 5 === '5' lần lượt là:",
-        "options": ["true, true", "false, false", "false, true", "true, false"],
-        "answer": "D"
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Kết quả của đoạn code sau là gì?\nconst arr = [1, 2, 3];\nconst newArr = [...arr, 4];\nconsole.log(newArr);",
+        "options": ["[1, 2, 3]", "[4, 1, 2, 3]", "[1, 2, 3, 4]", "Error"],
+        "answer": "C"
     },
     {
         "id": 4,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "JavaScript - Nền Tảng và Tính Chất Bất Đồng Bộ",
-        "question": "Hàm nào dùng để tạo ra một mảng mới bằng cách biến đổi từng phần tử của mảng cũ?",
-        "options": ["filter()", "forEach()", "map()", "reduce()"],
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Để truy cập trực tiếp vào một phần tử DOM hoặc lưu trữ giá trị mà không gây re-render, ta dùng Hook nào?",
+        "options": ["useState", "useReducer", "useRef", "useCallback"],
         "answer": "C"
     },
     {
         "id": 5,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "JavaScript - Nền Tảng và Tính Chất Bất Đồng Bộ",
-        "question": "Kết quả của đoạn code sau: \nconst p = { name: 'A' }; \nconst q = p; \nq.name = 'B'; \nconsole.log(p.name);",
-        "options": ["A", "B", "undefined", "Error"],
-        "answer": "B"
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Đoạn code sau in ra giá trị gì?\nlet a = 10;\n{ let a = 20; }\nconsole.log(a);",
+        "options": ["10", "20", "undefined", "ReferenceError"],
+        "answer": "A"
     },
     {
         "id": 6,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "React Hooks",
-        "question": "Trong React Native, Hook nào được sử dụng để quản lý trạng thái (state) trong Functional Component?",
-        "options": ["useEffect", "useContext", "useState", "useReducer"],
-        "answer": "C"
-    },
-    {
-        "id": 7,
-        "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "React Hooks",
-        "question": "Khi sử dụng useEffect, nếu truyền một mảng rỗng [] vào dependency array, callback sẽ chạy khi nào?",
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Lệnh 'setCount(count + 1)' trong React có cập nhật giá trị biến 'count' ngay lập tức ở dòng code tiếp theo không?",
         "options": [
-            "Mỗi khi component re-render",
-            "Chỉ một lần sau lần render đầu tiên",
-            "Khi state thay đổi",
-            "Khi component bị xóa"
+            "Có",
+            "Không, nó là bất đồng bộ",
+            "Chỉ cập nhật nếu dùng useEffect",
+            "Chỉ cập nhật trong Class Component"
         ],
         "answer": "B"
     },
     {
+        "id": 7,
+        "subject": "Phát triển ứng dụng đa nền tảng",
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Cơ chế 'Hoisting' áp dụng với từ khóa nào sau đây khiến biến có giá trị undefined trước khi gán?",
+        "options": ["let", "const", "var", "Cả 3 đáp án trên"],
+        "answer": "C"
+    },
+    {
         "id": 8,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "React Hooks",
-        "question": "Đoạn code sau in ra gì khi nút được nhấn lần đầu? \nconst [val, setVal] = useState(0); \nconst press = () => { setVal(val + 1); console.log(val); }",
-        "options": ["0", "1", "2", "undefined"],
-        "answer": "A"
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Trong useEffect, dependency array [data] có ý nghĩa gì?",
+        "options": [
+            "Chỉ chạy một lần duy nhất",
+            "Chạy mỗi khi component re-render",
+            "Chạy khi giá trị 'data' thay đổi",
+            "Chạy khi component unmount"
+        ],
+        "answer": "C"
     },
     {
         "id": 9,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "JavaScript - Nền Tảng và Tính Chất Bất Đồng Bộ",
-        "question": "Cơ chế nào trong JavaScript dùng để kiểm tra Call Stack và đẩy Callback từ Queue vào Stack?",
-        "options": ["Memory Heap", "Event Loop", "V8 Engine", "Task Manager"],
-        "answer": "B"
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Kết quả của: console.log(typeof null);",
+        "options": ["null", "undefined", "object", "string"],
+        "answer": "C"
     },
     {
         "id": 10,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "JavaScript - Nền Tảng và Tính Chất Bất Đồng Bộ",
-        "question": "Từ khóa nào được sử dụng để đợi một Promise hoàn thành trong một hàm async?",
-        "options": ["wait", "pause", "await", "then"],
-        "answer": "C"
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Cách nào đúng để lấy giá trị 'name' từ object: const user = {name: 'Tung', age: 20}?",
+        "options": [
+            "const name = user",
+            "const {name} = user",
+            "const [name] = user",
+            "const name = {user}"
+        ],
+        "answer": "B"
     },
     {
         "id": 11,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "JavaScript - Nền Tảng và Tính Chất Bất Đồng Bộ",
-        "question": "Kết quả của: console.log(typeof NaN);",
-        "options": ["number", "NaN", "undefined", "object"],
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Hàm 'map()' trong mảng trả về kết quả gì?",
+        "options": [
+            "Một mảng mới",
+            "Giá trị Boolean",
+            "Phần tử đầu tiên tìm thấy",
+            "Tổng các phần tử"
+        ],
         "answer": "A"
     },
     {
         "id": 12,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "React Hooks",
-        "question": "Quy tắc nào sau đây là đúng khi sử dụng Hooks?",
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Từ khóa 'await' chỉ có thể được sử dụng bên trong hàm nào?",
         "options": [
-            "Có thể gọi Hook trong vòng lặp",
-            "Có thể gọi Hook trong hàm if",
-            "Chỉ gọi Hook ở cấp cao nhất của hàm component",
-            "Có thể gọi Hook trong hàm thường"
+            "Hàm mũi tên (Arrow function)",
+            "Hàm callback",
+            "Hàm async",
+            "Hàm tạo (Constructor)"
         ],
         "answer": "C"
     },
     {
         "id": 13,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "ES6 Syntax",
-        "question": "Cú pháp '[...arr1, ...arr2]' được gọi là gì?",
-        "options": [
-            "Rest Parameter",
-            "Spread Operator",
-            "Destructuring",
-            "Template Strings"
-        ],
-        "answer": "B"
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Kết quả của: console.log(false == '0');",
+        "options": ["true", "false", "undefined", "Error"],
+        "answer": "A"
     },
     {
         "id": 14,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "React Hooks",
-        "question": "Hook useEffect trả về một function (cleanup function) thì function đó chạy khi nào?",
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Hook 'useCallback' dùng để làm gì?",
         "options": [
-            "Trước khi component render",
-            "Trước khi component unmount hoặc trước khi chạy lại effect",
-            "Khi state khởi tạo",
-            "Ngay sau khi mount"
+            "Ghi nhớ một giá trị tính toán",
+            "Ghi nhớ một định nghĩa hàm để tránh tạo lại",
+            "Thực hiện gọi API",
+            "Quản lý state phức tạp"
         ],
         "answer": "B"
     },
     {
         "id": 15,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "JavaScript - Nền Tảng và Tính Chất Bất Đồng Bộ",
-        "question": "Promise có bao nhiêu trạng thái chính?",
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Trong Event Loop, hàng đợi nào được ưu tiên xử lý trước?",
         "options": [
-            "1 (Pending)",
-            "2 (Resolved, Rejected)",
-            "3 (Pending, Fulfilled, Rejected)",
-            "4 (Start, Wait, End, Error)"
+            "Macro task queue (setTimeout)",
+            "Micro task queue (Promise)",
+            "Cả hai bằng nhau",
+            "Tùy vào trình duyệt"
         ],
-        "answer": "C"
+        "answer": "B"
     },
     {
         "id": 16,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "ES6 Syntax",
-        "question": "Kết quả của: const { a = 10, b } = { b: 5 }; console.log(a, b);",
-        "options": ["undefined, 5", "10, 5", "NaN, 5", "Error"],
-        "answer": "B"
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Kết quả đoạn code: console.log(2 + '2' - 1);",
+        "options": ["21", "3", "Error", "NaN"],
+        "answer": "A"
     },
     {
         "id": 17,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "JavaScript - Nền Tảng và Tính Chất Bất Đồng Bộ",
-        "question": "Lệnh 'console.log(1); Promise.resolve().then(() => console.log(2)); console.log(3);' in ra:",
-        "options": ["1, 2, 3", "1, 3, 2", "2, 1, 3", "3, 2, 1"],
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Làm thế nào để 'clean up' một subscription trong useEffect?",
+        "options": [
+            "Dùng hàm clear()",
+            "Trả về một hàm (cleanup function) từ useEffect",
+            "Đặt dependency array là null",
+            "Gọi useEffect hai lần"
+        ],
         "answer": "B"
     },
     {
         "id": 18,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "React Hooks",
-        "question": "Để tối ưu hiệu năng và tránh tạo lại hàm khi re-render, ta dùng Hook nào?",
-        "options": ["useMemo", "useCallback", "useRef", "useEffect"],
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Toán tử '??' (Nullish Coalescing) trả về vế phải khi vế trái là:",
+        "options": [
+            "false hoặc 0",
+            "null hoặc undefined",
+            "Chuỗi rỗng",
+            "Tất cả các giá trị falsy"
+        ],
         "answer": "B"
     },
     {
         "id": 19,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "React Hooks",
-        "question": "Hook useRef thường được sử dụng để làm gì?",
-        "options": [
-            "Thay thế hoàn toàn useState",
-            "Lưu giá trị mà không gây re-render khi thay đổi",
-            "Ghi log ra console",
-            "Tạo ra các component mới"
-        ],
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Trong React, 'Strict Mode' khiến useEffect chạy bao nhiêu lần khi mount ở môi trường Development?",
+        "options": ["1 lần", "2 lần", "Không lần nào", "3 lần"],
         "answer": "B"
     },
     {
         "id": 20,
         "subject": "Phát triển ứng dụng đa nền tảng",
-        "chapter": "JavaScript - Nền Tảng và Tính Chất Bất Đồng Bộ",
-        "question": "Điều gì xảy ra nếu ta gọi 'resolve()' hai lần trong cùng một Promise?",
-        "options": [
-            "Promise trả về 2 giá trị",
-            "Promise bị lỗi",
-            "Chỉ lần resolve() đầu tiên có tác dụng",
-            "Lần resolve() thứ hai sẽ ghi đè lần một"
-        ],
+        "chapter": "Nền tảng JavaScript & React Hooks",
+        "question": "Phương thức nào dùng để gộp tất cả phần tử mảng thành một giá trị duy nhất?",
+        "options": ["filter", "find", "reduce", "some"],
         "answer": "C"
     }
 ]

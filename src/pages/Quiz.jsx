@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
+import QuestionContent from "../components/QuestionContent";
 
 export default function Quiz() {
     const { quizQuestions, score, userAnswers, handleAnswer } = useQuiz();
@@ -88,9 +89,10 @@ export default function Quiz() {
                             <div className="text-xs uppercase tracking-wider text-gray-500 mb-2 font-bold">
                                 {currentQ.subject} - {currentQ.chapter}
                             </div>
-                            <h2 className="text-xl md:text-2xl font-bold mb-6 leading-relaxed text-white/90">
-                                {currentQ.question}
-                            </h2>
+                            <QuestionContent
+                                text={currentQ.question}
+                                className="text-xl md:text-2xl font-bold mb-6 leading-relaxed text-white/90"
+                            />
 
                             <div className="space-y-3 flex-1">
                                 {currentQ.options.map((opt, idx) => {
@@ -134,7 +136,7 @@ export default function Quiz() {
                                             disabled={isAnswered} // Khóa nút sau khi chọn
                                             className={clsx(
                                                 "w-full p-4 text-left rounded-xl border transition-all duration-200 flex justify-between items-start gap-3",
-                                                btnStyle
+                                                btnStyle,
                                             )}
                                         >
                                             <span className="flex-1">
@@ -169,7 +171,7 @@ export default function Quiz() {
                                 <button
                                     onClick={() =>
                                         setCurrentIndex((prev) =>
-                                            Math.max(0, prev - 1)
+                                            Math.max(0, prev - 1),
                                         )
                                     }
                                     disabled={currentIndex === 0}
@@ -191,7 +193,7 @@ export default function Quiz() {
                                     <button
                                         onClick={() =>
                                             alert(
-                                                `Kết quả: ${score.correct}/${score.total}`
+                                                `Kết quả: ${score.correct}/${score.total}`,
                                             )
                                         }
                                         className="bg-green-600 hover:bg-green-500 text-white px-6 py-2 rounded-lg font-bold transition shadow-lg shadow-green-900/50"
@@ -209,7 +211,7 @@ export default function Quiz() {
             <div
                 className={clsx(
                     "fixed inset-0 z-50 bg-slate-900/95 p-6 lg:static lg:bg-transparent lg:p-0 lg:w-72 lg:block transition-all",
-                    showGrid ? "block" : "hidden"
+                    showGrid ? "block" : "hidden",
                 )}
             >
                 <div className="glass-panel p-4 h-full flex flex-col">
@@ -250,7 +252,7 @@ export default function Quiz() {
                                     onClick={() => goToQuestion(idx)}
                                     className={clsx(
                                         "h-10 w-10 rounded-lg text-sm font-bold border border-transparent transition-all flex items-center justify-center",
-                                        bgClass
+                                        bgClass,
                                     )}
                                 >
                                     {idx + 1}
