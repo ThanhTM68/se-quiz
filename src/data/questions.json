@@ -1,4 +1,4 @@
-[
+﻿[
     {
         "id": 1,
         "subject": "Phát triển ứng dụng đa nền tảng",
@@ -3569,404 +3569,1004 @@
         ],
         "answer": "A"
     },
-  {
-    "id": 331,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Kết quả của biểu thức `typeof \"React Native\"` trong JavaScript là gì?",
-    "options": ["string", "object", "undefined", "function"],
-    "answer": "A"
-  },
-  {
-    "id": 332,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Kết quả của biểu thức `2 == \"2\"` trong JavaScript là gì?",
-    "options": ["true", "false", "undefined", "NaN"],
-    "answer": "A"
-  },
-  {
-    "id": 333,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Component nào trong React Native được sử dụng để hiển thị hình ảnh?",
-    "options": ["View", "Text", "Image", "ImageView"],
-    "answer": "C"
-  },
-  {
-    "id": 334,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Để xếp các component con theo hàng ngang, thuộc tính `flexDirection` trong React Native cần nhận giá trị nào?",
-    "options": ["row", "column", "horizontal", "grid"],
-    "answer": "A"
-  },
-  {
-    "id": 335,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Phương thức nào dùng để thêm một hoặc nhiều phần tử vào cuối mảng trong JavaScript?",
-    "options": ["pop()", "push()", "shift()", "unshift()"],
-    "answer": "B"
-  },
-  {
-    "id": 336,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Trong Flexbox của React Native, thuộc tính nào dùng để căn chỉnh các phần tử con dọc theo trục chính (Main Axis)?",
-    "options": ["alignItems", "justifyContent", "alignContent", "flexWrap"],
-    "answer": "B"
-  },
-  {
-    "id": 337,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Component nào trong React Native cung cấp một vùng chứa có thể cuộn cho các nội dung bên trong?",
-    "options": ["View", "ScrollView", "SafeAreaView", "FlatList"],
-    "answer": "B"
-  },
-  {
-    "id": 338,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Kết quả của đoạn mã `console.log(10 % 3);` là gì?",
-    "options": ["1", "3", "0", "2"],
-    "answer": "A"
-  },
-  {
-    "id": 339,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Từ khóa nào dùng để khai báo một biến có phạm vi khối (block scope) và không thể gán lại giá trị sau đó?",
-    "options": ["var", "let", "const", "global"],
-    "answer": "C"
-  },
-  {
-    "id": 340,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Component nào trong React Native được sử dụng để nhận dữ liệu nhập vào từ bàn phím?",
-    "options": ["Input", "TextInput", "KeyInput", "Label"],
-    "answer": "B"
-  },
-  {
-    "id": 341,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Giá trị mặc định của thuộc tính `flexDirection` trong React Native là gì?",
-    "options": ["row", "column", "row-reverse", "column-reverse"],
-    "answer": "B"
-  },
-  {
-    "id": 342,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Biểu thức `Boolean(\"\")` (chuỗi rỗng) trong JavaScript trả về kết quả nào?",
-    "options": ["true", "false", "undefined", "null"],
-    "answer": "B"
-  },
-  {
-    "id": 343,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Để áp dụng kiểu dáng (style) cho một component trong React Native, ta dùng prop nào?",
-    "options": ["class", "id", "style", "styles"],
-    "answer": "C"
-  },
-  {
-    "id": 344,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Kết quả của `console.log(typeof null);` trong JavaScript là gì?",
-    "options": ["null", "undefined", "object", "string"],
-    "answer": "C"
-  },
-  {
-    "id": 345,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Phương thức nào loại bỏ phần tử cuối cùng ra khỏi một mảng và trả về phần tử đó?",
-    "options": ["shift()", "unshift()", "pop()", "push()"],
-    "answer": "C"
-  },
-  {
-    "id": 346,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Kết quả của đoạn mã `const arr = [1, 2, 3]; console.log(arr.map(x => x * 2));` là gì?",
-    "options": ["[1, 2, 3]", "[2, 4, 6]", "[2, 3, 4]", "Error"],
-    "answer": "B"
-  },
-  {
-    "id": 347,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Hook nào trong React Native được sử dụng để quản lý trạng thái cục bộ của một functional component?",
-    "options": ["useEffect", "useContext", "useState", "useReducer"],
-    "answer": "C"
-  },
-  {
-    "id": 348,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Biểu thức `3 === \"3\"` trả về kết quả gì trong JavaScript?",
-    "options": ["true", "false", "NaN", "undefined"],
-    "answer": "B"
-  },
-  {
-    "id": 349,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Hook nào dùng để thực hiện side effects (gọi API, lắng nghe sự kiện...) trong React Native?",
-    "options": ["useState", "useEffect", "useMemo", "useCallback"],
-    "answer": "B"
-  },
-  {
-    "id": 350,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Kỹ thuật Destructuring `const [a, b] = [10, 20, 30];` sẽ gán giá trị nào cho biến `b`?",
-    "options": ["10", "20", "30", "undefined"],
-    "answer": "B"
-  },
-  {
-    "id": 351,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Công cụ/Hệ sinh thái nào giúp xây dựng và chạy nhanh dự án React Native mà không cần cấu hình Android Studio hay Xcode từ đầu?",
-    "options": ["Webpack", "Expo", "Flutter", "Redux"],
-    "answer": "B"
-  },
-  {
-    "id": 352,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Thuộc tính nào của component `TouchableOpacity` dùng để thiết lập hàm xử lý khi người dùng nhấn vào?",
-    "options": ["onClick", "onPress", "onTap", "onTouch"],
-    "answer": "B"
-  },
-  {
-    "id": 353,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Kết quả của `const obj1 = {x: 1}; const obj2 = {...obj1, y: 2}; console.log(obj2);` là gì?",
-    "options": ["{x: 1}", "{y: 2}", "{x: 1, y: 2}", "Error"],
-    "answer": "C"
-  },
-  {
-    "id": 354,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Kết quả của đoạn mã `console.log([1, 2, 3, 4].filter(x => x % 2 === 0));` là gì?",
-    "options": ["[1, 3]", "[2, 4]", "[2]", "[4]"],
-    "answer": "B"
-  },
-  {
-    "id": 355,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Component nào tối ưu nhất để hiển thị một danh sách dữ liệu dài trong React Native giúp tiết kiệm bộ nhớ?",
-    "options": ["ScrollView", "View", "FlatList", "SafeAreaView"],
-    "answer": "C"
-  },
-  {
-    "id": 356,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Trong JavaScript, giá trị của biểu thức `NaN === NaN` là gì?",
-    "options": ["true", "false", "undefined", "Error"],
-    "answer": "B"
-  },
-  {
-    "id": 357,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Để tự động căn chỉnh giao diện tránh các vùng bị che khuất như \"tai thỏ\" (notch) trên thiết bị iOS, ta dùng component nào?",
-    "options": ["View", "SafeAreaView", "ScrollView", "KeyboardAvoidingView"],
-    "answer": "B"
-  },
-  {
-    "id": 358,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Biểu thức `console.log(\"5\" - 2);` trong JavaScript trả về kết quả gì?",
-    "options": ["3", "52", "NaN", "Error"],
-    "answer": "A"
-  },
-  {
-    "id": 359,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Cú pháp Arrow Function nào dưới đây trả về một object `{ value: 1 }` một cách chính xác?",
-    "options": ["() => { value: 1 }", "() => ({ value: 1 })", "() => return { value: 1 }", "() => { return { value: 1 } }"],
-    "answer": "B"
-  },
-  {
-    "id": 360,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Trong Flexbox của React Native, thuộc tính `alignItems` mặc định căn chỉnh các phần tử con dọc theo trục nào?",
-    "options": ["Trục chính (Main Axis)", "Trục phụ (Cross Axis)", "Luôn là trục ngang", "Luôn là trục dọc"],
-    "answer": "B"
-  },
-  {
-    "id": 361,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Cách chuẩn quy trình để truyền dữ liệu từ component cha xuống component con trong React Native là gì?",
-    "options": ["Sử dụng State", "Sử dụng Props", "Sử dụng Refs", "Sử dụng Redux"],
-    "answer": "B"
-  },
-  {
-    "id": 362,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Để lấy thông tin kích thước màn hình thiết bị và tự động cập nhật khi xoay màn hình, hook nào tối ưu nhất?",
-    "options": ["useMemo", "useWindowDimensions", "useState", "useEffect"],
-    "answer": "B"
-  },
-  {
-    "id": 363,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Kết quả của `console.log(JSON.stringify({ id: 100 }));` là gì?",
-    "options": ["{ id: 100 }", "'{\"id\":100}'", "\"[id: 100]\"", "undefined"],
-    "answer": "B"
-  },
-  {
-    "id": 364,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Thuộc tính `keyExtractor` trong component `FlatList` nhận vào một hàm nhằm mục đích chính là gì?",
-    "options": ["Xác định kiểu dữ liệu item", "Tạo khóa chuỗi duy nhất cho từng phần tử để tối ưu hiệu năng render", "Tìm kiếm phần tử", "Sắp xếp lại phần tử"],
-    "answer": "B"
-  },
-  {
-    "id": 365,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Đoạn mã `const set = new Set([1, 2, 2, 3]); console.log(set.size);` in ra kết quả gì?",
-    "options": ["4", "3", "2", "1"],
-    "answer": "B"
-  },
-  {
-    "id": 366,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Đoạn mã sau trả về gì?\n`function outer() { let a = 1; return function() { return a; }; } const inner = outer(); console.log(inner());`",
-    "options": ["undefined", "1", "Error", "function"],
-    "answer": "B"
-  },
-  {
-    "id": 367,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Phương thức `Promise.all([p1, p2, p3])` sẽ kích hoạt khối `.catch()` khi nào?",
-    "options": ["Khi tất cả các Promise đều bị từ chối", "Khi có ít nhất một Promise bị từ chối (rejected)", "Khi Promise đầu tiên hoàn thành thành công", "Không bao giờ ném lỗi"],
-    "answer": "B"
-  },
-  {
-    "id": 368,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Để tối ưu hiệu năng, ngăn một component con bị render lại không cần thiết khi component cha re-render (props không đổi), ta bọc component con bằng công cụ nào?",
-    "options": ["React.memo", "useMemo", "useCallback", "useState"],
-    "answer": "A"
-  },
-  {
-    "id": 369,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Sự khác biệt lớn nhất giữa việc khai báo `const obj = {}` và áp dụng `Object.freeze(obj)` là gì?",
-    "options": ["const ngăn chỉnh sửa thuộc tính bên trong, Object.freeze ngăn gán lại biến", "const ngăn gán lại tham chiếu của biến, Object.freeze đóng băng không cho thêm/sửa/xóa thuộc tính đối tượng", "Cả hai đều có chức năng hoàn toàn giống nhau", "const chỉ áp dụng cho số nguyên, Object.freeze dùng cho object"],
-    "answer": "B"
-  },
-  {
-    "id": 370,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Kết quả của biểu thức `console.log(true + false);` trong JavaScript là gì?",
-    "options": ["truefalse", "1", "0", "NaN"],
-    "answer": "B"
-  },
-  {
-    "id": 371,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Khi tự định nghĩa một Custom Hook trong React/React Native, quy tắc đặt tên bắt buộc nào phải tuân theo?",
-    "options": ["Bắt đầu bằng chữ in hoa", "Bắt đầu bằng từ khóa 'use' viết thường", "Kết thúc bằng hậu tố 'Hook'", "Không có quy tắc cụ thể"],
-    "answer": "B"
-  },
-  {
-    "id": 372,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Đối tượng `Proxy` trong JavaScript (`new Proxy(target, handler)`) được dùng chủ yếu để làm gì?",
-    "options": ["Thay thế cho fetch API gọi mạng", "Định nghĩa hành vi tùy biến cho các thao tác cơ bản trên object (như đọc/ghi thuộc tính)", "Mã hóa dữ liệu bảo mật cho đối tượng", "Tăng tốc độ thực thi hàm đồng bộ"],
-    "answer": "B"
-  },
-  {
-    "id": 373,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Để thực hiện đồng thời hai yêu cầu gọi API bất đồng bộ song song nhằm rút ngắn thời gian xử lý, giải pháp nào tối ưu nhất?",
-    "options": ["Dùng hai khối try-catch lồng nhau", "Sử dụng Promise.all()", "Sử dụng từ khóa await tuần tự từng dòng", "Sử dụng vòng lặp for-in"],
-    "answer": "B"
-  },
-  {
-    "id": 374,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Vấn đề vòng lặp vô hạn (Infinite Loop) xảy ra trong `useEffect` khi nào?",
-    "options": ["Khi mảng dependency được để trống `[]`", "Khi ta cập nhật một state mà chính state đó lại nằm trong mảng dependency của `useEffect` đó không kèm điều kiện dừng", "Khi hàm không trả về giá trị clean-up", "Khi ứng dụng chạy trên giả lập Android"],
-    "answer": "B"
-  },
-  {
-    "id": 375,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Sự khác biệt cốt lõi về ngữ cảnh `this` giữa Arrow Function và Regular Function là gì?",
-    "options": ["Arrow function có ngữ cảnh 'this' động theo runtime", "Arrow function không có 'this' riêng; nó kế thừa 'this' từ phạm vi bao quanh lúc định nghĩa (lexical scope)", "Regular function không bao giờ có thuộc tính 'this'", "Cả hai đều xử lý 'this' hoàn toàn giống nhau"],
-    "answer": "B"
-  },
-  {
-    "id": 376,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Mục đích chính của việc sử dụng Hook `useCallback` là gì?",
-    "options": ["Ghi nhớ giá trị tính toán phức tạp để tránh tính toán lại", "Ghi nhớ định nghĩa hàm (memoize function) giữa các lần render để tránh tạo lại hàm mới", "Thay thế hoàn toàn cho Hook useEffect", "Tạo ra biến global lưu trạng thái"],
-    "answer": "B"
-  },
-  {
-    "id": 377,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Kết quả của hai biểu thức `console.log(1 + 2 + \"3\");` và `console.log(\"1\" + 2 + 3);` lần lượt là gì?",
-    "options": ["\"6\" v? \"15\"", "\"33\" v? \"123\"", "\"123\" v? \"33\"", "6 v? 123"],
-    "answer": "B"
-  },
-  {
-    "id": 378,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Để thiết lập component `FlatList` hiển thị danh sách dạng lưới (Grid) gồm 2 cột, ta sử dụng thuộc tính nào?",
-    "options": ["gridColumns={2}", "numColumns={2}", "flexWrap=\"wrap\"", "columnCount={2}"],
-    "answer": "B"
-  },
-  {
-    "id": 379,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Khi sử dụng Hook `useReducer`, hàm `reducer` luôn luôn phải nhận vào những tham số mặc định nào?",
-    "options": ["(state, action)", "(dispatch, state)", "(initialState, payload)", "(action, dispatch)"],
-    "answer": "A"
-  },
-  {
-    "id": 380,
-    "subject": "Đề ktra PTUDĐNT",
-    "chapter": "đề thi 3",
-    "question": "Xét đoạn mã sau:\n`const p = new Promise((res, rej) => { rej(\"Error\"); });` \n`p.then(() => console.log(1)).catch(() => console.log(2)).then(() => console.log(3));` \nĐoạn mã trên sẽ in ra chuỗi kết quả nào?",
-    "options": ["1, 2, 3", "2", "2, 3", "1, 3"],
-    "answer": "C"
-  }
+    {
+        "id": 331,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Kết quả của biểu thức `typeof \"React Native\"` trong JavaScript là gì?",
+        "options": ["string", "object", "undefined", "function"],
+        "answer": "A"
+    },
+    {
+        "id": 332,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Kết quả của biểu thức `2 == \"2\"` trong JavaScript là gì?",
+        "options": ["true", "false", "undefined", "NaN"],
+        "answer": "A"
+    },
+    {
+        "id": 333,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Component nào trong React Native được sử dụng để hiển thị hình ảnh?",
+        "options": ["View", "Text", "Image", "ImageView"],
+        "answer": "C"
+    },
+    {
+        "id": 334,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Để xếp các component con theo hàng ngang, thuộc tính `flexDirection` trong React Native cần nhận giá trị nào?",
+        "options": ["row", "column", "horizontal", "grid"],
+        "answer": "A"
+    },
+    {
+        "id": 335,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Phương thức nào dùng để thêm một hoặc nhiều phần tử vào cuối mảng trong JavaScript?",
+        "options": ["pop()", "push()", "shift()", "unshift()"],
+        "answer": "B"
+    },
+    {
+        "id": 336,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Trong Flexbox của React Native, thuộc tính nào dùng để căn chỉnh các phần tử con dọc theo trục chính (Main Axis)?",
+        "options": ["alignItems", "justifyContent", "alignContent", "flexWrap"],
+        "answer": "B"
+    },
+    {
+        "id": 337,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Component nào trong React Native cung cấp một vùng chứa có thể cuộn cho các nội dung bên trong?",
+        "options": ["View", "ScrollView", "SafeAreaView", "FlatList"],
+        "answer": "B"
+    },
+    {
+        "id": 338,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Kết quả của đoạn mã `console.log(10 % 3);` là gì?",
+        "options": ["1", "3", "0", "2"],
+        "answer": "A"
+    },
+    {
+        "id": 339,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Từ khóa nào dùng để khai báo một biến có phạm vi khối (block scope) và không thể gán lại giá trị sau đó?",
+        "options": ["var", "let", "const", "global"],
+        "answer": "C"
+    },
+    {
+        "id": 340,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Component nào trong React Native được sử dụng để nhận dữ liệu nhập vào từ bàn phím?",
+        "options": ["Input", "TextInput", "KeyInput", "Label"],
+        "answer": "B"
+    },
+    {
+        "id": 341,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Giá trị mặc định của thuộc tính `flexDirection` trong React Native là gì?",
+        "options": ["row", "column", "row-reverse", "column-reverse"],
+        "answer": "B"
+    },
+    {
+        "id": 342,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Biểu thức `Boolean(\"\")` (chuỗi rỗng) trong JavaScript trả về kết quả nào?",
+        "options": ["true", "false", "undefined", "null"],
+        "answer": "B"
+    },
+    {
+        "id": 343,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Để áp dụng kiểu dáng (style) cho một component trong React Native, ta dùng prop nào?",
+        "options": ["class", "id", "style", "styles"],
+        "answer": "C"
+    },
+    {
+        "id": 344,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Kết quả của `console.log(typeof null);` trong JavaScript là gì?",
+        "options": ["null", "undefined", "object", "string"],
+        "answer": "C"
+    },
+    {
+        "id": 345,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Phương thức nào loại bỏ phần tử cuối cùng ra khỏi một mảng và trả về phần tử đó?",
+        "options": ["shift()", "unshift()", "pop()", "push()"],
+        "answer": "C"
+    },
+    {
+        "id": 346,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Kết quả của đoạn mã `const arr = [1, 2, 3]; console.log(arr.map(x => x * 2));` là gì?",
+        "options": ["[1, 2, 3]", "[2, 4, 6]", "[2, 3, 4]", "Error"],
+        "answer": "B"
+    },
+    {
+        "id": 347,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Hook nào trong React Native được sử dụng để quản lý trạng thái cục bộ của một functional component?",
+        "options": ["useEffect", "useContext", "useState", "useReducer"],
+        "answer": "C"
+    },
+    {
+        "id": 348,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Biểu thức `3 === \"3\"` trả về kết quả gì trong JavaScript?",
+        "options": ["true", "false", "NaN", "undefined"],
+        "answer": "B"
+    },
+    {
+        "id": 349,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Hook nào dùng để thực hiện side effects (gọi API, lắng nghe sự kiện...) trong React Native?",
+        "options": ["useState", "useEffect", "useMemo", "useCallback"],
+        "answer": "B"
+    },
+    {
+        "id": 350,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Kỹ thuật Destructuring `const [a, b] = [10, 20, 30];` sẽ gán giá trị nào cho biến `b`?",
+        "options": ["10", "20", "30", "undefined"],
+        "answer": "B"
+    },
+    {
+        "id": 351,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Công cụ/Hệ sinh thái nào giúp xây dựng và chạy nhanh dự án React Native mà không cần cấu hình Android Studio hay Xcode từ đầu?",
+        "options": ["Webpack", "Expo", "Flutter", "Redux"],
+        "answer": "B"
+    },
+    {
+        "id": 352,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Thuộc tính nào của component `TouchableOpacity` dùng để thiết lập hàm xử lý khi người dùng nhấn vào?",
+        "options": ["onClick", "onPress", "onTap", "onTouch"],
+        "answer": "B"
+    },
+    {
+        "id": 353,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Kết quả của `const obj1 = {x: 1}; const obj2 = {...obj1, y: 2}; console.log(obj2);` là gì?",
+        "options": ["{x: 1}", "{y: 2}", "{x: 1, y: 2}", "Error"],
+        "answer": "C"
+    },
+    {
+        "id": 354,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Kết quả của đoạn mã `console.log([1, 2, 3, 4].filter(x => x % 2 === 0));` là gì?",
+        "options": ["[1, 3]", "[2, 4]", "[2]", "[4]"],
+        "answer": "B"
+    },
+    {
+        "id": 355,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Component nào tối ưu nhất để hiển thị một danh sách dữ liệu dài trong React Native giúp tiết kiệm bộ nhớ?",
+        "options": ["ScrollView", "View", "FlatList", "SafeAreaView"],
+        "answer": "C"
+    },
+    {
+        "id": 356,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Trong JavaScript, giá trị của biểu thức `NaN === NaN` là gì?",
+        "options": ["true", "false", "undefined", "Error"],
+        "answer": "B"
+    },
+    {
+        "id": 357,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Để tự động căn chỉnh giao diện tránh các vùng bị che khuất như \"tai thỏ\" (notch) trên thiết bị iOS, ta dùng component nào?",
+        "options": [
+            "View",
+            "SafeAreaView",
+            "ScrollView",
+            "KeyboardAvoidingView"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 358,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Biểu thức `console.log(\"5\" - 2);` trong JavaScript trả về kết quả gì?",
+        "options": ["3", "52", "NaN", "Error"],
+        "answer": "A"
+    },
+    {
+        "id": 359,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Cú pháp Arrow Function nào dưới đây trả về một object `{ value: 1 }` một cách chính xác?",
+        "options": [
+            "() => { value: 1 }",
+            "() => ({ value: 1 })",
+            "() => return { value: 1 }",
+            "() => { return { value: 1 } }"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 360,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Trong Flexbox của React Native, thuộc tính `alignItems` mặc định căn chỉnh các phần tử con dọc theo trục nào?",
+        "options": [
+            "Trục chính (Main Axis)",
+            "Trục phụ (Cross Axis)",
+            "Luôn là trục ngang",
+            "Luôn là trục dọc"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 361,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Cách chuẩn quy trình để truyền dữ liệu từ component cha xuống component con trong React Native là gì?",
+        "options": [
+            "Sử dụng State",
+            "Sử dụng Props",
+            "Sử dụng Refs",
+            "Sử dụng Redux"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 362,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Để lấy thông tin kích thước màn hình thiết bị và tự động cập nhật khi xoay màn hình, hook nào tối ưu nhất?",
+        "options": ["useMemo", "useWindowDimensions", "useState", "useEffect"],
+        "answer": "B"
+    },
+    {
+        "id": 363,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Kết quả của `console.log(JSON.stringify({ id: 100 }));` là gì?",
+        "options": [
+            "{ id: 100 }",
+            "'{\"id\":100}'",
+            "\"[id: 100]\"",
+            "undefined"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 364,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Thuộc tính `keyExtractor` trong component `FlatList` nhận vào một hàm nhằm mục đích chính là gì?",
+        "options": [
+            "Xác định kiểu dữ liệu item",
+            "Tạo khóa chuỗi duy nhất cho từng phần tử để tối ưu hiệu năng render",
+            "Tìm kiếm phần tử",
+            "Sắp xếp lại phần tử"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 365,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Đoạn mã `const set = new Set([1, 2, 2, 3]); console.log(set.size);` in ra kết quả gì?",
+        "options": ["4", "3", "2", "1"],
+        "answer": "B"
+    },
+    {
+        "id": 366,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Đoạn mã sau trả về gì?\n`function outer() { let a = 1; return function() { return a; }; } const inner = outer(); console.log(inner());`",
+        "options": ["undefined", "1", "Error", "function"],
+        "answer": "B"
+    },
+    {
+        "id": 367,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Phương thức `Promise.all([p1, p2, p3])` sẽ kích hoạt khối `.catch()` khi nào?",
+        "options": [
+            "Khi tất cả các Promise đều bị từ chối",
+            "Khi có ít nhất một Promise bị từ chối (rejected)",
+            "Khi Promise đầu tiên hoàn thành thành công",
+            "Không bao giờ ném lỗi"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 368,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Để tối ưu hiệu năng, ngăn một component con bị render lại không cần thiết khi component cha re-render (props không đổi), ta bọc component con bằng công cụ nào?",
+        "options": ["React.memo", "useMemo", "useCallback", "useState"],
+        "answer": "A"
+    },
+    {
+        "id": 369,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Sự khác biệt lớn nhất giữa việc khai báo `const obj = {}` và áp dụng `Object.freeze(obj)` là gì?",
+        "options": [
+            "const ngăn chỉnh sửa thuộc tính bên trong, Object.freeze ngăn gán lại biến",
+            "const ngăn gán lại tham chiếu của biến, Object.freeze đóng băng không cho thêm/sửa/xóa thuộc tính đối tượng",
+            "Cả hai đều có chức năng hoàn toàn giống nhau",
+            "const chỉ áp dụng cho số nguyên, Object.freeze dùng cho object"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 370,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Kết quả của biểu thức `console.log(true + false);` trong JavaScript là gì?",
+        "options": ["truefalse", "1", "0", "NaN"],
+        "answer": "B"
+    },
+    {
+        "id": 371,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Khi tự định nghĩa một Custom Hook trong React/React Native, quy tắc đặt tên bắt buộc nào phải tuân theo?",
+        "options": [
+            "Bắt đầu bằng chữ in hoa",
+            "Bắt đầu bằng từ khóa 'use' viết thường",
+            "Kết thúc bằng hậu tố 'Hook'",
+            "Không có quy tắc cụ thể"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 372,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Đối tượng `Proxy` trong JavaScript (`new Proxy(target, handler)`) được dùng chủ yếu để làm gì?",
+        "options": [
+            "Thay thế cho fetch API gọi mạng",
+            "Định nghĩa hành vi tùy biến cho các thao tác cơ bản trên object (như đọc/ghi thuộc tính)",
+            "Mã hóa dữ liệu bảo mật cho đối tượng",
+            "Tăng tốc độ thực thi hàm đồng bộ"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 373,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Để thực hiện đồng thời hai yêu cầu gọi API bất đồng bộ song song nhằm rút ngắn thời gian xử lý, giải pháp nào tối ưu nhất?",
+        "options": [
+            "Dùng hai khối try-catch lồng nhau",
+            "Sử dụng Promise.all()",
+            "Sử dụng từ khóa await tuần tự từng dòng",
+            "Sử dụng vòng lặp for-in"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 374,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Vấn đề vòng lặp vô hạn (Infinite Loop) xảy ra trong `useEffect` khi nào?",
+        "options": [
+            "Khi mảng dependency được để trống `[]`",
+            "Khi ta cập nhật một state mà chính state đó lại nằm trong mảng dependency của `useEffect` đó không kèm điều kiện dừng",
+            "Khi hàm không trả về giá trị clean-up",
+            "Khi ứng dụng chạy trên giả lập Android"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 375,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Sự khác biệt cốt lõi về ngữ cảnh `this` giữa Arrow Function và Regular Function là gì?",
+        "options": [
+            "Arrow function có ngữ cảnh 'this' động theo runtime",
+            "Arrow function không có 'this' riêng; nó kế thừa 'this' từ phạm vi bao quanh lúc định nghĩa (lexical scope)",
+            "Regular function không bao giờ có thuộc tính 'this'",
+            "Cả hai đều xử lý 'this' hoàn toàn giống nhau"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 376,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Mục đích chính của việc sử dụng Hook `useCallback` là gì?",
+        "options": [
+            "Ghi nhớ giá trị tính toán phức tạp để tránh tính toán lại",
+            "Ghi nhớ định nghĩa hàm (memoize function) giữa các lần render để tránh tạo lại hàm mới",
+            "Thay thế hoàn toàn cho Hook useEffect",
+            "Tạo ra biến global lưu trạng thái"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 377,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Kết quả của hai biểu thức `console.log(1 + 2 + \"3\");` và `console.log(\"1\" + 2 + 3);` lần lượt là gì?",
+        "options": [
+            "\"6\" v? \"15\"",
+            "\"33\" v? \"123\"",
+            "\"123\" v? \"33\"",
+            "6 v? 123"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 378,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Để thiết lập component `FlatList` hiển thị danh sách dạng lưới (Grid) gồm 2 cột, ta sử dụng thuộc tính nào?",
+        "options": [
+            "gridColumns={2}",
+            "numColumns={2}",
+            "flexWrap=\"wrap\"",
+            "columnCount={2}"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 379,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Khi sử dụng Hook `useReducer`, hàm `reducer` luôn luôn phải nhận vào những tham số mặc định nào?",
+        "options": [
+            "(state, action)",
+            "(dispatch, state)",
+            "(initialState, payload)",
+            "(action, dispatch)"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 380,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi 3",
+        "question": "Xét đoạn mã sau:\n`const p = new Promise((res, rej) => { rej(\"Error\"); });` \n`p.then(() => console.log(1)).catch(() => console.log(2)).then(() => console.log(3));` \nĐoạn mã trên sẽ in ra chuỗi kết quả nào?",
+        "options": ["1, 2, 3", "2", "2, 3", "1, 3"],
+        "answer": "C"
+    },
+    {
+        "id": 381,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nlet a = 5;\nlet b = \"5\";\nconsole.log(a == b);",
+        "options": ["true", "false", "undefined", "Error"],
+        "answer": "A"
+    },
+    {
+        "id": 382,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã sau trả về gì?\nconsole.log(typeof []);",
+        "options": ["array", "object", "undefined", "null"],
+        "answer": "B"
+    },
+    {
+        "id": 383,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Kết quả của biểu thức sau là gì?\nconsole.log(2 + \"2\" - 1);",
+        "options": ["3", "21", "NaN", "22"],
+        "answer": "A"
+    },
+    {
+        "id": 384,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã sau in ra gì?\nlet x = 1;\nlet y = x++;\nconsole.log(y);",
+        "options": ["1", "2", "undefined", "0"],
+        "answer": "A"
+    },
+    {
+        "id": 385,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nlet fruits = [\"apple\", \"banana\"];\nfruits.push(\"orange\");\nconsole.log(fruits.length);",
+        "options": ["2", "3", "1", "0"],
+        "answer": "B"
+    },
+    {
+        "id": 386,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã sau in ra gì?\nlet message = \"Hello\";\nmessage += \" World\";\nconsole.log(message);",
+        "options": ["Hello", "World", "Hello World", "undefined"],
+        "answer": "C"
+    },
+    {
+        "id": 387,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nfunction sayHi() {\n return \"Hi\";\n}\nconsole.log(typeof sayHi);",
+        "options": ["string", "function", "object", "undefined"],
+        "answer": "B"
+    },
+    {
+        "id": 388,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã sau in ra gì?\nconst numbers = [1, 4, 9, 16];\nconst result = numbers.map(Math.sqrt);\nconsole.log(result);",
+        "options": [
+            "[1, 2, 3, 4]",
+            "[1, 4, 9, 16]",
+            "[1, 1.5, 2, 2.5]",
+            "Error"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 389,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst users = [{ id: 1, name: \"John\", age: 25 },{ id: 2, name: \"Jane\", age: 30 },{ id: 3, name: \"Bob\", age: 22 }];\nconst names = users.map(user => user.name);\nconsole.log(names);",
+        "options": [
+            "[\"John\", \"Jane\", \"Bob\"]",
+            "[25, 30, 22]",
+            "[1, 2, 3]",
+            "[{name:\"John\"}]"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 390,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã sau trả về gì?\nfunction outer() {\n let x = 10;\n function inner() {\n return x;\n }\n return inner;\n}\nconst innerFunc = outer();\nconsole.log(innerFunc());",
+        "options": ["undefined", "10", "Error", "function"],
+        "answer": "B"
+    },
+    {
+        "id": 391,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst numbers = [10, 20, 30];\nconst [a, ...rest] = numbers;\nconsole.log(rest);",
+        "options": ["10", "[10]", "[20, 30]", "[10, 20, 30]"],
+        "answer": "C"
+    },
+    {
+        "id": 392,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã sau in ra gì?\nlet x = 5;\nlet y = 10;\n[x, y] = [y, x];\nconsole.log(x, y);",
+        "options": ["5, 10", "10, 5", "undefined, undefined", "Error"],
+        "answer": "B"
+    },
+    {
+        "id": 393,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst employees = [{ name: \"Alice\", department: \"Sales\" },{ name: \"Bob\", department: \"IT\" },{ name: \"Charlie\", department: \"Sales\" }];\nconst salesEmployees = employees.filter(emp => emp.department === \"Sales\");\nconsole.log(salesEmployees.length);",
+        "options": ["0", "1", "2", "3"],
+        "answer": "C"
+    },
+    {
+        "id": 394,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã sau in ra gì?\nconst products = [{ price: 1000 },{ price: 500 },{ price: 300 }];\nconst totalPrice = products.reduce((sum, product) => sum + product.price, 0);\nconsole.log(totalPrice);",
+        "options": ["1800", "1500", "1000", "800"],
+        "answer": "A"
+    },
+    {
+        "id": 395,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã sau trả về gì?\nconst person = { name: 'John', age: 30 };\nconst handler = { get: function(obj, prop) { return prop in obj ? obj[prop] : `Property \"${prop}\" does not exist`; }};\nconst proxy = new Proxy(person, handler);\nconsole.log(proxy.job);",
+        "options": [
+            "undefined",
+            "null",
+            "Property \"job\" does not exist",
+            "Error"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 396,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nasync function test() {\n return \"hello\";\n}\nconsole.log(test());",
+        "options": ["hello", "Promise", "undefined", "Error"],
+        "answer": "B"
+    },
+    {
+        "id": 397,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã sau trả về gì?\nclass Animal {}\nclass Dog extends Animal {}\nconst dog = new Dog();\nconst animal = new Animal();\nconsole.log(dog instanceof Dog, animal instanceof Dog);",
+        "options": ["true true", "false false", "true false", "Error"],
+        "answer": "C"
+    },
+    {
+        "id": 398,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst arr = [1,2,3];\nconst obj = { ...arr };\nconsole.log(obj);",
+        "options": ["[1,2,3]", "{0:1,1:2,2:3}", "{}", "Error"],
+        "answer": "B"
+    },
+    {
+        "id": 399,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã sau in ra gì?\nconst string = \"Hello\";\nconst charArray = [...string];\nconsole.log(charArray);",
+        "options": [
+            "[\"Hello\"]",
+            "[\"H\",\"e\",\"l\",\"l\",\"o\"]",
+            "\"H,e,l,l,o\"",
+            "Error"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 400,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã sau trả về gì?\nconst students = [{ grades:[85,90,92] },{ grades:[75,80,85] },{ grades:[90,95,85] }];\nconst highScorers = students.filter(student => {\n const average = student.grades.reduce((sum, grade) => sum + grade, 0) / student.grades.length;\n return average >= 85;\n});\nconsole.log(highScorers.length);",
+        "options": ["0", "1", "2", "3"],
+        "answer": "C"
+    },
+    {
+        "id": 401,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Trong React Native, Hook nào được sử dụng để thực hiện side effects?",
+        "options": ["useState", "useContext", "useEffect", "useReducer"],
+        "answer": "C"
+    },
+    {
+        "id": 402,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Component nào trong React Native được sử dụng để hiển thị văn bản?",
+        "options": ["View", "Text", "TextInput", "Label"],
+        "answer": "B"
+    },
+    {
+        "id": 403,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã sau tạo ra kiểu layout gì?\n<View style={{flexDirection:'column'}}><View style={{flex:1}} /><View style={{flex:1}} /></View>",
+        "options": [
+            "Hai cột ngang cạnh nhau",
+            "Hai hàng dọc bằng nhau",
+            "Một cột dọc duy nhất",
+            "Không có gì hiển thị"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 404,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Cách chính xác để lắng nghe sự kiện nhấn trong React Native là gì?",
+        "options": ["onClick", "onPress", "onTap", "onTouch"],
+        "answer": "B"
+    },
+    {
+        "id": 405,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nfunction Component(){ const [text,setText]=useState('Hello'); useEffect(()=>{setText('World')},[]); return <Text>{text}</Text>}",
+        "options": ["Hello", "World", "Cả Hello và World", "Component lỗi"],
+        "answer": "B"
+    },
+    {
+        "id": 406,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã dưới đây có vấn đề gì?\n<Button onPress={setCount(count + 1)} title='Increment' />",
+        "options": [
+            "Không thể dùng useState",
+            "Cần truyền function vào onPress",
+            "Text cần style",
+            "Button không tồn tại"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 407,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã sau trong React Native thực hiện chức năng gì?\n<View style={{ padding:10, margin:5, borderRadius:8, backgroundColor:'#eee' }}><Text>Title</Text></View>",
+        "options": ["Button", "Card đơn giản", "Header", "Image"],
+        "answer": "B"
+    },
+    {
+        "id": 408,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã sau sẽ hiển thị gì?\n<Text>Count: {count}</Text>",
+        "options": [
+            "Count tăng sau mỗi lần nhấn",
+            "Không hiển thị",
+            "Lỗi",
+            "Undefined"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 409,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã ProfileCard sẽ hiển thị như thế nào?",
+        "options": [
+            "Card có ảnh vuông",
+            "Card có ảnh tròn và text căn giữa",
+            "Card hình tròn",
+            "Không có ảnh"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 410,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Promise.all([promise1, promise2]) sẽ in ra gì?",
+        "options": ["[3, undefined]", "[3, 'foo']", "['foo',3]", "Error"],
+        "answer": "B"
+    },
+    {
+        "id": 411,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Trong React Navigation, navigation.navigate('Details', {id:1}) thực hiện gì?",
+        "options": [
+            "Điều hướng và truyền id",
+            "Mở modal",
+            "Reload màn hình",
+            "Không làm gì"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 412,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst obj1={a:1,b:2}; const obj2={b:3,c:4}; const merged={...obj1,...obj2};",
+        "options": [
+            "{a:1,b:2,c:4}",
+            "{a:1,b:3,c:4}",
+            "{a:1,b:2,b:3,c:4}",
+            "Error"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 413,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconsole.log(calc.add(5).multiply(2).getTotal());",
+        "options": ["5", "10", "7", "Error"],
+        "answer": "B"
+    },
+    {
+        "id": 414,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã JavaScript sau sẽ trả về gì?\nconst set = new Set(['a','b','c']); set.add('a'); set.add('d'); console.log(set.size);",
+        "options": ["5", "4", "3", "2"],
+        "answer": "B"
+    },
+    {
+        "id": 415,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "useEffect(() => { fetchData(); }, []); thực hiện chức năng gì?",
+        "options": [
+            "Gọi API mỗi render",
+            "Gọi API một lần khi mount",
+            "Lưu local storage",
+            "Reload trang"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 416,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst url = new URL('https://example.com/path'); url.searchParams.append('name','John Doe');",
+        "options": [
+            "https://example.com/path",
+            "https://example.com/path?name=John%20Doe",
+            "Error",
+            "undefined"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 417,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "StatusIndicator status='active' sẽ hiển thị gì?",
+        "options": ["Chấm đỏ", "Chấm xanh lá", "Chấm cam", "Chấm xám"],
+        "answer": "B"
+    },
+    {
+        "id": 418,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Expo ImagePicker.launchImageLibraryAsync() dùng để làm gì?",
+        "options": [
+            "Mở camera",
+            "Tải ảnh internet",
+            "Mở thư viện ảnh",
+            "Lưu ảnh"
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 419,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Promise.all trong axios được dùng để làm gì?",
+        "options": [
+            "Gọi API tuần tự",
+            "Gọi nhiều API song song",
+            "Upload file",
+            "Lưu dữ liệu"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 420,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "FlatList numColumns={2} thực hiện chức năng gì?",
+        "options": [
+            "Danh sách dọc",
+            "Danh sách dạng lưới 2 cột",
+            "Một sản phẩm",
+            "Carousel"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 421,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Component SearchBar thực hiện chức năng gì?",
+        "options": [
+            "Input tìm kiếm với nút gửi",
+            "Form đăng nhập",
+            "Filter",
+            "Dropdown"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 422,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Object.assign(target, source) sẽ cho kết quả gì?",
+        "options": [
+            "Không thay đổi target",
+            "Merge object vào target",
+            "Tạo array",
+            "Error"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 423,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst filtered=[1,2,3,4,5].map(n=>n*2).filter(n=>n>5);",
+        "options": ["[1,2,3]", "[2,4,6,8,10]", "[6,8,10]", "[]"],
+        "answer": "C"
+    },
+    {
+        "id": 424,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "createBottomTabNavigator dùng để làm gì?",
+        "options": [
+            "Stack navigator",
+            "Bottom tab navigator",
+            "Drawer navigator",
+            "Không có UI"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 425,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "React.memo(Child) có ý nghĩa gì?",
+        "options": [
+            "Child chỉ render khi props thay đổi",
+            "Child không render",
+            "Render liên tục",
+            "Error"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 426,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Đoạn mã debounce dùng để làm gì?",
+        "options": [
+            "Delay thực thi sau khi ngừng gõ",
+            "Lặp vô hạn",
+            "Throttle",
+            "Animation"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 427,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Modal visible={isVisible} dùng để làm gì?",
+        "options": ["Popup", "Modal đóng/mở", "Drawer", "Dropdown"],
+        "answer": "B"
+    },
+    {
+        "id": 428,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Setter fullName trong object person sẽ làm gì?",
+        "options": [
+            "Không thay đổi dữ liệu",
+            "Cập nhật firstName và lastName",
+            "Tạo object mới",
+            "Error"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 429,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Nếu authService.login(credentials) lỗi thì state sẽ như thế nào?",
+        "options": [
+            "error null",
+            "error = error.message",
+            "Không đổi",
+            "user được cập nhật"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 430,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi mẫu(gốc)",
+        "question": "Nếu fetchData lỗi thì state cuối cùng sẽ là gì?",
+        "options": [
+            "{ data: [], isLoading: true, error:'Failed to fetch' }",
+            "{ data: [], isLoading: false, error:'Failed to fetch' }",
+            "Giữ nguyên state ban đầu",
+            "{ data: result, isLoading:false, error:null }"
+        ],
+        "answer": "B"
+    }
 ]
