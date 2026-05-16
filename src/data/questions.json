@@ -4127,7 +4127,7 @@
         "id": 389,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Kết quả của đoạn mã sau là gì?\nconst users = [{ id: 1, name: \"John\", age: 25 },{ id: 2, name: \"Jane\", age: 30 },{ id: 3, name: \"Bob\", age: 22 }];\nconst names = users.map(user => user.name);\nconsole.log(names);",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst users = [{ id: 1, name: \"John\", age: 25 }, { id: 2, name: \"Jane\", age: 30 }, { id: 3, name: \"Bob\", age: 22 }];\nconst names = users.map(user => user.name);\nconsole.log(names);",
         "options": [
             "[\"John\", \"Jane\", \"Bob\"]",
             "[25, 30, 22]",
@@ -4164,7 +4164,7 @@
         "id": 393,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Kết quả của đoạn mã sau là gì?\nconst employees = [{ name: \"Alice\", department: \"Sales\" },{ name: \"Bob\", department: \"IT\" },{ name: \"Charlie\", department: \"Sales\" }];\nconst salesEmployees = employees.filter(emp => emp.department === \"Sales\");\nconsole.log(salesEmployees.length);",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst employees = [{ name: \"Alice\", department: \"Sales\" }, { name: \"Bob\", department: \"IT\" }, { name: \"Charlie\", department: \"Sales\" }];\nconst salesEmployees = employees.filter(emp => emp.department === \"Sales\");\nconsole.log(salesEmployees.length);",
         "options": ["0", "1", "2", "3"],
         "answer": "C"
     },
@@ -4172,7 +4172,7 @@
         "id": 394,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Đoạn mã sau in ra gì?\nconst products = [{ price: 1000 },{ price: 500 },{ price: 300 }];\nconst totalPrice = products.reduce((sum, product) => sum + product.price, 0);\nconsole.log(totalPrice);",
+        "question": "Đoạn mã sau in ra gì?\nconst products = [{ price: 1000 }, { price: 500 }, { price: 300 }];\nconst totalPrice = products.reduce((sum, product) => sum + product.price, 0);\nconsole.log(totalPrice);",
         "options": ["1800", "1500", "1000", "800"],
         "answer": "A"
     },
@@ -4180,7 +4180,7 @@
         "id": 395,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Đoạn mã sau trả về gì?\nconst person = { name: 'John', age: 30 };\nconst handler = { get: function(obj, prop) { return prop in obj ? obj[prop] : `Property \"${prop}\" does not exist`; }};\nconst proxy = new Proxy(person, handler);\nconsole.log(proxy.job);",
+        "question": "Đoạn mã sau trả về gì?\nconst person = { name: 'John', age: 30 };\nconst handler = { get: function(obj, prop) { return prop in obj ? obj[prop] : `Property \"${prop}\" does not exist`; } };\nconst proxy = new Proxy(person, handler);\nconsole.log(proxy.job);",
         "options": [
             "undefined",
             "null",
@@ -4194,23 +4194,28 @@
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
         "question": "Kết quả của đoạn mã sau là gì?\nasync function test() {\n return \"hello\";\n}\nconsole.log(test());",
-        "options": ["hello", "Promise", "undefined", "Error"],
+        "options": [
+            "\"hello\"",
+            "Promise {<fulfilled>: \"hello\"}",
+            "undefined",
+            "Error"
+        ],
         "answer": "B"
     },
     {
         "id": 397,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Đoạn mã sau trả về gì?\nclass Animal {}\nclass Dog extends Animal {}\nconst dog = new Dog();\nconst animal = new Animal();\nconsole.log(dog instanceof Dog, animal instanceof Dog);",
-        "options": ["true true", "false false", "true false", "Error"],
+        "question": "Đoạn mã sau trả về gì?\nclass Animal {\n constructor(name) {\n  this.name = name;\n }\n speak() {\n  return `${this.name} makes a noise`;\n }\n}\nclass Dog extends Animal {\n constructor(name, breed) {\n  super(name);\n  this.breed = breed;\n }\n speak() {\n  return `${this.name} barks and is a ${this.breed}`;\n }\n static isDog(animal) {\n  return animal instanceof Dog;\n }\n}\nconst dog = new Dog(\"Rex\", \"German Shepherd\");\nconst animal = new Animal(\"Generic Animal\");\nconsole.log(Dog.isDog(dog), Dog.isDog(animal));",
+        "options": ["true, true", "false, false", "true, false", "Error"],
         "answer": "C"
     },
     {
         "id": 398,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Kết quả của đoạn mã sau là gì?\nconst arr = [1,2,3];\nconst obj = { ...arr };\nconsole.log(obj);",
-        "options": ["[1,2,3]", "{0:1,1:2,2:3}", "{}", "Error"],
+        "question": "Kết quả của đoạn mã sau là gì?\nconst arr = [1, 2, 3];\nconst obj = { ...arr };\nconsole.log(obj);",
+        "options": ["[1, 2, 3]", "{ 0: 1, 1: 2, 2: 3 }", "{}", "Error"],
         "answer": "B"
     },
     {
@@ -4220,7 +4225,7 @@
         "question": "Đoạn mã sau in ra gì?\nconst string = \"Hello\";\nconst charArray = [...string];\nconsole.log(charArray);",
         "options": [
             "[\"Hello\"]",
-            "[\"H\",\"e\",\"l\",\"l\",\"o\"]",
+            "[\"H\", \"e\", \"l\", \"l\", \"o\"]",
             "\"H,e,l,l,o\"",
             "Error"
         ],
@@ -4230,7 +4235,7 @@
         "id": 400,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Đoạn mã sau trả về gì?\nconst students = [{ grades:[85,90,92] },{ grades:[75,80,85] },{ grades:[90,95,85] }];\nconst highScorers = students.filter(student => {\n const average = student.grades.reduce((sum, grade) => sum + grade, 0) / student.grades.length;\n return average >= 85;\n});\nconsole.log(highScorers.length);",
+        "question": "Đoạn mã sau trả về gì?\nconst students = [\n { name: \"Alice\", grades: [85, 90, 92] },\n { name: \"Bob\", grades: [75, 80, 85] },\n { name: \"Charlie\", grades: [90, 95, 85] }\n];\nconst highScorers = students.filter(student => {\n const average = student.grades.reduce((sum, grade) => sum + grade, 0) / student.grades.length;\n return average >= 85;\n});\nconsole.log(highScorers.length);",
         "options": ["0", "1", "2", "3"],
         "answer": "C"
     },
@@ -4254,7 +4259,7 @@
         "id": 403,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Đoạn mã sau tạo ra kiểu layout gì?\n<View style={{flexDirection:'column'}}><View style={{flex:1}} /><View style={{flex:1}} /></View>",
+        "question": "Đoạn mã sau tạo ra kiểu layout gì?\n<View style={{flexDirection: \"column\"}}>\n <View style={{flex: 1, backgroundColor: \"red\"}} />\n <View style={{flex: 1, backgroundColor: \"blue\"}} />\n</View>",
         "options": [
             "Hai cột ngang cạnh nhau",
             "Hai hàng dọc bằng nhau",
@@ -4268,27 +4273,37 @@
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
         "question": "Cách chính xác để lắng nghe sự kiện nhấn trong React Native là gì?",
-        "options": ["onClick", "onPress", "onTap", "onTouch"],
+        "options": [
+            "onClick={() => {}}",
+            "onPress={() => {}}",
+            "onTap={() => {}}",
+            "onTouch={() => {}}"
+        ],
         "answer": "B"
     },
     {
         "id": 405,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Kết quả của đoạn mã sau là gì?\nfunction Component(){ const [text,setText]=useState('Hello'); useEffect(()=>{setText('World')},[]); return <Text>{text}</Text>}",
-        "options": ["Hello", "World", "Cả Hello và World", "Component lỗi"],
+        "question": "Kết quả của đoạn mã sau là gì?\nfunction Component() {\n const [text, setText] = useState(\"Hello\");\n useEffect(() => {\n  setText(\"World\");\n }, []);\n return <Text>{text}</Text>;\n}",
+        "options": [
+            "\"Hello\" sẽ được hiển thị",
+            "\"World\" sẽ được hiển thị",
+            "Cả \"Hello\" và \"World\" sẽ được hiển thị",
+            "Component sẽ bị lỗi"
+        ],
         "answer": "B"
     },
     {
         "id": 406,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Đoạn mã dưới đây có vấn đề gì?\n<Button onPress={setCount(count + 1)} title='Increment' />",
+        "question": "Đoạn mã dưới đây có vấn đề gì?\nfunction Counter() {\n const [count, setCount] = useState(0);\n return (\n  <View>\n   <Text>{count}</Text>\n   <Button onPress={setCount(count + 1)} title=\"Increment\" />\n  </View>\n );\n}",
         "options": [
-            "Không thể dùng useState",
-            "Cần truyền function vào onPress",
-            "Text cần style",
-            "Button không tồn tại"
+            "Không thể sử dụng useState trong functional component",
+            "Cần truyền một function vào onPress, không phải kết quả của function",
+            "Text component cần có thuộc tính style",
+            "Button component không tồn tại trong React Native"
         ],
         "answer": "B"
     },
@@ -4296,33 +4311,38 @@
         "id": 407,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Đoạn mã sau trong React Native thực hiện chức năng gì?\n<View style={{ padding:10, margin:5, borderRadius:8, backgroundColor:'#eee' }}><Text>Title</Text></View>",
-        "options": ["Button", "Card đơn giản", "Header", "Image"],
+        "question": "Đoạn mã sau trong React Native thực hiện chức năng gì?\n<View style={{ padding: 10, margin: 5, borderRadius: 8, backgroundColor: '#eee' }}>\n <Text style={{ fontWeight: 'bold' }}>Title</Text>\n <Text>Description</Text>\n</View>",
+        "options": [
+            "Tạo một component Button tùy chỉnh",
+            "Tạo một component Card đơn giản",
+            "Tạo một component Header",
+            "Tạo một component Image"
+        ],
         "answer": "B"
     },
     {
         "id": 408,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Đoạn mã sau sẽ hiển thị gì?\n<Text>Count: {count}</Text>",
+        "question": "Đoạn mã sau sẽ hiển thị gì?\nfunction Parent() {\n const [count, setCount] = useState(0);\n return <Child count={count} onIncrement={() => setCount(count + 1)} />;\n}\nfunction Child({ count, onIncrement }) {\n return (\n  <View>\n   <Text>Count: {count}</Text>\n   <Button title=\"Increment\" onPress={onIncrement} />\n  </View>\n );\n}",
         "options": [
-            "Count tăng sau mỗi lần nhấn",
-            "Không hiển thị",
-            "Lỗi",
-            "Undefined"
+            "Một text hiển thị \"Count: 0\" và nút không hoạt động",
+            "Một text hiển thị \"Count: 0\" và nút tăng giá trị sau mỗi lần nhấn",
+            "Một text hiển thị \"Count: undefined\" và gây ra lỗi",
+            "Không hiển thị gì và gây ra lỗi"
         ],
-        "answer": "A"
+        "answer": "B"
     },
     {
         "id": 409,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Đoạn mã ProfileCard sẽ hiển thị như thế nào?",
+        "question": "Đoạn mã sau trong React Native sẽ hiển thị như thế nào?\nfunction ProfileCard() {\n return (\n  <View style={{ borderWidth: 1, borderColor: '#ddd', borderRadius: 10, padding: 15, margin: 10 }}>\n   <Image source={{ uri: 'https://example.com/avatar.jpg' }} style={{ width: 100, height: 100, borderRadius: 50, alignSelf: 'center' }} />\n   <Text style={{ fontSize: 18, fontWeight: 'bold', textAlign: 'center', marginTop: 10 }}>John Doe</Text>\n   <Text style={{ textAlign: 'center', color: '#666' }}>Software Developer</Text>\n  </View>\n );\n}",
         "options": [
-            "Card có ảnh vuông",
-            "Card có ảnh tròn và text căn giữa",
-            "Card hình tròn",
-            "Không có ảnh"
+            "Một card hình chữ nhật với hình ảnh hình vuông",
+            "Một card hình chữ nhật với hình ảnh hình tròn và text căn giữa",
+            "Một card hình tròn với hình ảnh hình tròn",
+            "Một card hình chữ nhật không có hình ảnh"
         ],
         "answer": "B"
     },
@@ -4330,20 +4350,20 @@
         "id": 410,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Promise.all([promise1, promise2]) sẽ in ra gì?",
-        "options": ["[3, undefined]", "[3, 'foo']", "['foo',3]", "Error"],
+        "question": "Đoạn mã sau sẽ in ra gì?\nconst promise1 = Promise.resolve(3);\nconst promise2 = new Promise((resolve) => setTimeout(() => resolve('foo'), 100));\nPromise.all([promise1, promise2]).then((values) => {\n console.log(values);\n});",
+        "options": ["[3, undefined]", "[3, 'foo']", "['foo', 3]", "Error"],
         "answer": "B"
     },
     {
         "id": 411,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Trong React Navigation, navigation.navigate('Details', {id:1}) thực hiện gì?",
+        "question": "Trong React Navigation, đoạn mã sau thực hiện chức năng gì?\nfunction MyScreen({ navigation }) {\n return (\n  <View>\n   <Button\n    title=\"Go to Details\"\n    onPress={() => navigation.navigate('Details', { id: 1 })}\n   />\n  </View>\n );\n}",
         "options": [
-            "Điều hướng và truyền id",
-            "Mở modal",
-            "Reload màn hình",
-            "Không làm gì"
+            "Điều hướng đến màn hình Details và truyền tham số id",
+            "Mở một modal với tên Details",
+            "Tải lại màn hình hiện tại",
+            "Không thực hiện bất kỳ điều hướng nào"
         ],
         "answer": "A"
     },
@@ -4351,11 +4371,11 @@
         "id": 412,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Kết quả của đoạn mã sau là gì?\nconst obj1={a:1,b:2}; const obj2={b:3,c:4}; const merged={...obj1,...obj2};",
+        "question": "Đoạn mã sau trong JavaScript sẽ trả về gì?\nconst obj1 = { a: 1, b: 2 };\nconst obj2 = { b: 3, c: 4 };\nconst merged = { ...obj1, ...obj2 };\nconsole.log(merged);",
         "options": [
-            "{a:1,b:2,c:4}",
-            "{a:1,b:3,c:4}",
-            "{a:1,b:2,b:3,c:4}",
+            "{ a: 1, b: 2, c: 4 }",
+            "{ a: 1, b: 3, c: 4 }",
+            "{ a: 1, b: 2, b: 3, c: 4 }",
             "Error"
         ],
         "answer": "B"
@@ -4364,7 +4384,7 @@
         "id": 413,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Kết quả của đoạn mã sau là gì?\nconsole.log(calc.add(5).multiply(2).getTotal());",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst calc = {\n total: 0,\n add(a) {\n  this.total += a;\n  return this;\n },\n multiply(a) {\n  this.total *= a;\n  return this;\n },\n getTotal() {\n  return this.total;\n }\n};\nconsole.log(calc.add(5).multiply(2).getTotal());",
         "options": ["5", "10", "7", "Error"],
         "answer": "B"
     },
@@ -4372,7 +4392,7 @@
         "id": 414,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Đoạn mã JavaScript sau sẽ trả về gì?\nconst set = new Set(['a','b','c']); set.add('a'); set.add('d'); console.log(set.size);",
+        "question": "Đoạn mã JavaScript sau sẽ trả về gì?\nconst values = ['a', 'b', 'c'];\nconst set = new Set(values);\nset.add('a');\nset.add('d');\nconsole.log(set.size);",
         "options": ["5", "4", "3", "2"],
         "answer": "B"
     },
@@ -4380,12 +4400,12 @@
         "id": 415,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "useEffect(() => { fetchData(); }, []); thực hiện chức năng gì?",
+        "question": "Sử dụng fetch API trong React Native, đoạn mã sau sẽ thực hiện chức năng gì?\nuseEffect(() => {\n const fetchData = async () => {\n  try {\n   const response = await fetch('https://api.example.com/data');\n   const data = await response.json();\n   setItems(data);\n  } catch (error) {\n   console.error('Error fetching data:', error);\n  }\n };\n fetchData();\n}, []);",
         "options": [
-            "Gọi API mỗi render",
-            "Gọi API một lần khi mount",
-            "Lưu local storage",
-            "Reload trang"
+            "Gọi API mỗi khi component render",
+            "Gọi API chỉ một lần khi component được mount",
+            "Gọi API và lưu kết quả vào local storage",
+            "Gọi API và tải lại trang"
         ],
         "answer": "B"
     },
@@ -4393,12 +4413,12 @@
         "id": 416,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Kết quả của đoạn mã sau là gì?\nconst url = new URL('https://example.com/path'); url.searchParams.append('name','John Doe');",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst url = new URL('https://example.com/path');\nurl.searchParams.append('name', 'John Doe');\nurl.searchParams.append('age', '30');\nconsole.log(url.toString());",
         "options": [
             "https://example.com/path",
-            "https://example.com/path?name=John%20Doe",
-            "Error",
-            "undefined"
+            "https://example.com/path?name=John%20Doe&age=30",
+            "https://example.com/path?name=John Doe&age=30",
+            "Error"
         ],
         "answer": "B"
     },
@@ -4406,20 +4426,25 @@
         "id": 417,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "StatusIndicator status='active' sẽ hiển thị gì?",
-        "options": ["Chấm đỏ", "Chấm xanh lá", "Chấm cam", "Chấm xám"],
+        "question": "Đoạn mã sau trong React Native sẽ hiển thị như thế nào?\nfunction StatusIndicator({ status }) {\n const colorMap = {\n  active: 'green',\n  pending: 'orange',\n  inactive: 'red'\n };\n return (\n  <View style={{ width: 10, height: 10, borderRadius: 5, backgroundColor: colorMap[status] || 'gray' }} />\n );\n}\nfunction UserRow() {\n return (\n  <View style={{ flexDirection: 'row', alignItems: 'center' }}>\n   <StatusIndicator status=\"active\" />\n   <Text style={{ marginLeft: 5 }}>John Doe</Text>\n  </View>\n );\n}",
+        "options": [
+            "Một dòng với một chấm đỏ và tên \"John Doe\"",
+            "Một dòng với một chấm xanh lá và tên \"John Doe\"",
+            "Một dòng với một chấm cam và tên \"John Doe\"",
+            "Một dòng với một chấm xám và tên \"John Doe\""
+        ],
         "answer": "B"
     },
     {
         "id": 418,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Expo ImagePicker.launchImageLibraryAsync() dùng để làm gì?",
+        "question": "Trong Expo, đoạn mã sau thực hiện chức năng gì?\nimport * as ImagePicker from 'expo-image-picker';\nconst pickImage = async () => {\n const { status } = await ImagePicker.requestMediaLibraryPermissionsAsync();\n if (status !== 'granted') {\n  alert('Permission to access media library is required!');\n  return;\n }\n const result = await ImagePicker.launchImageLibraryAsync({\n  mediaTypes: ImagePicker.MediaTypeOptions.Images,\n  allowsEditing: true,\n  aspect: [4, 3],\n  quality: 1\n });\n if (!result.cancelled) {\n  setImage(result.uri);\n }\n};",
         "options": [
-            "Mở camera",
-            "Tải ảnh internet",
-            "Mở thư viện ảnh",
-            "Lưu ảnh"
+            "Mở camera để chụp ảnh",
+            "Tải ảnh từ internet",
+            "Mở thư viện ảnh để chọn ảnh",
+            "Lưu ảnh vào bộ nhớ thiết bị"
         ],
         "answer": "C"
     },
@@ -4427,12 +4452,12 @@
         "id": 419,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Promise.all trong axios được dùng để làm gì?",
+        "question": "Sử dụng thư viện axios, đoạn mã sau thực hiện chức năng gì?\nasync function fetchUserData(userId) {\n try {\n  const [userResponse, postsResponse] = await Promise.all([\n   axios.get(`https://api.example.com/users/${userId}`),\n   axios.get(`https://api.example.com/users/${userId}/posts`)\n  ]);\n  return {\n   user: userResponse.data,\n   posts: postsResponse.data\n  };\n } catch (error) {\n  console.error('Error fetching data:', error);\n  return null;\n }\n}",
         "options": [
-            "Gọi API tuần tự",
-            "Gọi nhiều API song song",
-            "Upload file",
-            "Lưu dữ liệu"
+            "Gọi API tuần tự để lấy thông tin người dùng, sau đó lấy bài viết",
+            "Gọi hai API song song để lấy cả thông tin người dùng và bài viết cùng lúc",
+            "Gọi API để lấy thông tin người dùng hoặc bài viết, không phải cả hai",
+            "Gửi dữ liệu người dùng lên API"
         ],
         "answer": "B"
     },
@@ -4440,12 +4465,12 @@
         "id": 420,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "FlatList numColumns={2} thực hiện chức năng gì?",
+        "question": "Đoạn mã sau trong React Native thực hiện chức năng gì?\nimport { FlatList } from 'react-native';\nfunction ProductList({ products, onProductPress }) {\n const renderItem = ({ item }) => (\n  <TouchableOpacity style={styles.productCard} onPress={() => onProductPress(item.id)}>\n   <Image source={{ uri: item.imageUrl }} style={styles.productImage} />\n   <Text style={styles.productName}>{item.name}</Text>\n   <Text style={styles.productPrice}>${item.price.toFixed(2)}</Text>\n  </TouchableOpacity>\n );\n return (\n  <FlatList\n   data={products}\n   renderItem={renderItem}\n   keyExtractor={item => item.id.toString()}\n   numColumns={2}\n   contentContainerStyle={styles.container}\n  />\n );\n}",
         "options": [
-            "Danh sách dọc",
-            "Danh sách dạng lưới 2 cột",
-            "Một sản phẩm",
-            "Carousel"
+            "Hiển thị một danh sách sản phẩm theo hàng dọc",
+            "Hiển thị một danh sách sản phẩm theo lưới 2 cột",
+            "Hiển thị một sản phẩm duy nhất",
+            "Hiển thị một carousel sản phẩm"
         ],
         "answer": "B"
     },
@@ -4453,12 +4478,12 @@
         "id": 421,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Component SearchBar thực hiện chức năng gì?",
+        "question": "Đoạn mã sau trong React Native thực hiện chức năng gì?\nfunction SearchBar({ onSearch }) {\n const [query, setQuery] = useState('');\n const handleSearch = () => {\n  if (query.trim()) {\n   onSearch(query);\n  }\n };\n return (\n  <View style={styles.container}>\n   <TextInput\n    style={styles.input}\n    placeholder=\"Search...\"\n    value={query}\n    onChangeText={setQuery}\n   />\n   <TouchableOpacity style={styles.button} onPress={handleSearch}>\n    <Text style={styles.buttonText}>Search</Text>\n   </TouchableOpacity>\n  </View>\n );\n}",
         "options": [
-            "Input tìm kiếm với nút gửi",
-            "Form đăng nhập",
-            "Filter",
-            "Dropdown"
+            "Tạo một component input tìm kiếm với nút gửi",
+            "Tạo một form đăng nhập",
+            "Tạo một component filter",
+            "Tạo một component dropdown menu"
         ],
         "answer": "A"
     },
@@ -4466,12 +4491,12 @@
         "id": 422,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Object.assign(target, source) sẽ cho kết quả gì?",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst target = { a: 1, b: 2 };\nconst source = { b: 4, c: 5 };\nconst returnedTarget = Object.assign(target, source);\nconsole.log(target);\nconsole.log(returnedTarget === target);",
         "options": [
-            "Không thay đổi target",
-            "Merge object vào target",
-            "Tạo array",
-            "Error"
+            "{ a: 1, b: 2 }, false",
+            "{ a: 1, b: 4, c: 5 }, true",
+            "{ a: 1, b: 4, c: 5 }, false",
+            "{ a: 1, b: 2, c: 5 }, true"
         ],
         "answer": "B"
     },
@@ -4479,20 +4504,20 @@
         "id": 423,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Kết quả của đoạn mã sau là gì?\nconst filtered=[1,2,3,4,5].map(n=>n*2).filter(n=>n>5);",
-        "options": ["[1,2,3]", "[2,4,6,8,10]", "[6,8,10]", "[]"],
+        "question": "Đoạn mã JavaScript sau sẽ in ra gì?\nconst data = [1, 2, 3, 4, 5];\nconst doubled = data.map(num => num * 2);\nconst filtered = doubled.filter(num => num > 5);\nconsole.log(filtered);",
+        "options": ["[1, 2, 3, 4, 5]", "[2, 4, 6, 8, 10]", "[6, 8, 10]", "[]"],
         "answer": "C"
     },
     {
         "id": 424,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "createBottomTabNavigator dùng để làm gì?",
+        "question": "Đoạn mã sau trong React Native thực hiện chức năng gì?\nimport { createBottomTabNavigator } from '@react-navigation/bottom-tabs';\nimport { Ionicons } from '@expo/vector-icons';\nconst Tab = createBottomTabNavigator();\nfunction AppNavigator() {\n return (\n  <Tab.Navigator\n   screenOptions={({ route }) => ({\n    tabBarIcon: ({ focused, color, size }) => {\n     let iconName;\n     if (route.name === 'Home') {\n      iconName = focused ? 'home' : 'home-outline';\n     } else if (route.name === 'Profile') {\n      iconName = focused ? 'person' : 'person-outline';\n     }\n     return <Ionicons name={iconName} size={size} color={color} />;\n    }\n   })}\n  >\n   <Tab.Screen name=\"Home\" component={HomeScreen} />\n   <Tab.Screen name=\"Profile\" component={ProfileScreen} />\n  </Tab.Navigator>\n );\n}",
         "options": [
-            "Stack navigator",
-            "Bottom tab navigator",
-            "Drawer navigator",
-            "Không có UI"
+            "Tạo một stack navigator",
+            "Tạo một bottom tab navigator với hai tab",
+            "Tạo một drawer navigator",
+            "Tạo một hệ thống route không có UI"
         ],
         "answer": "B"
     },
@@ -4500,12 +4525,12 @@
         "id": 425,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "React.memo(Child) có ý nghĩa gì?",
+        "question": "Kết quả của đoạn mã sau là gì?\nfunction Parent() {\n const [count, setCount] = useState(0);\n const handleIncrement = useCallback(() => {\n  setCount(prevCount => prevCount + 1);\n }, []);\n return <Child count={count} onIncrement={handleIncrement} />;\n}\nfunction Child({ count, onIncrement }) {\n console.log(\"Child rendered\");\n return (\n  <View>\n   <Text>Count: {count}</Text>\n   <Button title=\"Increment\" onPress={onIncrement} />\n  </View>\n );\n}\nconst MemoizedChild = React.memo(Child);",
         "options": [
-            "Child chỉ render khi props thay đổi",
-            "Child không render",
-            "Render liên tục",
-            "Error"
+            "Child component chỉ render lại khi count thay đổi",
+            "Child component không bao giờ render lại",
+            "Child component render lại mỗi khi Parent render",
+            "Child component gây ra lỗi"
         ],
         "answer": "A"
     },
@@ -4513,12 +4538,12 @@
         "id": 426,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Đoạn mã debounce dùng để làm gì?",
+        "question": "Đoạn mã sau thực hiện chức năng gì?\nconst debounce = (func, delay) => {\n let timeoutId;\n return function(...args) {\n  clearTimeout(timeoutId);\n  timeoutId = setTimeout(() => {\n   func.apply(this, args);\n  }, delay);\n };\n};\nconst handleSearch = debounce((query) => {\n fetchResults(query);\n}, 500);",
         "options": [
-            "Delay thực thi sau khi ngừng gõ",
-            "Lặp vô hạn",
-            "Throttle",
-            "Animation"
+            "Làm chậm việc thực thi hàm fetchResults cho đến khi người dùng ngừng gõ trong 500ms",
+            "Lặp lại việc gọi hàm fetchResults mỗi 500ms",
+            "Giới hạn số lần gọi hàm fetchResults",
+            "Thực thi hàm fetchResults sau chính xác 500ms"
         ],
         "answer": "A"
     },
@@ -4526,33 +4551,33 @@
         "id": 427,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Modal visible={isVisible} dùng để làm gì?",
-        "options": ["Popup", "Modal đóng/mở", "Drawer", "Dropdown"],
+        "question": "Đoạn mã sau trong React Native thực hiện chức năng gì?\nfunction App() {\n const [isVisible, setIsVisible] = useState(false);\n return (\n  <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n   <Button title=\"Show Modal\" onPress={() => setIsVisible(true)} />\n   <Modal\n    animationType=\"slide\"\n    transparent={true}\n    visible={isVisible}\n    onRequestClose={() => setIsVisible(false)}\n   >\n    <View style={styles.centeredView}>\n     <View style={styles.modalView}>\n      <Text>This is a modal!</Text>\n      <Button title=\"Close\" onPress={() => setIsVisible(false)} />\n     </View>\n    </View>\n   </Modal>\n  </View>\n );\n}",
+        "options": [
+            "Tạo một popup thông báo",
+            "Tạo một màn hình modal có thể đóng/mở",
+            "Tạo một navigation drawer",
+            "Tạo một dropdown menu"
+        ],
         "answer": "B"
     },
     {
         "id": 428,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Setter fullName trong object person sẽ làm gì?",
-        "options": [
-            "Không thay đổi dữ liệu",
-            "Cập nhật firstName và lastName",
-            "Tạo object mới",
-            "Error"
-        ],
+        "question": "Kết quả của đoạn mã JavaScript sau là gì?\nconst person = {\n firstName: \"John\",\n lastName: \"Doe\",\n get fullName() {\n  return `${this.firstName} ${this.lastName}`;\n },\n set fullName(name) {\n  const parts = name.split(' ');\n  this.firstName = parts[0];\n  this.lastName = parts[1];\n }\n};\nperson.fullName = \"Jane Smith\";\nconsole.log(person.firstName);",
+        "options": ["\"John\"", "\"Jane\"", "\"Smith\"", "undefined"],
         "answer": "B"
     },
     {
         "id": 429,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Nếu authService.login(credentials) lỗi thì state sẽ như thế nào?",
+        "question": "Kết quả của đoạn mã sau là gì khi hàm login được gọi và authService.login(credentials) trả về một lỗi?\nfunction StateManager() {\n const [state, setState] = useState({\n  user: null,\n  isLoading: false,\n  error: null\n });\n const login = async (credentials) => {\n  try {\n   setState(prev => ({ ...prev, isLoading: true, error: null }));\n   const user = await authService.login(credentials);\n   setState(prev => ({ ...prev, user, isLoading: false }));\n   return true;\n  } catch (error) {\n   setState(prev => ({\n    ...prev,\n    isLoading: false,\n    error: error.message\n   }));\n   return false;\n  }\n };\n return { state, login };\n}",
         "options": [
-            "error null",
-            "error = error.message",
-            "Không đổi",
-            "user được cập nhật"
+            "state sẽ có { user: null, isLoading: false, error: null }",
+            "state sẽ có { user: null, isLoading: false, error: error.message }",
+            "state sẽ giữ nguyên giá trị ban đầu",
+            "state sẽ có { user: user, isLoading: false, error: null }"
         ],
         "answer": "B"
     },
@@ -4560,13 +4585,504 @@
         "id": 430,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "đề thi mẫu(gốc)",
-        "question": "Nếu fetchData lỗi thì state cuối cùng sẽ là gì?",
+        "question": "Kết quả cuối cùng của đoạn mã sau là gì sau khi fetchData được gọi và API trả về lỗi?\nimport React, { useState, useEffect } from 'react';\nfunction Dashboard() {\n const [state, setState] = useState({\n  data: [],\n  isLoading: false,\n  error: null,\n  lastUpdated: null\n });\n const fetchData = async () => {\n  try {\n   setState(prev => ({ ...prev, isLoading: true, error: null }));\n   const response = await fetch('https://api.example.com/data');\n   if (!response.ok) throw new Error('Failed to fetch');\n   const result = await response.json();\n   setState(prev => ({\n    ...prev,\n    data: result,\n    isLoading: false,\n    lastUpdated: new Date().toISOString()\n   }));\n  } catch (error) {\n   setState(prev => ({\n    ...prev,\n    isLoading: false,\n    error: error.message\n   }));\n  }\n };\n useEffect(() => {\n  fetchData();\n }, []);\n return (\n  <div>\n   {state.isLoading && <p>Loading...</p>}\n   {state.error && <p>Error: {state.error}</p>}\n   <ul>\n    {state.data.map((item, index) => (\n     <li key={index}>{item.name}</li>\n    ))}\n   </ul>\n   {state.lastUpdated && <p>Last updated: {state.lastUpdated}</p>}\n  </div>\n );\n}\nexport default Dashboard;",
         "options": [
-            "{ data: [], isLoading: true, error:'Failed to fetch' }",
-            "{ data: [], isLoading: false, error:'Failed to fetch' }",
-            "Giữ nguyên state ban đầu",
-            "{ data: result, isLoading:false, error:null }"
+            "state sẽ là: { data: [], isLoading: true, error: 'Failed to fetch', lastUpdated: null }",
+            "state sẽ là: { data: [], isLoading: false, error: 'Failed to fetch', lastUpdated: null }",
+            "state sẽ giữ nguyên giá trị ban đầu vì lỗi xảy ra",
+            "state sẽ là: { data: result, isLoading: false, error: null, lastUpdated: new Date().toISOString() }"
         ],
         "answer": "B"
+    },
+    ,
+    {
+        "id": 431,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconsole.log(5 + true);",
+        "options": ["6", "5true", "NaN", "Error"],
+        "answer": "A"
+    },
+    {
+        "id": 432,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconsole.log(Boolean(\"0\"));",
+        "options": ["false", "0", "true", "undefined"],
+        "answer": "C"
+    },
+    {
+        "id": 433,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Đâu là Hook dùng để lưu state trong functional component?",
+        "options": ["useEffect", "useRef", "useState", "useMemo"],
+        "answer": "C"
+    },
+    {
+        "id": 434,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst arr = [1,2,3];\nconsole.log(arr.includes(4));",
+        "options": ["true", "false", "undefined", "Error"],
+        "answer": "B"
+    },
+    {
+        "id": 435,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Component nào trong React Native dùng để hiển thị ảnh?",
+        "options": ["View", "Text", "Image", "ScrollView"],
+        "answer": "C"
+    },
+    {
+        "id": 436,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconsole.log(parseFloat(\"3.14abc\"));",
+        "options": ["3", "3.14", "NaN", "undefined"],
+        "answer": "B"
+    },
+    {
+        "id": 437,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong React Native, ScrollView phù hợp nhất với trường hợp nào?",
+        "options": [
+            "Danh sách rất lớn",
+            "Nội dung cuộn ngắn",
+            "Render API",
+            "Navigation"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 438,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst user = {name:'An'};\nconsole.log(user.age ?? 18);",
+        "options": ["undefined", "18", "null", "Error"],
+        "answer": "B"
+    },
+    {
+        "id": 439,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Thuộc tính nào dùng để căn giữa phần tử theo chiều dọc trong Flexbox React Native?",
+        "options": [
+            "alignItems",
+            "justifyContent",
+            "flexDirection",
+            "position"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 440,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst nums = [2,4,6];\nconst result = nums.every(n => n % 2 === 0);\nconsole.log(result);",
+        "options": ["true", "false", "undefined", "NaN"],
+        "answer": "A"
+    },
+    {
+        "id": 441,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst arr = [1, 2, 3, 4];\nconst result = arr.find(n => n > 2);\nconsole.log(result);",
+        "options": ["[3, 4]", "3", "4", "undefined"],
+        "answer": "B"
+    },
+    {
+        "id": 442,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong React Native, prop nào của TextInput được dùng để lấy giá trị nhập khi người dùng thay đổi nội dung?",
+        "options": ["onChangeText", "onPress", "onSubmit", "valueChange"],
+        "answer": "A"
+    },
+    {
+        "id": 443,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst obj = { a: 1, b: 2 };\nconst { a } = obj;\nconsole.log(a);",
+        "options": ["1", "2", "{ a: 1 }", "undefined"],
+        "answer": "A"
+    },
+    {
+        "id": 444,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong React Navigation, params truyền qua navigate thường được lấy ở màn hình đích bằng đối tượng nào?",
+        "options": [
+            "navigation.params",
+            "route.params",
+            "props.data",
+            "screen.options"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 445,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconsole.log([1, 2, 3].some(n => n > 2));",
+        "options": ["true", "false", "[3]", "undefined"],
+        "answer": "A"
+    },
+    {
+        "id": 446,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong React Native, ActivityIndicator thường được dùng trong trường hợp nào?",
+        "options": [
+            "Khi dữ liệu đang tải",
+            "Khi cần nhập văn bản",
+            "Khi cần điều hướng màn hình",
+            "Khi cần lưu ảnh"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 447,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst name = null;\nconsole.log(name || \"Guest\");",
+        "options": ["null", "\"Guest\"", "undefined", "false"],
+        "answer": "B"
+    },
+    {
+        "id": 448,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Khi dùng FlatList, prop nào quy định dữ liệu đầu vào của danh sách?",
+        "options": ["items", "data", "source", "list"],
+        "answer": "B"
+    },
+    {
+        "id": 449,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst numbers = [1, 2, 3];\nconst copy = numbers.slice();\ncopy.push(4);\nconsole.log(numbers.length);",
+        "options": ["3", "4", "0", "undefined"],
+        "answer": "A"
+    },
+    {
+        "id": 450,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong React Native, StyleSheet.create() thường dùng để làm gì?",
+        "options": [
+            "Tạo style object có tổ chức",
+            "Gọi API",
+            "Điều hướng màn hình",
+            "Tạo state toàn cục"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 451,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconsole.log(Math.ceil(4.2));",
+        "options": ["4", "5", "4.2", "Error"],
+        "answer": "B"
+    },
+    {
+        "id": 452,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Hook nào phù hợp nhất để lưu giá trị DOM/reference trong React Native?",
+        "options": ["useMemo", "useRef", "useEffect", "useContext"],
+        "answer": "B"
+    },
+    {
+        "id": 453,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst arr = ['a', 'b', 'c'];\nconsole.log(arr.indexOf('b'));",
+        "options": ["0", "1", "2", "-1"],
+        "answer": "B"
+    },
+    {
+        "id": 454,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong React Native, component nào thường dùng để tạo vùng có thể nhấn tùy biến?",
+        "options": ["Pressable", "Text", "SafeAreaView", "StatusBar"],
+        "answer": "A"
+    },
+    {
+        "id": 455,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconsole.log(Array.from('abc'));",
+        "options": ["['abc']", "['a','b','c']", "\"abc\"", "Error"],
+        "answer": "B"
+    },
+    {
+        "id": 456,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Khi sử dụng useEffect, hàm return bên trong effect thường dùng để làm gì?",
+        "options": [
+            "Render UI",
+            "Cleanup side effects",
+            "Tạo state",
+            "Navigation"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 457,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst nums = [1,2,3];\nconst result = nums.reduce((sum,n)=>sum+n,5);\nconsole.log(result);",
+        "options": ["6", "11", "5", "NaN"],
+        "answer": "B"
+    },
+    {
+        "id": 458,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong Expo, thư viện expo-status-bar dùng để làm gì?",
+        "options": [
+            "Quản lý trạng thái loading",
+            "Điều chỉnh thanh trạng thái thiết bị",
+            "Tạo navigation",
+            "Quản lý database"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 459,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst user = { profile: { name: 'An' } };\nconsole.log(user.profile?.age);",
+        "options": ["null", "0", "undefined", "Error"],
+        "answer": "C"
+    },
+    {
+        "id": 460,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong React Native, thuộc tính nào giúp Image hiển thị vừa khung mà không méo ảnh?",
+        "options": [
+            "resizeMode='cover'",
+            "flex=1",
+            "overflow='hidden'",
+            "padding=0"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 461,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst text = 'React Native';\nconsole.log(text.startsWith('React'));",
+        "options": ["true", "false", "undefined", "Error"],
+        "answer": "A"
+    },
+    {
+        "id": 462,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong React Native, KeyboardAvoidingView dùng để làm gì?",
+        "options": [
+            "Ẩn keyboard",
+            "Điều chỉnh layout khi keyboard xuất hiện",
+            "Đổi màu keyboard",
+            "Tạo animation"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 463,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst arr = [5, 10, 15];\nconsole.log(arr.at(-1));",
+        "options": ["5", "10", "15", "undefined"],
+        "answer": "C"
+    },
+    {
+        "id": 464,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong React Navigation, Stack Navigator phù hợp nhất với kiểu điều hướng nào?",
+        "options": [
+            "Điều hướng dạng ngăn xếp màn hình",
+            "Điều hướng dạng tab",
+            "Điều hướng dạng carousel",
+            "Điều hướng dạng grid"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 465,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst value = '';\nconsole.log(value ?? 'default');",
+        "options": ["default", "''", "undefined", "null"],
+        "answer": "B"
+    },
+    {
+        "id": 466,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Hook useCallback thường được dùng để tối ưu điều gì?",
+        "options": [
+            "Giá trị object",
+            "Function reference",
+            "FlatList",
+            "API response"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 467,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst map = new Map();\nmap.set('a', 1);\nmap.set('b', 2);\nconsole.log(map.size);",
+        "options": ["1", "2", "3", "undefined"],
+        "answer": "B"
+    },
+    {
+        "id": 468,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong React Native, SafeAreaView giúp giải quyết vấn đề gì?",
+        "options": [
+            "Lỗi API",
+            "UI bị che bởi notch/status bar",
+            "Thiếu font chữ",
+            "Hiệu năng FlatList"
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 469,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst nums = [1,2,3,4];\nconst even = nums.filter(n => n % 2 === 0);\nconsole.log(even.length);",
+        "options": ["1", "2", "3", "4"],
+        "answer": "B"
+    },
+    {
+        "id": 470,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong React Native, Dimensions.get('window') thường dùng để làm gì?",
+        "options": [
+            "Lấy kích thước màn hình",
+            "Lấy API dimensions",
+            "Tạo animation",
+            "Quản lý keyboard"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 471,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconsole.log('5' * '2');",
+        "options": ["10", "\"10\"", "52", "NaN"],
+        "answer": "A"
+    },
+    {
+        "id": 472,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong React Native, prop secureTextEntry của TextInput dùng để làm gì?",
+        "options": [
+            "Ẩn nội dung nhập như mật khẩu",
+            "Tự động lưu dữ liệu",
+            "Tăng tốc nhập liệu",
+            "Tạo keyboard số"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 473,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst str = 'hello';\nconsole.log(str.toUpperCase());",
+        "options": ["HELLO", "Hello", "hello", "undefined"],
+        "answer": "A"
+    },
+    {
+        "id": 474,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong React Navigation, navigation.replace() khác navigate() ở điểm nào?",
+        "options": [
+            "replace thay màn hình hiện tại trong stack",
+            "replace tạo tab mới",
+            "replace reload app",
+            "Không có khác biệt"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 475,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst arr = [1,2,3];\narr.reverse();\nconsole.log(arr[0]);",
+        "options": ["1", "2", "3", "undefined"],
+        "answer": "C"
+    },
+    {
+        "id": 476,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong React Native, TouchableWithoutFeedback phù hợp khi nào?",
+        "options": [
+            "Khi cần nhấn nhưng không muốn hiệu ứng",
+            "Khi cần animation",
+            "Khi cần nhập liệu",
+            "Khi cần render list"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 477,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst nums = [3,6,9];\nconsole.log(nums.map(n => n / 3));",
+        "options": ["[1,2,3]", "[3,6,9]", "[0,1,2]", "undefined"],
+        "answer": "A"
+    },
+    {
+        "id": 478,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong Expo, expo-location thường yêu cầu điều gì trước khi lấy vị trí?",
+        "options": [
+            "Quyền truy cập GPS",
+            "Kết nối database",
+            "Tạo navigation",
+            "Quyền camera"
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 479,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Kết quả của đoạn mã sau là gì?\nconst user = { name: 'Nam' };\nconst clone = { ...user };\nclone.name = 'An';\nconsole.log(user.name);",
+        "options": ["Nam", "An", "undefined", "Error"],
+        "answer": "A"
+    },
+    {
+        "id": 480,
+        "subject": "Đề ktra PTUDĐNT",
+        "chapter": "đề thi số 4(chuẩn form gốc)",
+        "question": "Trong React Native, Platform.OS có thể trả về giá trị nào?",
+        "options": [
+            "android hoặc ios",
+            "windows hoặc linux",
+            "mobile hoặc tablet",
+            "react hoặc native"
+        ],
+        "answer": "A"
     }
 ]
