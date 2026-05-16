@@ -3942,7 +3942,7 @@
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Kết quả của hai biểu thức `console.log(1 + 2 + \"3\");` và `console.log(\"1\" + 2 + 3);` lần lượt là gì?",
-    "options": ["\"6\" và \"15\"", \"\"33\" và \"123\"", \"\"123\" và \"33\"", "6 và 123"],
+    "options": ["\"6\" v? \"15\"", "\"33\" v? \"123\"", "\"123\" v? \"33\"", "6 v? 123"],
     "answer": "B"
   },
   {
