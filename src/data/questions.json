@@ -2605,7 +2605,7 @@
         "answer": "B"
     },
     {
-        "id": 1,
+        "id": 231,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã sau là gì? console.log(3 + '2');",
@@ -2613,7 +2613,7 @@
         "answer": "B"
     },
     {
-        "id": 2,
+        "id": 232,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kiểu dữ liệu của null trong JavaScript là gì?",
@@ -2621,7 +2621,7 @@
         "answer": "C"
     },
     {
-        "id": 3,
+        "id": 233,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Hook nào dùng để quản lý state trong React Native?",
@@ -2629,7 +2629,7 @@
         "answer": "B"
     },
     {
-        "id": 4,
+        "id": 234,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Component nào dùng để chứa các component khác trong React Native?",
@@ -2637,7 +2637,7 @@
         "answer": "C"
     },
     {
-        "id": 5,
+        "id": 235,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã sau là gì? const arr = [1,2]; arr.push(3); console.log(arr.length);",
@@ -2645,7 +2645,7 @@
         "answer": "C"
     },
     {
-        "id": 6,
+        "id": 236,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Thuộc tính nào dùng để hiển thị ảnh trong component Image?",
@@ -2653,7 +2653,7 @@
         "answer": "C"
     },
     {
-        "id": 7,
+        "id": 237,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của typeof 'hello' là gì?",
@@ -2661,7 +2661,7 @@
         "answer": "A"
     },
     {
-        "id": 8,
+        "id": 238,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Hook useEffect với dependency [] sẽ chạy khi nào?",
@@ -2674,7 +2674,7 @@
         "answer": "B"
     },
     {
-        "id": 9,
+        "id": 239,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của 10 / '2' là gì?",
@@ -2682,7 +2682,7 @@
         "answer": "A"
     },
     {
-        "id": 10,
+        "id": 240,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Trong React Native, component nào nhận input từ người dùng?",
@@ -2690,7 +2690,7 @@
         "answer": "C"
     },
     {
-        "id": 11,
+        "id": 241,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Phương thức nào dùng để duyệt qua từng phần tử mảng?",
@@ -2698,7 +2698,7 @@
         "answer": "B"
     },
     {
-        "id": 12,
+        "id": 242,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã sau là gì? const a = [1,2]; const b = [...a,3];",
@@ -2706,7 +2706,7 @@
         "answer": "B"
     },
     {
-        "id": 13,
+        "id": 243,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Thuộc tính flexDirection: 'row' dùng để làm gì?",
@@ -2719,7 +2719,7 @@
         "answer": "B"
     },
     {
-        "id": 14,
+        "id": 244,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Promise đại diện cho điều gì?",
@@ -2732,7 +2732,7 @@
         "answer": "C"
     },
     {
-        "id": 15,
+        "id": 245,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của Boolean('') là gì?",
@@ -2740,7 +2740,7 @@
         "answer": "B"
     },
     {
-        "id": 16,
+        "id": 246,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "FlatList trong React Native dùng để làm gì?",
@@ -2753,7 +2753,7 @@
         "answer": "B"
     },
     {
-        "id": 17,
+        "id": 247,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã: [1,2,3].filter(x => x > 1)",
@@ -2761,7 +2761,7 @@
         "answer": "B"
     },
     {
-        "id": 18,
+        "id": 248,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Async/await dùng để xử lý gì?",
@@ -2769,7 +2769,7 @@
         "answer": "C"
     },
     {
-        "id": 19,
+        "id": 249,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Thuộc tính nào căn giữa theo chiều ngang trong React Native?",
@@ -2777,7 +2777,7 @@
         "answer": "B"
     },
     {
-        "id": 20,
+        "id": 250,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của parseInt('15px') là gì?",
@@ -2785,7 +2785,7 @@
         "answer": "A"
     },
     {
-        "id": 21,
+        "id": 251,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Trong React Navigation, navigation.navigate() dùng để làm gì?",
@@ -2798,7 +2798,7 @@
         "answer": "B"
     },
     {
-        "id": 22,
+        "id": 252,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã: const x = [1,2]; console.log(typeof x);",
@@ -2806,7 +2806,7 @@
         "answer": "B"
     },
     {
-        "id": 23,
+        "id": 253,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "TouchableOpacity dùng để làm gì?",
@@ -2819,7 +2819,7 @@
         "answer": "B"
     },
     {
-        "id": 24,
+        "id": 254,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của Math.max(2,8,5) là gì?",
@@ -2827,7 +2827,7 @@
         "answer": "C"
     },
     {
-        "id": 25,
+        "id": 255,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Expo là gì?",
@@ -2840,7 +2840,7 @@
         "answer": "B"
     },
     {
-        "id": 26,
+        "id": 256,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã: const a = {x:1}; const b = {...a,y:2};",
@@ -2848,7 +2848,7 @@
         "answer": "C"
     },
     {
-        "id": 27,
+        "id": 257,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Phương thức nào chuyển object sang JSON string?",
@@ -2861,7 +2861,7 @@
         "answer": "B"
     },
     {
-        "id": 28,
+        "id": 258,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã sau là gì? console.log([1,2,3].includes(2));",
@@ -2869,7 +2869,7 @@
         "answer": "A"
     },
     {
-        "id": 29,
+        "id": 259,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "ScrollView phù hợp với trường hợp nào?",
@@ -2882,7 +2882,7 @@
         "answer": "B"
     },
     {
-        "id": 30,
+        "id": 260,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của Promise.resolve(5).then(x => x * 2) là gì?",
@@ -2890,7 +2890,7 @@
         "answer": "B"
     },
     {
-        "id": 31,
+        "id": 261,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "useCallback dùng để làm gì?",
@@ -2898,7 +2898,7 @@
         "answer": "B"
     },
     {
-        "id": 32,
+        "id": 262,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã: const s = new Set([1,1,2]); console.log(s.size);",
@@ -2906,7 +2906,7 @@
         "answer": "B"
     },
     {
-        "id": 33,
+        "id": 263,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "axios khác fetch ở điểm nào?",
@@ -2919,7 +2919,7 @@
         "answer": "A"
     },
     {
-        "id": 34,
+        "id": 264,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã: console.log(0 == false);",
@@ -2927,7 +2927,7 @@
         "answer": "A"
     },
     {
-        "id": 35,
+        "id": 265,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "keyExtractor trong FlatList dùng để làm gì?",
@@ -2940,7 +2940,7 @@
         "answer": "B"
     },
     {
-        "id": 36,
+        "id": 266,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã: const nums=[1,2,3]; console.log(nums.reduce((a,b)=>a+b,0));",
@@ -2948,7 +2948,7 @@
         "answer": "C"
     },
     {
-        "id": 37,
+        "id": 267,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "React.memo dùng để làm gì?",
@@ -2961,7 +2961,7 @@
         "answer": "B"
     },
     {
-        "id": 38,
+        "id": 268,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã async function test(){ return 1;} console.log(test());",
@@ -2969,7 +2969,7 @@
         "answer": "B"
     },
     {
-        "id": 39,
+        "id": 269,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Trong Expo ImagePicker, requestMediaLibraryPermissionsAsync() dùng để làm gì?",
@@ -2982,7 +2982,7 @@
         "answer": "B"
     },
     {
-        "id": 40,
+        "id": 270,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã: console.log('5' - 2);",
@@ -2990,7 +2990,7 @@
         "answer": "B"
     },
     {
-        "id": 41,
+        "id": 271,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Dependency array trong useEffect dùng để làm gì?",
@@ -3003,7 +3003,7 @@
         "answer": "B"
     },
     {
-        "id": 42,
+        "id": 272,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã: const arr=[1,2,3]; console.log(arr.find(x=>x>1));",
@@ -3011,7 +3011,7 @@
         "answer": "B"
     },
     {
-        "id": 43,
+        "id": 273,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Modal trong React Native dùng để làm gì?",
@@ -3024,7 +3024,7 @@
         "answer": "A"
     },
     {
-        "id": 44,
+        "id": 274,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Debounce thường được dùng trong trường hợp nào?",
@@ -3032,7 +3032,7 @@
         "answer": "B"
     },
     {
-        "id": 45,
+        "id": 275,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã: const obj={a:1}; delete obj.a; console.log(obj.a);",
@@ -3040,7 +3040,7 @@
         "answer": "C"
     },
     {
-        "id": 46,
+        "id": 276,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "React Navigation Bottom Tabs dùng để làm gì?",
@@ -3048,7 +3048,7 @@
         "answer": "A"
     },
     {
-        "id": 47,
+        "id": 277,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã: console.log([...'abc']);",
@@ -3056,7 +3056,7 @@
         "answer": "B"
     },
     {
-        "id": 48,
+        "id": 278,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "useReducer phù hợp với trường hợp nào?",
@@ -3069,7 +3069,7 @@
         "answer": "A"
     },
     {
-        "id": 49,
+        "id": 279,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Kết quả của đoạn mã Promise.all([Promise.resolve(1), Promise.resolve(2)]) là gì?",
@@ -3077,7 +3077,7 @@
         "answer": "A"
     },
     {
-        "id": 50,
+        "id": 280,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 1",
         "question": "Trong React Native, Zustand hoặc Redux thường dùng để làm gì?",
@@ -3090,7 +3090,7 @@
         "answer": "A"
     },
     {
-        "id": 1,
+        "id": 281,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? console.log([] == false);",
@@ -3098,7 +3098,7 @@
         "answer": "A"
     },
     {
-        "id": 2,
+        "id": 282,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? console.log(typeof NaN);",
@@ -3106,7 +3106,7 @@
         "answer": "B"
     },
     {
-        "id": 3,
+        "id": 283,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Đâu là đặc điểm đúng của React Native?",
@@ -3119,7 +3119,7 @@
         "answer": "C"
     },
     {
-        "id": 4,
+        "id": 284,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? console.log(0.1 + 0.2 === 0.3);",
@@ -3127,7 +3127,7 @@
         "answer": "B"
     },
     {
-        "id": 5,
+        "id": 285,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Hook nào phù hợp nhất để lưu giá trị không làm component render lại?",
@@ -3135,7 +3135,7 @@
         "answer": "D"
     },
     {
-        "id": 6,
+        "id": 286,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? const arr=[1,2,3]; delete arr[1]; console.log(arr.length);",
@@ -3143,7 +3143,7 @@
         "answer": "C"
     },
     {
-        "id": 7,
+        "id": 287,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Trong React Native, component nào tối ưu hơn cho danh sách lớn?",
@@ -3151,7 +3151,7 @@
         "answer": "B"
     },
     {
-        "id": 8,
+        "id": 288,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? console.log('5' + 3 - 2);",
@@ -3159,7 +3159,7 @@
         "answer": "A"
     },
     {
-        "id": 9,
+        "id": 289,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Thuộc tính nào dùng để căn chỉnh phần tử theo trục chính trong Flexbox?",
@@ -3167,7 +3167,7 @@
         "answer": "B"
     },
     {
-        "id": 10,
+        "id": 290,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? console.log([1,2,3] + [4,5]);",
@@ -3175,7 +3175,7 @@
         "answer": "B"
     },
     {
-        "id": 11,
+        "id": 291,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "useEffect(() => {}, []) có ý nghĩa gì?",
@@ -3188,7 +3188,7 @@
         "answer": "B"
     },
     {
-        "id": 12,
+        "id": 292,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? const a = {}; const b = a; console.log(a === b);",
@@ -3196,7 +3196,7 @@
         "answer": "B"
     },
     {
-        "id": 13,
+        "id": 293,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Phương thức nào tạo một mảng mới từ mảng cũ?",
@@ -3204,7 +3204,7 @@
         "answer": "B"
     },
     {
-        "id": 14,
+        "id": 294,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Trong React Native, TouchableOpacity khác Button ở điểm nào?",
@@ -3217,7 +3217,7 @@
         "answer": "B"
     },
     {
-        "id": 15,
+        "id": 295,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? console.log(Boolean([]));",
@@ -3225,7 +3225,7 @@
         "answer": "B"
     },
     {
-        "id": 16,
+        "id": 296,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Khi nào nên dùng React.memo?",
@@ -3238,7 +3238,7 @@
         "answer": "B"
     },
     {
-        "id": 17,
+        "id": 297,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? const x = [1,2,3]; console.log(x.slice(1));",
@@ -3246,7 +3246,7 @@
         "answer": "B"
     },
     {
-        "id": 18,
+        "id": 298,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Đâu là lợi ích của async/await?",
@@ -3259,7 +3259,7 @@
         "answer": "B"
     },
     {
-        "id": 19,
+        "id": 299,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? console.log(null == undefined);",
@@ -3267,7 +3267,7 @@
         "answer": "A"
     },
     {
-        "id": 20,
+        "id": 300,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "FlatList cần prop nào để tránh warning key?",
@@ -3275,7 +3275,7 @@
         "answer": "C"
     },
     {
-        "id": 21,
+        "id": 301,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? console.log(typeof (() => {}));",
@@ -3283,7 +3283,7 @@
         "answer": "C"
     },
     {
-        "id": 22,
+        "id": 302,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Trong React Navigation, navigation.goBack() dùng để làm gì?",
@@ -3296,7 +3296,7 @@
         "answer": "B"
     },
     {
-        "id": 23,
+        "id": 303,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? console.log([...'123'].map(Number));",
@@ -3304,7 +3304,7 @@
         "answer": "B"
     },
     {
-        "id": 24,
+        "id": 304,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Đâu là cách đúng để cập nhật state phụ thuộc state cũ?",
@@ -3317,7 +3317,7 @@
         "answer": "B"
     },
     {
-        "id": 25,
+        "id": 305,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? const obj={a:1}; console.log(Object.keys(obj).length);",
@@ -3325,7 +3325,7 @@
         "answer": "B"
     },
     {
-        "id": 26,
+        "id": 306,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "useMemo dùng để làm gì?",
@@ -3338,7 +3338,7 @@
         "answer": "A"
     },
     {
-        "id": 27,
+        "id": 307,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? console.log(Math.floor(4.9));",
@@ -3346,7 +3346,7 @@
         "answer": "B"
     },
     {
-        "id": 28,
+        "id": 308,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Trong Expo, thư viện expo-location dùng để làm gì?",
@@ -3359,7 +3359,7 @@
         "answer": "B"
     },
     {
-        "id": 29,
+        "id": 309,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? Promise.resolve(1).then(x => x + 1).then(console.log);",
@@ -3367,7 +3367,7 @@
         "answer": "B"
     },
     {
-        "id": 30,
+        "id": 310,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Đâu là ưu điểm của Zustand so với Redux?",
@@ -3380,7 +3380,7 @@
         "answer": "A"
     },
     {
-        "id": 31,
+        "id": 311,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? const a=[1,2]; const b=a; b.push(3); console.log(a);",
@@ -3388,7 +3388,7 @@
         "answer": "B"
     },
     {
-        "id": 32,
+        "id": 312,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Khi nào component re-render?",
@@ -3401,7 +3401,7 @@
         "answer": "A"
     },
     {
-        "id": 33,
+        "id": 313,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? console.log(Number('abc'));",
@@ -3409,7 +3409,7 @@
         "answer": "C"
     },
     {
-        "id": 34,
+        "id": 314,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Hook nào thường dùng để gọi API?",
@@ -3417,7 +3417,7 @@
         "answer": "A"
     },
     {
-        "id": 35,
+        "id": 315,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? console.log(!!'hello');",
@@ -3425,7 +3425,7 @@
         "answer": "B"
     },
     {
-        "id": 36,
+        "id": 316,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Phương thức nào dùng để lọc phần tử mảng?",
@@ -3433,7 +3433,7 @@
         "answer": "C"
     },
     {
-        "id": 37,
+        "id": 317,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? const set=new Set([1,2,2,3]); console.log([...set]);",
@@ -3441,7 +3441,7 @@
         "answer": "B"
     },
     {
-        "id": 38,
+        "id": 318,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Trong React Native, SafeAreaView dùng để làm gì?",
@@ -3454,7 +3454,7 @@
         "answer": "B"
     },
     {
-        "id": 39,
+        "id": 319,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? const p = Promise.reject('error'); p.catch(console.log);",
@@ -3462,7 +3462,7 @@
         "answer": "B"
     },
     {
-        "id": 40,
+        "id": 320,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Trong React Native, ActivityIndicator dùng để làm gì?",
@@ -3475,7 +3475,7 @@
         "answer": "A"
     },
     {
-        "id": 41,
+        "id": 321,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? console.log('10' == 10 && '10' === 10);",
@@ -3483,7 +3483,7 @@
         "answer": "B"
     },
     {
-        "id": 42,
+        "id": 322,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Đâu là chức năng chính của TanStack Query?",
@@ -3496,7 +3496,7 @@
         "answer": "B"
     },
     {
-        "id": 43,
+        "id": 323,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? const arr=[1,2,3]; console.log(arr.find(x=>x>5));",
@@ -3504,7 +3504,7 @@
         "answer": "C"
     },
     {
-        "id": 44,
+        "id": 324,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Debounce thường dùng để tối ưu trường hợp nào?",
@@ -3512,7 +3512,7 @@
         "answer": "A"
     },
     {
-        "id": 45,
+        "id": 325,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? console.log(Array.isArray({}));",
@@ -3520,7 +3520,7 @@
         "answer": "B"
     },
     {
-        "id": 46,
+        "id": 326,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Trong fetch API, response.json() trả về gì?",
@@ -3528,7 +3528,7 @@
         "answer": "B"
     },
     {
-        "id": 47,
+        "id": 327,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? console.log([1,2,3].reduce((a,b)=>a*b));",
@@ -3536,7 +3536,7 @@
         "answer": "B"
     },
     {
-        "id": 48,
+        "id": 328,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Trong React Native, prop horizontal của FlatList dùng để làm gì?",
@@ -3549,7 +3549,7 @@
         "answer": "A"
     },
     {
-        "id": 49,
+        "id": 329,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Kết quả của đoạn mã sau là gì? const fn = (()=>{ let x=0; return ()=>++x; })(); console.log(fn(), fn());",
@@ -3557,7 +3557,7 @@
         "answer": "B"
     },
     {
-        "id": 50,
+        "id": 330,
         "subject": "Đề ktra PTUDĐNT",
         "chapter": "Đề thi 2",
         "question": "Khi sử dụng useEffect để gọi API, cần cleanup trong trường hợp nào?",
@@ -3570,7 +3570,7 @@
         "answer": "A"
     },
   {
-    "id": 1,
+    "id": 331,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Kết quả của biểu thức `typeof \"React Native\"` trong JavaScript là gì?",
@@ -3578,7 +3578,7 @@
     "answer": "A"
   },
   {
-    "id": 2,
+    "id": 332,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Kết quả của biểu thức `2 == \"2\"` trong JavaScript là gì?",
@@ -3586,7 +3586,7 @@
     "answer": "A"
   },
   {
-    "id": 3,
+    "id": 333,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Component nào trong React Native được sử dụng để hiển thị hình ảnh?",
@@ -3594,7 +3594,7 @@
     "answer": "C"
   },
   {
-    "id": 4,
+    "id": 334,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Để xếp các component con theo hàng ngang, thuộc tính `flexDirection` trong React Native cần nhận giá trị nào?",
@@ -3602,7 +3602,7 @@
     "answer": "A"
   },
   {
-    "id": 5,
+    "id": 335,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Phương thức nào dùng để thêm một hoặc nhiều phần tử vào cuối mảng trong JavaScript?",
@@ -3610,7 +3610,7 @@
     "answer": "B"
   },
   {
-    "id": 6,
+    "id": 336,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Trong Flexbox của React Native, thuộc tính nào dùng để căn chỉnh các phần tử con dọc theo trục chính (Main Axis)?",
@@ -3618,7 +3618,7 @@
     "answer": "B"
   },
   {
-    "id": 7,
+    "id": 337,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Component nào trong React Native cung cấp một vùng chứa có thể cuộn cho các nội dung bên trong?",
@@ -3626,7 +3626,7 @@
     "answer": "B"
   },
   {
-    "id": 8,
+    "id": 338,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Kết quả của đoạn mã `console.log(10 % 3);` là gì?",
@@ -3634,7 +3634,7 @@
     "answer": "A"
   },
   {
-    "id": 9,
+    "id": 339,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Từ khóa nào dùng để khai báo một biến có phạm vi khối (block scope) và không thể gán lại giá trị sau đó?",
@@ -3642,7 +3642,7 @@
     "answer": "C"
   },
   {
-    "id": 10,
+    "id": 340,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Component nào trong React Native được sử dụng để nhận dữ liệu nhập vào từ bàn phím?",
@@ -3650,7 +3650,7 @@
     "answer": "B"
   },
   {
-    "id": 11,
+    "id": 341,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Giá trị mặc định của thuộc tính `flexDirection` trong React Native là gì?",
@@ -3658,7 +3658,7 @@
     "answer": "B"
   },
   {
-    "id": 12,
+    "id": 342,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Biểu thức `Boolean(\"\")` (chuỗi rỗng) trong JavaScript trả về kết quả nào?",
@@ -3666,7 +3666,7 @@
     "answer": "B"
   },
   {
-    "id": 13,
+    "id": 343,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Để áp dụng kiểu dáng (style) cho một component trong React Native, ta dùng prop nào?",
@@ -3674,7 +3674,7 @@
     "answer": "C"
   },
   {
-    "id": 14,
+    "id": 344,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Kết quả của `console.log(typeof null);` trong JavaScript là gì?",
@@ -3682,7 +3682,7 @@
     "answer": "C"
   },
   {
-    "id": 15,
+    "id": 345,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Phương thức nào loại bỏ phần tử cuối cùng ra khỏi một mảng và trả về phần tử đó?",
@@ -3690,7 +3690,7 @@
     "answer": "C"
   },
   {
-    "id": 16,
+    "id": 346,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Kết quả của đoạn mã `const arr = [1, 2, 3]; console.log(arr.map(x => x * 2));` là gì?",
@@ -3698,7 +3698,7 @@
     "answer": "B"
   },
   {
-    "id": 17,
+    "id": 347,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Hook nào trong React Native được sử dụng để quản lý trạng thái cục bộ của một functional component?",
@@ -3706,7 +3706,7 @@
     "answer": "C"
   },
   {
-    "id": 18,
+    "id": 348,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Biểu thức `3 === \"3\"` trả về kết quả gì trong JavaScript?",
@@ -3714,7 +3714,7 @@
     "answer": "B"
   },
   {
-    "id": 19,
+    "id": 349,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Hook nào dùng để thực hiện side effects (gọi API, lắng nghe sự kiện...) trong React Native?",
@@ -3722,7 +3722,7 @@
     "answer": "B"
   },
   {
-    "id": 20,
+    "id": 350,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Kỹ thuật Destructuring `const [a, b] = [10, 20, 30];` sẽ gán giá trị nào cho biến `b`?",
@@ -3730,7 +3730,7 @@
     "answer": "B"
   },
   {
-    "id": 21,
+    "id": 351,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Công cụ/Hệ sinh thái nào giúp xây dựng và chạy nhanh dự án React Native mà không cần cấu hình Android Studio hay Xcode từ đầu?",
@@ -3738,7 +3738,7 @@
     "answer": "B"
   },
   {
-    "id": 22,
+    "id": 352,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Thuộc tính nào của component `TouchableOpacity` dùng để thiết lập hàm xử lý khi người dùng nhấn vào?",
@@ -3746,7 +3746,7 @@
     "answer": "B"
   },
   {
-    "id": 23,
+    "id": 353,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Kết quả của `const obj1 = {x: 1}; const obj2 = {...obj1, y: 2}; console.log(obj2);` là gì?",
@@ -3754,7 +3754,7 @@
     "answer": "C"
   },
   {
-    "id": 24,
+    "id": 354,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Kết quả của đoạn mã `console.log([1, 2, 3, 4].filter(x => x % 2 === 0));` là gì?",
@@ -3762,7 +3762,7 @@
     "answer": "B"
   },
   {
-    "id": 25,
+    "id": 355,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Component nào tối ưu nhất để hiển thị một danh sách dữ liệu dài trong React Native giúp tiết kiệm bộ nhớ?",
@@ -3770,7 +3770,7 @@
     "answer": "C"
   },
   {
-    "id": 26,
+    "id": 356,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Trong JavaScript, giá trị của biểu thức `NaN === NaN` là gì?",
@@ -3778,7 +3778,7 @@
     "answer": "B"
   },
   {
-    "id": 27,
+    "id": 357,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Để tự động căn chỉnh giao diện tránh các vùng bị che khuất như \"tai thỏ\" (notch) trên thiết bị iOS, ta dùng component nào?",
@@ -3786,7 +3786,7 @@
     "answer": "B"
   },
   {
-    "id": 28,
+    "id": 358,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Biểu thức `console.log(\"5\" - 2);` trong JavaScript trả về kết quả gì?",
@@ -3794,7 +3794,7 @@
     "answer": "A"
   },
   {
-    "id": 29,
+    "id": 359,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Cú pháp Arrow Function nào dưới đây trả về một object `{ value: 1 }` một cách chính xác?",
@@ -3802,7 +3802,7 @@
     "answer": "B"
   },
   {
-    "id": 30,
+    "id": 360,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Trong Flexbox của React Native, thuộc tính `alignItems` mặc định căn chỉnh các phần tử con dọc theo trục nào?",
@@ -3810,7 +3810,7 @@
     "answer": "B"
   },
   {
-    "id": 31,
+    "id": 361,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Cách chuẩn quy trình để truyền dữ liệu từ component cha xuống component con trong React Native là gì?",
@@ -3818,7 +3818,7 @@
     "answer": "B"
   },
   {
-    "id": 32,
+    "id": 362,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Để lấy thông tin kích thước màn hình thiết bị và tự động cập nhật khi xoay màn hình, hook nào tối ưu nhất?",
@@ -3826,7 +3826,7 @@
     "answer": "B"
   },
   {
-    "id": 33,
+    "id": 363,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Kết quả của `console.log(JSON.stringify({ id: 100 }));` là gì?",
@@ -3834,7 +3834,7 @@
     "answer": "B"
   },
   {
-    "id": 34,
+    "id": 364,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Thuộc tính `keyExtractor` trong component `FlatList` nhận vào một hàm nhằm mục đích chính là gì?",
@@ -3842,7 +3842,7 @@
     "answer": "B"
   },
   {
-    "id": 35,
+    "id": 365,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Đoạn mã `const set = new Set([1, 2, 2, 3]); console.log(set.size);` in ra kết quả gì?",
@@ -3850,7 +3850,7 @@
     "answer": "B"
   },
   {
-    "id": 36,
+    "id": 366,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Đoạn mã sau trả về gì?\n`function outer() { let a = 1; return function() { return a; }; } const inner = outer(); console.log(inner());`",
@@ -3858,7 +3858,7 @@
     "answer": "B"
   },
   {
-    "id": 37,
+    "id": 367,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Phương thức `Promise.all([p1, p2, p3])` sẽ kích hoạt khối `.catch()` khi nào?",
@@ -3866,7 +3866,7 @@
     "answer": "B"
   },
   {
-    "id": 38,
+    "id": 368,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Để tối ưu hiệu năng, ngăn một component con bị render lại không cần thiết khi component cha re-render (props không đổi), ta bọc component con bằng công cụ nào?",
@@ -3874,7 +3874,7 @@
     "answer": "A"
   },
   {
-    "id": 39,
+    "id": 369,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Sự khác biệt lớn nhất giữa việc khai báo `const obj = {}` và áp dụng `Object.freeze(obj)` là gì?",
@@ -3882,7 +3882,7 @@
     "answer": "B"
   },
   {
-    "id": 40,
+    "id": 370,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Kết quả của biểu thức `console.log(true + false);` trong JavaScript là gì?",
@@ -3890,7 +3890,7 @@
     "answer": "B"
   },
   {
-    "id": 41,
+    "id": 371,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Khi tự định nghĩa một Custom Hook trong React/React Native, quy tắc đặt tên bắt buộc nào phải tuân theo?",
@@ -3898,7 +3898,7 @@
     "answer": "B"
   },
   {
-    "id": 42,
+    "id": 372,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Đối tượng `Proxy` trong JavaScript (`new Proxy(target, handler)`) được dùng chủ yếu để làm gì?",
@@ -3906,7 +3906,7 @@
     "answer": "B"
   },
   {
-    "id": 43,
+    "id": 373,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Để thực hiện đồng thời hai yêu cầu gọi API bất đồng bộ song song nhằm rút ngắn thời gian xử lý, giải pháp nào tối ưu nhất?",
@@ -3914,7 +3914,7 @@
     "answer": "B"
   },
   {
-    "id": 44,
+    "id": 374,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Vấn đề vòng lặp vô hạn (Infinite Loop) xảy ra trong `useEffect` khi nào?",
@@ -3922,7 +3922,7 @@
     "answer": "B"
   },
   {
-    "id": 45,
+    "id": 375,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Sự khác biệt cốt lõi về ngữ cảnh `this` giữa Arrow Function và Regular Function là gì?",
@@ -3930,7 +3930,7 @@
     "answer": "B"
   },
   {
-    "id": 46,
+    "id": 376,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Mục đích chính của việc sử dụng Hook `useCallback` là gì?",
@@ -3938,7 +3938,7 @@
     "answer": "B"
   },
   {
-    "id": 47,
+    "id": 377,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Kết quả của hai biểu thức `console.log(1 + 2 + \"3\");` và `console.log(\"1\" + 2 + 3);` lần lượt là gì?",
@@ -3946,7 +3946,7 @@
     "answer": "B"
   },
   {
-    "id": 48,
+    "id": 378,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Để thiết lập component `FlatList` hiển thị danh sách dạng lưới (Grid) gồm 2 cột, ta sử dụng thuộc tính nào?",
@@ -3954,7 +3954,7 @@
     "answer": "B"
   },
   {
-    "id": 49,
+    "id": 379,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Khi sử dụng Hook `useReducer`, hàm `reducer` luôn luôn phải nhận vào những tham số mặc định nào?",
@@ -3962,7 +3962,7 @@
     "answer": "A"
   },
   {
-    "id": 50,
+    "id": 380,
     "subject": "Đề ktra PTUDĐNT",
     "chapter": "đề thi 3",
     "question": "Xét đoạn mã sau:\n`const p = new Promise((res, rej) => { rej(\"Error\"); });` \n`p.then(() => console.log(1)).catch(() => console.log(2)).then(() => console.log(3));` \nĐoạn mã trên sẽ in ra chuỗi kết quả nào?",
